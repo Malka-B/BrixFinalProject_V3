@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Transaction.Service;
+using Transaction.Share.Models;
 
 namespace Transaction.Data.Entities
 {
-    public enum eStatus { proccessing, success, fail};
     public class TransactionEntity
     {
         public Guid Id { get; set; }

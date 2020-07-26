@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Account.Service/1.0.0": {
         "dependencies": {
+          "Account.Share": "1.0.0",
           "Exceptions": "1.0.0",
           "Microsoft.AspNetCore.Authentication.Google": "3.1.6"
         },
@@ -23,12 +24,25 @@
           }
         }
       },
+      "Account.Share/1.0.0": {
+        "dependencies": {
+          "Messages": "1.0.0"
+        },
+        "runtime": {
+          "Account.Share.dll": {}
+        }
+      },
       "Exceptions/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Google": "3.1.6"
         },
         "runtime": {
           "Exceptions.dll": {}
+        }
+      },
+      "Messages/1.0.0": {
+        "runtime": {
+          "Messages.dll": {}
         }
       }
     }
@@ -46,7 +60,17 @@
       "path": "microsoft.aspnetcore.authentication.google/3.1.6",
       "hashPath": "microsoft.aspnetcore.authentication.google.3.1.6.nupkg.sha512"
     },
+    "Account.Share/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Exceptions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Messages/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

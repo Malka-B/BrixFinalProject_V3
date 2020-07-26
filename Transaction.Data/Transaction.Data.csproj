@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Transaction.Service\Transaction.Service.csproj" />
+    <ProjectReference Include="..\TransactionInterfaces\Transaction.Share.csproj" />
   </ItemGroup>
 
 </Project>

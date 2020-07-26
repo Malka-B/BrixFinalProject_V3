@@ -1,11 +1,7 @@
 ﻿using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Tracking.WebApi.DTO;
 using Transaction.Data.Entities;
-using Transaction.Service.Models;
+using Transaction.Share.Models;
 
 namespace Tracking.WebApi.Profiles
 {

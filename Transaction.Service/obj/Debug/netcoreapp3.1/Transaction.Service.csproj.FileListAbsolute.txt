@@ -1,8 +1,50 @@
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Drop.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Subscription_Create.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Subscription_Drop.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Timeout_Create.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Timeout_Drop.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MySql\Outbox_Create.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MySql\Outbox_Drop.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MySql\Subscription_Create.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MySql\Subscription_Drop.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MySql\Timeout_Create.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MySql\Timeout_Drop.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\Oracle\Outbox_Create.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\Oracle\Outbox_Drop.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\Oracle\Subscription_Create.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\Oracle\Subscription_Drop.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\Oracle\Timeout_Create.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\Oracle\Timeout_Drop.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Outbox_Create.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Outbox_Drop.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Subscription_Create.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Subscription_Drop.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Timeout_Create.sql
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Timeout_Drop.sql
 F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\Transaction.Service.deps.json
 F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\Transaction.Service.dll
 F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\Transaction.Service.pdb
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\Messages.dll
+F:\Brix\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\Messages.pdb
+F:\Brix\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.csprojAssemblyReference.cache
 F:\Brix\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.csproj.CoreCompileInputs.cache
 F:\Brix\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.AssemblyInfoInputs.cache
 F:\Brix\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.AssemblyInfo.cs
+F:\Brix\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.csproj.CopyComplete
 F:\Brix\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.dll
 F:\Brix\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.pdb
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\Transaction.Service.deps.json
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\Transaction.Service.dll
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\Transaction.Service.pdb
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\Messages.dll
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\Transaction.Share.dll
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\Messages.pdb
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\bin\Debug\netcoreapp3.1\Transaction.Share.pdb
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.csprojAssemblyReference.cache
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.AssemblyInfo.cs
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.csproj.CopyComplete
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.dll
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.pdb

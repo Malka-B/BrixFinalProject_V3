@@ -45,3 +45,24 @@ F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.D
 F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.dll
 F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.pdb
 F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.genruntimeconfig.cache
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.deps.json
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.runtimeconfig.json
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.runtimeconfig.dev.json
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.dll
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.pdb
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Service.dll
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Share.dll
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Exceptions.dll
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Messages.dll
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Service.pdb
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Share.pdb
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Exceptions.pdb
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Messages.pdb
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.csprojAssemblyReference.cache
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.AssemblyInfo.cs
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.csproj.CopyComplete
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.dll
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.pdb
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.genruntimeconfig.cache

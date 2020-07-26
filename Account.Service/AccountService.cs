@@ -1,7 +1,10 @@
 ﻿using Account.Service.Intefaces;
 using Account.Service.Models;
+using Account.Share.Interfaces;
+using Account.Share.Models;
 using System;
 using System.Threading.Tasks;
+
 
 namespace Account.Service
 {
@@ -17,5 +20,7 @@ namespace Account.Service
         {
             return await _accountRepository.GetAccountInfoAsync(CustomerId);
         }
+
+        
     }
 }

@@ -1,6 +1,7 @@
 using Account.Data;
 using Account.Service;
 using Account.Service.Intefaces;
+using Account.Share.Interfaces;
 using Account.WebApi.Profiles;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;

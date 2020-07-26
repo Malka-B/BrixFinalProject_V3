@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Account.Data.Entites;
+using Account.Share.Models;
 
 namespace Account.WebApi.Profiles
 {

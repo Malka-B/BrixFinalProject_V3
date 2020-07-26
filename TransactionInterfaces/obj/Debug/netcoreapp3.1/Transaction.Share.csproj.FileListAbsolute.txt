@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\TransactionInterfaces\bin\Debug\netcoreapp3.1\Transaction.Share.deps.json
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\TransactionInterfaces\bin\Debug\netcoreapp3.1\Transaction.Share.dll
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\TransactionInterfaces\bin\Debug\netcoreapp3.1\Transaction.Share.pdb
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\TransactionInterfaces\bin\Debug\netcoreapp3.1\Messages.dll
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\TransactionInterfaces\bin\Debug\netcoreapp3.1\Messages.pdb
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.csprojAssemblyReference.cache
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.AssemblyInfo.cs
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.csproj.CopyComplete
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.dll
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.pdb

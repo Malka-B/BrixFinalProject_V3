@@ -7,3 +7,12 @@ F:\Brix\Brix final project\Exceptions\obj\Debug\netcoreapp3.1\Exceptions.Assembl
 F:\Brix\Brix final project\Exceptions\obj\Debug\netcoreapp3.1\Exceptions.AssemblyInfo.cs
 F:\Brix\Brix final project\Exceptions\obj\Debug\netcoreapp3.1\Exceptions.dll
 F:\Brix\Brix final project\Exceptions\obj\Debug\netcoreapp3.1\Exceptions.pdb
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Exceptions\bin\Debug\netcoreapp3.1\Exceptions.deps.json
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Exceptions\bin\Debug\netcoreapp3.1\Exceptions.dll
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Exceptions\bin\Debug\netcoreapp3.1\Exceptions.pdb
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Exceptions\obj\Debug\netcoreapp3.1\Exceptions.csprojAssemblyReference.cache
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Exceptions\obj\Debug\netcoreapp3.1\Exceptions.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Exceptions\obj\Debug\netcoreapp3.1\Exceptions.AssemblyInfo.cs
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Exceptions\obj\Debug\netcoreapp3.1\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Exceptions\obj\Debug\netcoreapp3.1\Exceptions.dll
+C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Exceptions\obj\Debug\netcoreapp3.1\Exceptions.pdb

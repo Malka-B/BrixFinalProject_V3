@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Account.Service\Account.Service.csproj" />
+    <ProjectReference Include="..\Account.Share\Account.Share.csproj" />
     <ProjectReference Include="..\Exceptions\Exceptions.csproj" />
   </ItemGroup>
 

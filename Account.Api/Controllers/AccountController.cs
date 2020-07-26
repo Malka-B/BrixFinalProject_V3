@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Account.Service.Intefaces;
 using Account.Service.Models;
+using Account.Share.Models;
 using Account.WebApi.DTO;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
