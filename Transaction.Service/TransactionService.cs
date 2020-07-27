@@ -14,10 +14,8 @@ namespace Transaction.Service
             _transactionRepository = transactionRepository;
         }
         public async Task<Guid> CreateTransactionAsync(TransactionModel transactionModel)
-        {
-            transactionModel.Id = new Guid();
-            transactionModel.Status = eStatus.proccessing;
-            transactionModel.Date = DateTime.Now;
+        {            
+            transactionModel.Status = eStatus.proccessing;            
             Guid transactionId = await _transactionRepository.CreateTransactionAsync(transactionModel);   
             return transactionId;
         }

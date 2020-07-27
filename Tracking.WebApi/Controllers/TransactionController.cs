@@ -28,7 +28,7 @@ namespace Transaction.WebApi.Controllers
         public async Task<bool> CreateTransactionAsync([FromBody] TransactionDTO transactionDTO)
         {
             TransactionModel transactionModel = _mapper.Map<TransactionModel>(transactionDTO);
-            Guid transactionId=await _transactionService.CreateTransactionAsync(transactionModel);
+            Guid transactionId = await _transactionService.CreateTransactionAsync(transactionModel);
             StartTransaction startTransaction = new StartTransaction()
             {
                 Amount = transactionModel.Amount,
@@ -38,8 +38,7 @@ namespace Transaction.WebApi.Controllers
             };
 
             await _messageSession.Send(startTransaction)
-              .ConfigureAwait(false);
-            
+              .ConfigureAwait(false);            
             return true;
         }
     }

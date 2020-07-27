@@ -14,11 +14,6 @@ namespace Account.Data
         { }
 
         public DbSet<AccountEntity> Accounts { get; set; }
-        public DbSet<CustomerEntity> Customers { get; set; }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-        }
+        public DbSet<CustomerEntity> Customers { get; set; }       
     }
 }

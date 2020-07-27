@@ -20,92 +20,54 @@ namespace Account.Data
             _mapper = mapper;
         }
 
-        public async Task<bool> CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId)
+        public async Task<bool> CheckAccountCorrectness(Guid accountId)
         {
-            try
+            AccountEntity account = await _accountContext.Accounts
+            .FirstOrDefaultAsync(account => account.Id == accountId);            
+            if (account == null)
             {
-                var fromAccount = await _accountContext.Accounts
-                .FirstOrDefaultAsync(account => account.Id == fromAccountId);
-                var toAccount = await _accountContext.Accounts
-                    .FirstOrDefaultAsync(account => account.Id == toAccountId);
-                if (fromAccount == null || toAccount == null)
-                {
-                    return false;
-                }
-                return true;
+                return false;
             }
-            catch
-            {
-                throw new SystemException();
-            }
+            return true;
         }
 
         public async Task<bool> CheckBalance(Guid fromAccountId, int amount)
         {
-            try
+            AccountEntity account = await _accountContext.Accounts
+            .FirstOrDefaultAsync(account => account.Id == fromAccountId);
+            if (account.Balance < amount)
             {
-                var account = await _accountContext.Accounts
-                .FirstOrDefaultAsync(account => account.Id == fromAccountId);
-                if (account.Balance < amount)
-                {
-                    return false;
-                }
-                return true;
+                return false;
             }
-            catch
-            {
-                throw new SystemException();
-            }
+            return true;
         }
 
         public async Task<bool> UpdateAccounts(UpdateAccounts message)
         {
-            try
-            {
-                var fromAccount = await _accountContext.Accounts
-                .FirstOrDefaultAsync(account => account.Id == message.FromAccountId);
-                fromAccount.Balance -= message.Amount;
-                var toAccount = await _accountContext.Accounts
-                    .FirstOrDefaultAsync(account => account.Id == message.ToAccountId);
-                toAccount.Balance += message.Amount;
-                await _accountContext.SaveChangesAsync();
-                return true;
-            }
-            catch
-            {
-                throw new SystemException();
-            }
+            var fromAccount = await _accountContext.Accounts
+            .FirstOrDefaultAsync(account => account.Id == message.FromAccountId);
+            fromAccount.Balance -= message.Amount;
+            var toAccount = await _accountContext.Accounts
+                .FirstOrDefaultAsync(account => account.Id == message.ToAccountId);
+            toAccount.Balance += message.Amount;
+            await _accountContext.SaveChangesAsync();
+            return true;
         }
 
         public async Task<AccountModel> GetAccountInfoAsync(Guid CustomerId)
         {
-            try
+            AccountEntity accountEntity = await _accountContext.Accounts
+                .Include(c => c.Customer)
+                .FirstOrDefaultAsync(a => a.Id == CustomerId);
+            if (accountEntity != null)
             {
-                AccountEntity accountEntity = await _accountContext.Accounts
-                    .Include(c => c.Customer)
-                    .FirstOrDefaultAsync(a => a.CustomerId == CustomerId);
-                if (accountEntity != null)
-                {
-                    AccountModel accountModel = _mapper.Map<AccountModel>(accountEntity);
-                    return accountModel;
-                }
-                else
-                {
-                    throw new AccountNotFoundException();
-                }
+                AccountModel accountModel = _mapper.Map<AccountModel>(accountEntity);
+                return accountModel;
             }
-            catch (Exception e)
+            else
             {
-                if (e is AccountNotFoundException)
-                {
-                    throw new AccountNotFoundException();
-                }
-                else
-                {
-                    throw new SystemException();
-                }
+                throw new AccountNotFoundException();
             }
         }
     }
 }
-

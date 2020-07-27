@@ -17,10 +17,5 @@ namespace Transaction.Data
         { }
 
         public DbSet<TransactionEntity> Transactions { get; set; }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-        }
     }
 }

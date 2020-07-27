@@ -249,3 +249,47 @@ License Expiration: 2020-10-04
 2020-07-27 16:04:06.582 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
 License Expiration: 2020-10-04
 2020-07-27 16:04:08.198 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 17:12:45.129 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:12:45.491 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:12:45.619 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 17:12:47.819 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 17:17:11.846 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:17:12.289 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:17:12.482 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 17:18:58.226 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:19:07.491 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:19:07.865 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 17:19:11.920 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 17:25:30.413 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:25:30.792 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:25:30.953 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 17:25:33.655 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 17:42:27.582 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:42:27.870 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:42:27.982 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 17:42:29.540 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 17:45:50.182 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:45:50.468 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:45:50.586 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 17:45:52.067 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 17:49:12.030 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:49:12.482 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:49:13.152 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 17:49:17.284 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 18:12:30.118 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 18:12:30.631 INFO  Auditing processed messages to 'audit'
+2020-07-27 18:12:31.243 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 18:12:34.324 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 22:55:17.898 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 22:55:18.296 INFO  Auditing processed messages to 'audit'
+2020-07-27 22:55:18.494 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 22:55:21.405 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'

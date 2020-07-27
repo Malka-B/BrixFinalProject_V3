@@ -2,6 +2,7 @@ using Account.Data;
 using Account.Service;
 using Account.Service.Intefaces;
 using Account.Share.Interfaces;
+using Account.WebApi.Miidleware;
 using Account.WebApi.Profiles;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
@@ -68,25 +69,18 @@ namespace Account.Api
                     });
             });
         }
-
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+       
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-            
-            
-
-            app.UseHttpsRedirection();
-           
+            app.UseHttpsRedirection();           
             app.UseRouting();
-
             app.UseCors();
-
+            app.UseMiddleware(typeof(AccountErrorHandlerMiddleware));
             app.UseSwagger();
-
             app.UseSwaggerUI(setupAction =>
             {
                 setupAction.SwaggerEndpoint(

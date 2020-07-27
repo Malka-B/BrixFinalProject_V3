@@ -1324,3 +1324,47 @@ License Expiration: 2020-10-04
 2020-07-27 16:04:01.271 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
 License Expiration: 2020-10-04
 2020-07-27 16:04:06.657 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 17:11:34.482 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:11:35.338 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:11:35.785 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 17:12:47.865 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 17:17:05.618 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:17:07.643 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:17:08.487 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 17:18:50.739 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:18:51.709 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:18:52.202 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 17:19:07.896 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 17:25:21.968 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:25:24.912 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:25:25.504 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 17:25:31.699 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 17:42:20.022 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:42:21.938 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:42:22.584 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 17:42:27.740 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 17:45:44.868 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:45:45.970 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:45:46.658 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 17:45:50.957 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 17:49:04.456 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:49:05.451 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:49:05.999 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 17:49:14.817 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 18:12:22.335 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 18:12:23.493 INFO  Auditing processed messages to 'audit'
+2020-07-27 18:12:24.086 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 18:12:32.214 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 22:55:07.568 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 22:55:08.409 INFO  Auditing processed messages to 'audit'
+2020-07-27 22:55:08.854 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 22:55:18.779 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'

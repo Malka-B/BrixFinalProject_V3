@@ -39,10 +39,8 @@ namespace Account.Service
                 customerModel.PasswordHash = Hashing.GenerateHash(customerModel.Password, passowrdSalt);
                 AccountRegisterModel account = new AccountRegisterModel()
                 {
-                    Id = Guid.NewGuid(),
                     CustomerId = customerModel.Id,
-                    Balance = 1000,
-                    OpenDate = DateTime.Now
+                    Balance = 1000                    
                 };
                 return await _loginRepository.RegisterAsync(customerModel, account);
             }

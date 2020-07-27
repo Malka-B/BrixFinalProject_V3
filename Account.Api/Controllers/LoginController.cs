@@ -22,26 +22,18 @@ namespace Account.WebApi.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<ActionResult<Guid>> LoginAsync([FromBody] LoginDTO login)
+        public async Task<Guid> LoginAsync([FromBody] LoginDTO login)
         {
             Guid accountId = await _loginService.LoginAsync(login.Email, login.Password);
-            if (accountId != default(Guid))
-            {
-                return Ok(accountId);
-            }
-            return Unauthorized();
+            return accountId;
         }
 
         [HttpPost("register")]
-        public async Task<ActionResult<bool>> RegisterAsync([FromBody] CustomerDTO customer)
+        public async Task<bool> RegisterAsync([FromBody] CustomerDTO customer)
         {
             CustomerModel customerModel = _mapper.Map<CustomerModel>(customer);
             var response = await _loginService.RegisterAsync(customerModel);
-            if (response)
-            {
-                return Ok(response);
-            }
-            return BadRequest(false);
+            return response;
         }
     }
 }

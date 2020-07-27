@@ -10,6 +10,7 @@ using Transaction.Data;
 using Transaction.Service;
 using Transaction.Service.Interfaces;
 using Transaction.Share.Interfaces;
+using Transaction.WebApi.Middleware;
 
 namespace Tracking.WebApi
 {
@@ -22,7 +23,6 @@ namespace Tracking.WebApi
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
@@ -60,8 +60,6 @@ namespace Tracking.WebApi
                                   .WithExposedHeaders("X-Pagination");
                        });
             });
-
-
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -72,8 +70,9 @@ namespace Tracking.WebApi
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
+            app.UseMiddleware(typeof(TransactionErrorHandlerMiddleware));
+            app.UseCors();
             app.UseSwagger();
             app.UseSwaggerUI(setupAction =>
             {

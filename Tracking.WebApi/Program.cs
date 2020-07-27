@@ -27,9 +27,7 @@ namespace Tracking.WebApi
   {
       var endpointConfiguration = new EndpointConfiguration("Transaction");
       endpointConfiguration.EnableInstallers();
-      var outboxSettings = endpointConfiguration.EnableOutbox();
-      //outboxSettings.KeepDeduplicationDataFor(TimeSpan.FromDays(6));
-      //outboxSettings.RunDeduplicationDataCleanupEvery(TimeSpan.FromMinutes(15));
+      var outboxSettings = endpointConfiguration.EnableOutbox();      
       var recoverability = endpointConfiguration.Recoverability();
       recoverability.Delayed(
           customizations: delayed =>

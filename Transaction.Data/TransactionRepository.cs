@@ -18,19 +18,15 @@ namespace Transaction.Data
             _mapper = mapper;
             _transactionContext = transactionContext;
         }
+
         public async Task<Guid> CreateTransactionAsync(TransactionModel transactionModel)
-        {
+        {            
             TransactionEntity transactionEntity = _mapper.Map<TransactionEntity>(transactionModel);
-            try
-            {
-                await _transactionContext.Transactions.AddAsync(transactionEntity);
-                await _transactionContext.SaveChangesAsync();
-                return transactionEntity.Id;
-            }
-            catch (Exception)
-            {
-                throw new SystemException();
-            }
+            transactionEntity.Id = new Guid();
+            transactionEntity.Date = DateTime.Now;
+            await _transactionContext.Transactions.AddAsync(transactionEntity);
+            await _transactionContext.SaveChangesAsync();
+            return transactionEntity.Id;
         }
 
         public async Task UpdateTransactionStatusAsync(UpdateTransactionStatus message)

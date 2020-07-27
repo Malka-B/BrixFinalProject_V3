@@ -30,17 +30,29 @@ namespace Account.WebApi.Miidleware
                     throw new UnauthorizedAccessException("Action Failed. Please try again!");
                 }
             }
-            catch (AccountNotFoundException ex)
+            catch (Exception ex)
             {
                 await HandleExceptionsAsync(context, ex);
             }
         }
-        public async Task HandleExceptionsAsync(HttpContext context, Exception ex)
+        public static Task HandleExceptionsAsync(HttpContext context, Exception ex)
         {
             var code = new HttpStatusCode();
-            if (ex is AccountNotFoundException) code = HttpStatusCode.NotFound;
-            var result = JsonConvert.SerializeObject(new { error = ex.Message });
-          //  return await context.Response.WriteAsync(result);
+            var errorMessage = "";
+            if (ex is AccountNotFoundException)
+            {
+                code = HttpStatusCode.Unauthorized;
+                context.Response.StatusCode = (int)code;
+                errorMessage = "Email or password is not correct.";
+            }
+            if (ex is DuplicateEmailException)
+            {
+                code = HttpStatusCode.BadRequest;
+                context.Response.StatusCode = (int)code;
+                errorMessage = "Email is not correct. Try again.";
+            }
+            var result = JsonConvert.SerializeObject(new { error = errorMessage });
+            return context.Response.WriteAsync(result);
         }
     }
 }
