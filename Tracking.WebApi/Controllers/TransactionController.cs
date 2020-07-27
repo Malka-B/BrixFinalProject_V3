@@ -17,6 +17,7 @@ namespace Transaction.WebApi.Controllers
         private readonly IMapper _mapper;
         private readonly ITransactionService _transactionService;
         private readonly IMessageSession _messageSession;
+       
         public TransactionController(IMapper mapper, ITransactionService transactionService, IMessageSession messageSession)
         {
             _mapper = mapper;
@@ -36,10 +37,8 @@ namespace Transaction.WebApi.Controllers
                 ToAccountId = transactionModel.ToAccountId,
                 TransactionId = transactionId
             };
-
             await _messageSession.Send(startTransaction)
-              .ConfigureAwait(false);
-            
+              .ConfigureAwait(false);            
             return true;
         }
     }

@@ -3,7 +3,6 @@ using Account.Service;
 using Account.Service.Intefaces;
 using Account.Service.Models;
 using AutoMapper;
-using Exceptions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Threading.Tasks;
@@ -65,15 +64,6 @@ namespace Account.Data
         {
             try
             {
-                //CustomerEntity customer = new CustomerEntity()
-                //{
-                //    PasswordHash = accountRegisterModel.PasswordHash,
-                //    PassowrdSalt = accountRegisterModel.PassowrdSalt,
-                //    Email = customerModel.Email,
-                //    FirstName = customerModel.FirstName,
-                //    LastName = customerModel.LastName,
-                //    Id = customerModel.Id
-                //};
                 CustomerEntity customer = _mapper.Map<CustomerEntity>(customerModel);
                 AccountEntity account = _mapper.Map<AccountEntity>(accountRegisterModel);
                 await _accountContext.Customers.AddAsync(customer);

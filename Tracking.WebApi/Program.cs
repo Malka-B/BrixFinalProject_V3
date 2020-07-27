@@ -16,6 +16,7 @@ namespace Tracking.WebApi
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
     .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production"}.json", optional: true)
     .Build();
+
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
@@ -28,8 +29,6 @@ namespace Tracking.WebApi
       var endpointConfiguration = new EndpointConfiguration("Transaction");
       endpointConfiguration.EnableInstallers();
       var outboxSettings = endpointConfiguration.EnableOutbox();
-      //outboxSettings.KeepDeduplicationDataFor(TimeSpan.FromDays(6));
-      //outboxSettings.RunDeduplicationDataCleanupEvery(TimeSpan.FromMinutes(15));
       var recoverability = endpointConfiguration.Recoverability();
       recoverability.Delayed(
           customizations: delayed =>
@@ -43,7 +42,6 @@ namespace Tracking.WebApi
               immediate.NumberOfRetries(3);
 
           });
-
       var transport = endpointConfiguration.UseTransport<RabbitMQTransport>();
       transport.UseConventionalRoutingTopology()
       .ConnectionString(Configuration.GetConnectionString("RabbitMQ"));
@@ -55,7 +53,6 @@ namespace Tracking.WebApi
           {
               return new SqlConnection(connection);
           });
-
       var routing = transport.Routing();
       routing.RouteToEndpoint(
            messageType: typeof(StartTransaction),

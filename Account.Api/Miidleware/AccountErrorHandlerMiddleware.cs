@@ -2,8 +2,6 @@
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -16,6 +14,7 @@ namespace Account.WebApi.Miidleware
         {
             _next = next;
         }
+
         public async Task Invoke(HttpContext context)
         {
             try
@@ -35,12 +34,24 @@ namespace Account.WebApi.Miidleware
                 await HandleExceptionsAsync(context, ex);
             }
         }
-        public async Task HandleExceptionsAsync(HttpContext context, Exception ex)
+
+        public static Task HandleExceptionsAsync(HttpContext context, Exception ex)
         {
             var code = new HttpStatusCode();
-            if (ex is AccountNotFoundException) code = HttpStatusCode.NotFound;
-            var result = JsonConvert.SerializeObject(new { error = ex.Message });
-          //  return await context.Response.WriteAsync(result);
+            var errorMessage = "";
+            if (ex is AccountNotFoundException)
+            {
+                code = HttpStatusCode.Unauthorized;
+                errorMessage = "Email or password is not correct.";
+            }
+            if (ex is AccountNotFoundException)
+            {
+                code = HttpStatusCode.BadRequest;
+                errorMessage = "Email is not correct. Try again.";
+            }
+            var result = JsonConvert.SerializeObject(new { error = errorMessage });
+            return context.Response.WriteAsync(result);
         }
     }
 }
+

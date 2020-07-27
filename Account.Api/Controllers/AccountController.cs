@@ -18,15 +18,16 @@ namespace Account.WebApi.Controllers
     {
         private readonly IAccountService _accountService;
         private readonly IMapper _mapper;
+
         public AccountController(IAccountService accountService,IMapper mapper)
         {
             _accountService = accountService;
             _mapper = mapper;
         }
+
         [HttpGet("GetAccountInfo")]
         public async Task<AccountDTO> Get([FromQuery]Guid guid)
         {
-           // Guid guid1 =Guid.Parse(guid);        
             AccountModel accountModel = await _accountService.GetAccountInfoAsync(guid);
             return _mapper.Map<AccountDTO>(accountModel);
         }

@@ -973,3 +973,40 @@ F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcore
 2020-07-27 16:31:27.611 ERROR Your license has expired
 2020-07-27 16:31:27.658 ERROR Your license has expired
 2020-07-27 16:31:37.210 ERROR Your license has expired
+2020-07-27 16:57:10.421 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 16:57:11.468 INFO  Auditing processed messages to 'audit'
+2020-07-27 16:57:11.580 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-07-27 16:57:11.628 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-27 16:57:11.641 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-27 16:57:22.447 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 16:57:22.985 INFO  Executing saga creation scripts:
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-27 17:01:25.722 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:01:26.561 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:01:26.711 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-07-27 17:01:26.757 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-27 17:01:26.840 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-27 17:01:35.835 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 17:01:36.078 INFO  Executing saga creation scripts:
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-27 17:02:53.621 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:02:54.684 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:02:54.872 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-07-27 17:02:55.049 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-27 17:03:03.924 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 17:03:04.424 INFO  Executing saga creation scripts:
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-27 17:06:57.900 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:06:59.433 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:06:59.638 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-07-27 17:06:59.669 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-27 17:07:08.391 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 17:07:09.322 INFO  Executing saga creation scripts:
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-27 17:14:35.185 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 17:14:35.779 INFO  Auditing processed messages to 'audit'
+2020-07-27 17:14:36.117 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-07-27 17:14:36.248 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-27 17:14:43.324 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 17:14:43.958 INFO  Executing saga creation scripts:
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql

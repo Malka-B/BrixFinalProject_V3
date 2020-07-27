@@ -1,12 +1,8 @@
-﻿using Account.Service.Models;
-using Account.WebApi.DTO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
-using Account.Data.Entites;
+﻿using Account.Data.Entites;
+using Account.Service.Models;
 using Account.Share.Models;
+using Account.WebApi.DTO;
+using AutoMapper;
 
 namespace Account.WebApi.Profiles
 {

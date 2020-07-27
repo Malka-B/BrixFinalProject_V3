@@ -22,7 +22,6 @@ namespace Tracking.WebApi
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
@@ -60,8 +59,6 @@ namespace Tracking.WebApi
                                   .WithExposedHeaders("X-Pagination");
                        });
             });
-
-
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -70,7 +67,6 @@ namespace Tracking.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseHttpsRedirection();
             app.UseCors();
             app.UseRouting();
@@ -83,7 +79,6 @@ namespace Tracking.WebApi
                     );
             });
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

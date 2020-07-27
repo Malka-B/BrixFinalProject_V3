@@ -2,6 +2,7 @@ using Account.Data;
 using Account.Service;
 using Account.Service.Intefaces;
 using Account.Share.Interfaces;
+using Account.WebApi.Miidleware;
 using Account.WebApi.Profiles;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
@@ -22,7 +23,6 @@ namespace Account.Api
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ILoginRepository, LoginRepository>();
@@ -32,15 +32,12 @@ namespace Account.Api
             services.AddDbContext<AccountContext>(options =>
                           options.UseSqlServer(
                               Configuration.GetConnectionString("FinalProject_Account")));
-
             var mappingConfig = new MapperConfiguration(mc =>
             {
                 mc.AddProfile(new AccountProfile());
             });
-
             IMapper mapper = mappingConfig.CreateMapper();
             services.AddSingleton(mapper);
-
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(
@@ -52,11 +49,9 @@ namespace Account.Api
                                   .WithExposedHeaders("X-Pagination");
                        });
             });
-
             services.AddControllers();
             services.AddMvc();
             services.AddAuthorization();
-
             services.AddSwaggerGen(setupAction =>
             {
                 setupAction.SwaggerDoc(
@@ -69,24 +64,17 @@ namespace Account.Api
             });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-            
-            
-
             app.UseHttpsRedirection();
-           
             app.UseRouting();
-
+            app.UseMiddleware(typeof(AccountErrorHandlerMiddleware));þ
             app.UseCors();
-
             app.UseSwagger();
-
             app.UseSwaggerUI(setupAction =>
             {
                 setupAction.SwaggerEndpoint(
@@ -94,9 +82,7 @@ namespace Account.Api
                     "Bank API"
                     );
             });
-
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

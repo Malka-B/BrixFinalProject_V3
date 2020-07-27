@@ -13,11 +13,13 @@ namespace Transaction.Data
     {
         private readonly IMapper _mapper;
         private readonly TransactionContext _transactionContext;
+
         public TransactionRepository(IMapper mapper, TransactionContext transactionContext)
         {
             _mapper = mapper;
             _transactionContext = transactionContext;
         }
+
         public async Task<Guid> CreateTransactionAsync(TransactionModel transactionModel)
         {
             TransactionEntity transactionEntity = _mapper.Map<TransactionEntity>(transactionModel);
