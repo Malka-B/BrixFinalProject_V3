@@ -50,8 +50,8 @@ namespace Transaction.NSB
                 .ToSaga(sagaData => sagaData.TransactionId);
             mapper.ConfigureMapping<AccountsUpdated>(message => message.TransactionId)
                .ToSaga(sagaData => sagaData.TransactionId);
-            mapper.ConfigureMapping<TransactionUpdated>(message => message.TransactionId)
-              .ToSaga(sagaData => sagaData.TransactionId);
+            //mapper.ConfigureMapping<TransactionUpdated>(message => message.TransactionId)
+            //  .ToSaga(sagaData => sagaData.TransactionId);
         }
     }
 }

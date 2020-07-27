@@ -28,6 +28,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Messages\Messages.csproj" />
+    <ProjectReference Include="..\Tracking.WebApi\Transaction.WebApi.csproj" />
     <ProjectReference Include="..\Transaction.Data\Transaction.Data.csproj" />
     <ProjectReference Include="..\TransactionInterfaces\Transaction.Share.csproj" />
   </ItemGroup>

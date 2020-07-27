@@ -50,3 +50,54 @@ Exception details:
 	HelpLink.EvtID: 4060
 	HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
 	HelpLink.LinkId: 20476
+2020-07-27 09:53:55.007 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 09:53:55.293 INFO  Auditing processed messages to 'audit'
+2020-07-27 09:53:55.473 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 09:53:59.984 ERROR Could not complete the installation. 
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "TransactionOutbox" requested by the login. The login failed.
+Login failed for user 'C1\User'.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at NServiceBus.Persistence.Sql.ScriptRunner.ExecuteInSeparateConnection[T](Func`6 installAction, String scriptDirectory, String tablePrefix, SqlDialect sqlDialect, Func`2 connectionBuilder) in /_/src/SqlPersistence/ScriptRunner.cs:line 70
+   at NServiceBus.Persistence.Sql.ScriptRunner.Install(SqlDialect sqlDialect, String tablePrefix, Func`2 connectionBuilder, String scriptDirectory, Boolean shouldInstallOutbox, Boolean shouldInstallSagas, Boolean shouldInstallSubscriptions, Boolean shouldInstallTimeouts) in /_/src/SqlPersistence/ScriptRunner.cs:line 48
+   at SqlPersistenceInstaller.Install(String identity) in /_/src/SqlPersistence/NeedToInstallSomething.cs:line 30
+ClientConnectionId:7ef85460-135b-495c-ba49-581fb997d49a
+Error Number:4060,State:1,Class:11
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 4060
+	HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2020-07-27 09:57:45.224 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 09:57:45.613 INFO  Auditing processed messages to 'audit'
+2020-07-27 09:57:45.794 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 09:57:49.054 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 10:06:53.344 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 10:06:54.114 INFO  Auditing processed messages to 'audit'
+2020-07-27 10:06:54.302 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 10:06:56.711 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 10:08:52.660 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 10:08:53.059 INFO  Auditing processed messages to 'audit'
+2020-07-27 10:08:53.343 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 10:08:56.107 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 10:19:05.478 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 10:19:06.554 INFO  Auditing processed messages to 'audit'
+2020-07-27 10:19:06.680 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 10:19:08.560 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 10:22:39.797 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 10:22:40.259 INFO  Auditing processed messages to 'audit'
+2020-07-27 10:22:40.477 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 10:22:43.462 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'

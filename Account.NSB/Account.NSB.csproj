@@ -26,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Account.Api\Account.WebApi.csproj" />
     <ProjectReference Include="..\Account.Share\Account.Share.csproj" />
     <ProjectReference Include="..\AccountService.Data\Account.Data.csproj" />
   </ItemGroup>

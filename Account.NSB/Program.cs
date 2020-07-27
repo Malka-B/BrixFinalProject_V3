@@ -8,6 +8,8 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 using Account.Share.Interfaces;
+using AutoMapper;
+using Account.WebApi.Profiles;
 
 namespace Account.NSB
 {
@@ -26,6 +28,14 @@ namespace Account.NSB
             containerSettings.ServiceCollection.AddScoped<IAccountRepository, AccountRepository>();
             containerSettings.ServiceCollection.AddDbContext<AccountContext>(
                   options => options.UseSqlServer(configuration.GetConnectionString("FinalProject_Account")));
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new AccountProfile());
+            });
+
+            IMapper mapper = mappingConfig.CreateMapper();
+            containerSettings.ServiceCollection.AddSingleton(mapper);
+
             endpointConfiguration.EnableOutbox();
             endpointConfiguration.EnableInstallers();
             var connection = configuration.GetConnectionString("AccountOutbox");

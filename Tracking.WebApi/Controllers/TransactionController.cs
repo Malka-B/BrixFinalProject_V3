@@ -37,7 +37,7 @@ namespace Transaction.WebApi.Controllers
                 TransactionId = transactionId
             };
 
-            await _messageSession.Publish(startTransaction)
+            await _messageSession.Send(startTransaction)
               .ConfigureAwait(false);
             return true;
         }

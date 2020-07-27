@@ -58,8 +58,8 @@ namespace Tracking.WebApi
 
       var routing = transport.Routing();
       routing.RouteToEndpoint(
-           messageType: typeof(UpdateAccounts),
-           destination: "Account");
+           messageType: typeof(StartTransaction),
+           destination: "TransactionNSB");
       endpointConfiguration.SendFailedMessagesTo("error");
       endpointConfiguration.AuditProcessedMessagesTo("audit");
       endpointConfiguration.AuditSagaStateChanges(
