@@ -2,9 +2,6 @@
 using Messages.Commands;
 using Messages.Events;
 using NServiceBus;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Account.NSB
@@ -17,13 +14,13 @@ namespace Account.NSB
         {
             _accountRepository = accountRepository;
         }
+
         public async Task Handle(UpdateAccounts message, IMessageHandlerContext context)
         {
             AccountsUpdated accountsUpdated = new AccountsUpdated
             {
                 TransactionId = message.TransactionId
             };
-
             bool areAccountsExist = await _accountRepository
                 .CheckAccountsCorrectness(message.FromAccountId, message.ToAccountId);
             if (areAccountsExist == false)
@@ -45,8 +42,7 @@ namespace Account.NSB
                     await _accountRepository.UpdateAccounts(message);
                     accountsUpdated.isAccountsUpdateSuccess = true;
                 }
-            }
-            
+            }            
             await context.Publish(accountsUpdated)
                 .ConfigureAwait(false);
         }

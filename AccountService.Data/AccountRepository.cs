@@ -1,5 +1,4 @@
 ﻿using Account.Data.Entites;
-using Account.Service.Models;
 using Account.Share.Interfaces;
 using Account.Share.Models;
 using AutoMapper;
@@ -13,20 +12,18 @@ namespace Account.Data
 {
     public class AccountRepository : IAccountRepository
     {
-        private readonly IMapper _mapper;
         private readonly AccountContext _accountContext;
-        public AccountRepository(IMapper mapper, AccountContext accountContext)
+        private readonly IMapper _mapper;
+        public AccountRepository(AccountContext accountContext, IMapper mapper)
         {
             _accountContext = accountContext;
             _mapper = mapper;
         }
 
-
         public async Task<bool> CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId)
         {
             try
             {
-
                 var fromAccount = await _accountContext.Accounts
                 .FirstOrDefaultAsync(account => account.Id == fromAccountId);
                 var toAccount = await _accountContext.Accounts
@@ -37,11 +34,10 @@ namespace Account.Data
                 }
                 return true;
             }
-            catch(Exception e)
+            catch
             {
                 throw new SystemException();
             }
-
         }
 
         public async Task<bool> CheckBalance(Guid fromAccountId, int amount)
@@ -50,7 +46,6 @@ namespace Account.Data
             {
                 var account = await _accountContext.Accounts
                 .FirstOrDefaultAsync(account => account.Id == fromAccountId);
-
                 if (account.Balance < amount)
                 {
                     return false;
@@ -69,14 +64,10 @@ namespace Account.Data
             {
                 var fromAccount = await _accountContext.Accounts
                 .FirstOrDefaultAsync(account => account.Id == message.FromAccountId);
-
                 fromAccount.Balance -= message.Amount;
-
                 var toAccount = await _accountContext.Accounts
                     .FirstOrDefaultAsync(account => account.Id == message.ToAccountId);
-
                 toAccount.Balance += message.Amount;
-
                 await _accountContext.SaveChangesAsync();
                 return true;
             }
@@ -90,23 +81,29 @@ namespace Account.Data
         {
             try
             {
-                AccountEntity accountEntity = await _accountContext.Accounts.Include(c => c.Customer)
-                                .FirstOrDefaultAsync(a => a.CustomerId == CustomerId);
+                AccountEntity accountEntity = await _accountContext.Accounts
+                    .Include(c => c.Customer)
+                    .FirstOrDefaultAsync(a => a.CustomerId == CustomerId);
                 if (accountEntity != null)
                 {
                     AccountModel accountModel = _mapper.Map<AccountModel>(accountEntity);
                     return accountModel;
                 }
                 else
+                {
                     throw new AccountNotFoundException();
+                }
             }
-            catch (AccountNotFoundException ex)
+            catch (Exception e)
             {
-                throw ex;
-            }
-            catch (Exception ex)
-            {
-                throw new SystemException();
+                if (e is AccountNotFoundException)
+                {
+                    throw new AccountNotFoundException();
+                }
+                else
+                {
+                    throw new SystemException();
+                }
             }
         }
     }

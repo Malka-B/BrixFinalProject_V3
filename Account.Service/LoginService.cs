@@ -9,6 +9,7 @@ namespace Account.Service
     public class LoginService : ILoginService
     {
         private readonly ILoginRepository _loginRepository;
+
         public LoginService(ILoginRepository loginRepository)
         {
             _loginRepository = loginRepository;
@@ -34,11 +35,10 @@ namespace Account.Service
             {
                 string passowrdSalt = Hashing.GetSalt();
                 customerModel.Id = Guid.NewGuid();
+                customerModel.PassowrdSalt = passowrdSalt;
+                customerModel.PasswordHash = Hashing.GenerateHash(customerModel.Password, passowrdSalt);
                 AccountRegisterModel account = new AccountRegisterModel()
                 {
-                   
-                    PassowrdSalt = passowrdSalt,
-                    PasswordHash = Hashing.GenerateHash(customerModel.Password, passowrdSalt),
                     Id = Guid.NewGuid(),
                     CustomerId = customerModel.Id,
                     Balance = 1000,
@@ -47,11 +47,9 @@ namespace Account.Service
                 return await _loginRepository.RegisterAsync(customerModel, account);
             }
             else
-            {
-                throw new SystemException();
-                //   throw new DuplicateEmailException();
+            {                
+                throw new DuplicateEmailException();
             }
-
         }
     }
 }

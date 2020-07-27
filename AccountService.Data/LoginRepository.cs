@@ -24,7 +24,7 @@ namespace Account.Data
         public async Task<bool> IsEmailValidAsync(string email)
         {
             CustomerEntity customerEntity = await _accountContext.Customers
-                                                .FirstOrDefaultAsync(s => s.Email == email);
+                .FirstOrDefaultAsync(s => s.Email == email);
             if (customerEntity != null)
             {
                 return false;
@@ -39,11 +39,12 @@ namespace Account.Data
             if (customer != null)
             {
                 if (Hashing.AreEqual(password, customer.PasswordHash, customer.PassowrdSalt))
+                {
                     return true;
+                }
                 return false;
             }
-            else
-                return false;
+            return false;
         }
 
         public async Task<Guid> LoginAsync(string email)
@@ -51,7 +52,7 @@ namespace Account.Data
             try
             {
                 CustomerEntity customer = await _accountContext.Customers
-             .FirstOrDefaultAsync(c => c.Email == email);
+                    .FirstOrDefaultAsync(c => c.Email == email);
                 return customer.Id;
             }
             catch (Exception)
@@ -64,22 +65,23 @@ namespace Account.Data
         {
             try
             {
-                CustomerEntity customer = new CustomerEntity()
-                {
-                    PasswordHash = accountRegisterModel.PasswordHash,
-                    PassowrdSalt = accountRegisterModel.PassowrdSalt,
-                    Email = customerModel.Email,
-                    FirstName = customerModel.FirstName,
-                    LastName = customerModel.LastName,
-                    Id = customerModel.Id
-                };
+                //CustomerEntity customer = new CustomerEntity()
+                //{
+                //    PasswordHash = accountRegisterModel.PasswordHash,
+                //    PassowrdSalt = accountRegisterModel.PassowrdSalt,
+                //    Email = customerModel.Email,
+                //    FirstName = customerModel.FirstName,
+                //    LastName = customerModel.LastName,
+                //    Id = customerModel.Id
+                //};
+                CustomerEntity customer = _mapper.Map<CustomerEntity>(customerModel);
                 AccountEntity account = _mapper.Map<AccountEntity>(accountRegisterModel);
                 await _accountContext.Customers.AddAsync(customer);
                 await _accountContext.Accounts.AddAsync(account);
                 await _accountContext.SaveChangesAsync();
                 return true;
             }
-            catch(Exception ex)
+            catch
             {
                 throw new SystemException();
             }

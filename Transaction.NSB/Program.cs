@@ -25,15 +25,15 @@ namespace Transaction.NSB
                 .AddJsonFile("appsettings.json");
             var configuration = builder.Build();
 
-            //Console.Title = GetQueue("queueName");
-            Console.Title = "TransactionNSB";
-            //var endpointConfiguration = new EndpointConfiguration(GetQueue("queueName"));            
-            var endpointConfiguration = new EndpointConfiguration("TransactionNSB");
+            Console.Title = GetQueue("queueName");
+            //Console.Title = "TransactionNSB";
+            var endpointConfiguration = new EndpointConfiguration(GetQueue("queueName"));            
+            //var endpointConfiguration = new EndpointConfiguration("TransactionNSB");
             var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());           
             containerSettings.ServiceCollection.AddScoped<ITransactionRepository, TransactionRepository>();
             containerSettings.ServiceCollection.AddDbContext<TransactionContext>(
-           //options => options.UseSqlServer(configuration.GetConnectionString("FinalProject_Transaction")));
-           options => options.UseSqlServer("Server = C1; Database = BrixFinalProject_Transaction ;Trusted_Connection=True;"));
+           options => options.UseSqlServer(configuration.GetConnectionString("FinalProject_Transaction")));
+           //options => options.UseSqlServer("Server = C1; Database = BrixFinalProject_Transaction ;Trusted_Connection=True;"));
             var mappingConfig = new MapperConfiguration(mc =>
             {
                 mc.AddProfile(new TransactionProfile());
@@ -43,8 +43,8 @@ namespace Transaction.NSB
             containerSettings.ServiceCollection.AddSingleton(mapper);
             endpointConfiguration.EnableOutbox();
             endpointConfiguration.EnableInstallers();
-            //var connection = configuration.GetConnectionString("TransactionOutbox");
-            var connection = "Server = C1; Database = TransactionNSBOutbox ;Trusted_Connection=True;";
+            var connection = configuration.GetConnectionString("TransactionOutbox");
+            //var connection = "Server = C1; Database = TransactionNSBOutbox ;Trusted_Connection=True;";
             var persistence = endpointConfiguration.UsePersistence<SqlPersistence>();
             persistence.SqlDialect<SqlDialect.MsSqlServer>();
             persistence.ConnectionBuilder(
@@ -58,8 +58,8 @@ namespace Transaction.NSB
             subscription.CacheFor(TimeSpan.FromMinutes(1));
             var transport = endpointConfiguration.UseTransport<RabbitMQTransport>();
             transport.UseConventionalRoutingTopology();
-            //transport.ConnectionString(configuration.GetConnectionString("RabbitMQ"));
-            transport.ConnectionString("host= localhost:5672;username=guest;password=guest");
+            transport.ConnectionString(configuration.GetConnectionString("RabbitMQ"));
+            //transport.ConnectionString("host= localhost:5672;username=guest;password=guest");
 
             var routing = transport.Routing();
             routing.RouteToEndpoint(
@@ -77,10 +77,10 @@ namespace Transaction.NSB
                     var retries = delayed.NumberOfRetries(3);
                     retries.TimeIncrease(TimeSpan.FromSeconds(2));
                 });
-            //endpointConfiguration.SendFailedMessagesTo(GetQueue("errorQueue"));
-            //endpointConfiguration.AuditProcessedMessagesTo(GetQueue("auditQueue"));
-            endpointConfiguration.SendFailedMessagesTo("error");
-            endpointConfiguration.AuditProcessedMessagesTo("audit");
+            endpointConfiguration.SendFailedMessagesTo(GetQueue("errorQueue"));
+            endpointConfiguration.AuditProcessedMessagesTo(GetQueue("auditQueue"));
+            //endpointConfiguration.SendFailedMessagesTo("error");
+            //endpointConfiguration.AuditProcessedMessagesTo("audit");
             var conventions = endpointConfiguration.Conventions();
             conventions.DefiningCommandsAs(type => type.Namespace == "Messages.Commands");
             conventions.DefiningEventsAs(type => type.Namespace == "Messages.Events");

@@ -1,5 +1,4 @@
 ﻿using Account.Service.Intefaces;
-using Account.Service.Models;
 using Account.Share.Interfaces;
 using Account.Share.Models;
 using System;
@@ -19,8 +18,6 @@ namespace Account.Service
         public async Task<AccountModel> GetAccountInfoAsync(Guid CustomerId)
         {
             return await _accountRepository.GetAccountInfoAsync(CustomerId);
-        }
-
-        
+        }        
     }
 }
