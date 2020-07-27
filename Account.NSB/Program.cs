@@ -55,12 +55,12 @@ namespace Account.NSB
             recoverability.Immediate(
                 immediate =>
                 {
-                    immediate.NumberOfRetries(3);
+                    immediate.NumberOfRetries(1);
                 });
             recoverability.Delayed(
                 delayed =>
                 {
-                    var retries = delayed.NumberOfRetries(3);
+                    var retries = delayed.NumberOfRetries(1);
                     retries.TimeIncrease(TimeSpan.FromSeconds(2));
                 });
             endpointConfiguration.SendFailedMessagesTo(GetQueue("errorQueue"));

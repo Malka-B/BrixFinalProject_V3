@@ -30,19 +30,24 @@ namespace Transaction.NSB
             UpdateTransactionStatus updateTransactionStatus = new UpdateTransactionStatus()
             {
                 IsTransactionSucceeded = message.isAccountsUpdateSuccess,
-                TransactionId = message.TransactionId
+                TransactionId = message.TransactionId,
+                FailureReason = message.FailureReason
             };
             await context.SendLocal(updateTransactionStatus)
                 .ConfigureAwait(false);
-
+            MarkAsComplete();
         }
 
-        //public void Handle(TransactionUpdated message, IMessageHandlerContext context)
+        //public Task Handle(TransactionUpdated message, IMessageHandlerContext context)
+        //{
+        //    Func1();
+        //    //MarkAsComplete();
+        //}
+        //private void Func1()
         //{
         //    MarkAsComplete();
         //}
 
-        
 
         protected override void ConfigureHowToFindSaga(SagaPropertyMapper<TransactionData> mapper)
         {

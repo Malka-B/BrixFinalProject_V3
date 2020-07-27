@@ -35,12 +35,18 @@ namespace Transaction.Data
 
         public async Task UpdateTransactionStatusAsync(UpdateTransactionStatus message)
         {
-            TransactionEntity transactionEntity =
-                 await _transactionContext.Transactions.FirstOrDefaultAsync(t => t.Id == message.TransactionId);
+            TransactionEntity transactionEntity = await _transactionContext.Transactions
+                .FirstOrDefaultAsync(t => t.Id == message.TransactionId);
             if (message.IsTransactionSucceeded == false)
+            {
                 transactionEntity.Status = eStatus.fail;
+                transactionEntity.FailureReason = message.FailureReason;
+            }
             else
+            {
                 transactionEntity.Status = eStatus.success;
+            }
+            await _transactionContext.SaveChangesAsync();
         }
     }
 }

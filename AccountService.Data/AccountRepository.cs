@@ -26,6 +26,7 @@ namespace Account.Data
         {
             try
             {
+
                 var fromAccount = await _accountContext.Accounts
                 .FirstOrDefaultAsync(account => account.Id == fromAccountId);
                 var toAccount = await _accountContext.Accounts
@@ -36,7 +37,7 @@ namespace Account.Data
                 }
                 return true;
             }
-            catch
+            catch(Exception e)
             {
                 throw new SystemException();
             }

@@ -39,6 +39,7 @@ namespace Transaction.WebApi.Controllers
 
             await _messageSession.Send(startTransaction)
               .ConfigureAwait(false);
+            
             return true;
         }
     }

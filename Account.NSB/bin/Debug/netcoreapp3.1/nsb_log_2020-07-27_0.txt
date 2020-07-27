@@ -641,3 +641,646 @@ License Expiration: 2020-10-04
 2020-07-27 10:22:33.179 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
 License Expiration: 2020-10-04
 2020-07-27 10:22:39.974 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 11:02:09.910 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 11:02:10.758 INFO  Auditing processed messages to 'audit'
+2020-07-27 11:02:11.817 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 11:02:18.531 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 11:05:12.076 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 11:05:12.682 INFO  Auditing processed messages to 'audit'
+2020-07-27 11:05:13.414 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 11:05:19.359 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 11:05:46.318 INFO  Immediate Retry is going to retry message '4dbf4e2f-2c2d-410c-8012-ac050084c57a' because of an exception:
+System.SystemException: System error.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:05:20:773222 Z
+	Handler failure time: 2020-07-27 08:05:46:276903 Z
+	Message ID: 4dbf4e2f-2c2d-410c-8012-ac050084c57a
+2020-07-27 11:06:00.730 INFO  Immediate Retry is going to retry message '4dbf4e2f-2c2d-410c-8012-ac050084c57a' because of an exception:
+System.SystemException: System error.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:05:46:482034 Z
+	Handler failure time: 2020-07-27 08:06:00:726426 Z
+	Message ID: 4dbf4e2f-2c2d-410c-8012-ac050084c57a
+2020-07-27 11:06:58.815 INFO  Immediate Retry is going to retry message '4dbf4e2f-2c2d-410c-8012-ac050084c57a' because of an exception:
+System.SystemException: System error.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:06:00:776119 Z
+	Handler failure time: 2020-07-27 08:06:58:804722 Z
+	Message ID: 4dbf4e2f-2c2d-410c-8012-ac050084c57a
+2020-07-27 11:07:04.726 WARN  Delayed Retry will reschedule message '4dbf4e2f-2c2d-410c-8012-ac050084c57a' after a delay of 00:00:02 because of an exception:
+System.SystemException: System error.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:06:58:861840 Z
+	Handler failure time: 2020-07-27 08:07:04:721439 Z
+	Message ID: 4dbf4e2f-2c2d-410c-8012-ac050084c57a
+2020-07-27 11:07:11.130 INFO  Immediate Retry is going to retry message '4dbf4e2f-2c2d-410c-8012-ac050084c57a' because of an exception:
+System.SystemException: System error.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:07:06:866110 Z
+	Handler failure time: 2020-07-27 08:07:11:128073 Z
+	Message ID: 4dbf4e2f-2c2d-410c-8012-ac050084c57a
+2020-07-27 11:07:12.886 INFO  Immediate Retry is going to retry message '4dbf4e2f-2c2d-410c-8012-ac050084c57a' because of an exception:
+System.SystemException: System error.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:07:11:164832 Z
+	Handler failure time: 2020-07-27 08:07:12:882713 Z
+	Message ID: 4dbf4e2f-2c2d-410c-8012-ac050084c57a
+2020-07-27 11:07:14.664 INFO  Immediate Retry is going to retry message '4dbf4e2f-2c2d-410c-8012-ac050084c57a' because of an exception:
+System.SystemException: System error.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:07:12:916472 Z
+	Handler failure time: 2020-07-27 08:07:14:661837 Z
+	Message ID: 4dbf4e2f-2c2d-410c-8012-ac050084c57a
+2020-07-27 11:07:16.449 WARN  Delayed Retry will reschedule message '4dbf4e2f-2c2d-410c-8012-ac050084c57a' after a delay of 00:00:04 because of an exception:
+System.SystemException: System error.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:07:14:690311 Z
+	Handler failure time: 2020-07-27 08:07:16:446088 Z
+	Message ID: 4dbf4e2f-2c2d-410c-8012-ac050084c57a
+2020-07-27 11:07:27.911 INFO  Immediate Retry is going to retry message '4dbf4e2f-2c2d-410c-8012-ac050084c57a' because of an exception:
+System.SystemException: System error.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:07:20:531781 Z
+	Handler failure time: 2020-07-27 08:07:27:908504 Z
+	Message ID: 4dbf4e2f-2c2d-410c-8012-ac050084c57a
+2020-07-27 11:07:32.043 INFO  Immediate Retry is going to retry message '4dbf4e2f-2c2d-410c-8012-ac050084c57a' because of an exception:
+System.SystemException: System error.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:07:27:939373 Z
+	Handler failure time: 2020-07-27 08:07:32:040939 Z
+	Message ID: 4dbf4e2f-2c2d-410c-8012-ac050084c57a
+2020-07-27 11:07:33.489 INFO  Immediate Retry is going to retry message '4dbf4e2f-2c2d-410c-8012-ac050084c57a' because of an exception:
+System.SystemException: System error.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:07:32:080099 Z
+	Handler failure time: 2020-07-27 08:07:33:486358 Z
+	Message ID: 4dbf4e2f-2c2d-410c-8012-ac050084c57a
+2020-07-27 11:07:34.860 WARN  Delayed Retry will reschedule message '4dbf4e2f-2c2d-410c-8012-ac050084c57a' after a delay of 00:00:06 because of an exception:
+System.SystemException: System error.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:07:33:520351 Z
+	Handler failure time: 2020-07-27 08:07:34:857360 Z
+	Message ID: 4dbf4e2f-2c2d-410c-8012-ac050084c57a
+2020-07-27 11:08:56.705 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 11:08:57.684 INFO  Auditing processed messages to 'audit'
+2020-07-27 11:08:57.965 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 11:09:05.274 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 11:09:42.307 INFO  Immediate Retry is going to retry message '4dbf4e2f-2c2d-410c-8012-ac050084c57a' because of an exception:
+System.SystemException: System error.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:09:10:130460 Z
+	Handler failure time: 2020-07-27 08:09:42:264901 Z
+	Message ID: 4dbf4e2f-2c2d-410c-8012-ac050084c57a
+2020-07-27 11:09:45.190 INFO  Immediate Retry is going to retry message '4dbf4e2f-2c2d-410c-8012-ac050084c57a' because of an exception:
+System.SystemException: System error.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:09:42:453859 Z
+	Handler failure time: 2020-07-27 08:09:45:188007 Z
+	Message ID: 4dbf4e2f-2c2d-410c-8012-ac050084c57a
+2020-07-27 11:09:46.116 INFO  Immediate Retry is going to retry message '4dbf4e2f-2c2d-410c-8012-ac050084c57a' because of an exception:
+System.SystemException: System error.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:09:45:227212 Z
+	Handler failure time: 2020-07-27 08:09:46:112755 Z
+	Message ID: 4dbf4e2f-2c2d-410c-8012-ac050084c57a
+2020-07-27 11:09:47.054 ERROR Moving message '4dbf4e2f-2c2d-410c-8012-ac050084c57a' to the error queue 'error' because processing failed due to an exception:
+System.SystemException: System error.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:09:46:150667 Z
+	Handler failure time: 2020-07-27 08:09:47:049484 Z
+	Message ID: 4dbf4e2f-2c2d-410c-8012-ac050084c57a
+2020-07-27 11:11:23.014 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 11:11:24.262 INFO  Auditing processed messages to 'audit'
+2020-07-27 11:11:25.138 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 11:11:30.936 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 11:13:00.769 INFO  Immediate Retry is going to retry message 'c1f502a2-fdc0-4d01-a1a4-ac0500875fa2' because of an exception:
+Exceptions.AccountNotFoundException: Exception of type 'Exceptions.AccountNotFoundException' was thrown.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:12:53:836194 Z
+	Handler failure time: 2020-07-27 08:13:00:741497 Z
+	Message ID: c1f502a2-fdc0-4d01-a1a4-ac0500875fa2
+2020-07-27 11:27:22.073 WARN  'AccountNSB MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-27 11:27:22.085 WARN  'AccountNSB Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-27 11:27:22.133 WARN  The circuit breaker for 'AccountNSB MessagePump' is now in the armed state
+2020-07-27 11:27:22.071 INFO  Immediate Retry is going to retry message 'c1f502a2-fdc0-4d01-a1a4-ac0500875fa2' because of an exception:
+Exceptions.AccountNotFoundException: Exception of type 'Exceptions.AccountNotFoundException' was thrown.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:13:00:864053 Z
+	Handler failure time: 2020-07-27 08:27:22:031539 Z
+	Message ID: c1f502a2-fdc0-4d01-a1a4-ac0500875fa2
+2020-07-27 11:27:22.159 INFO  Attempting to reconnect in 10 seconds.
+2020-07-27 11:28:04.401 INFO  Connection to the broker reestablished successfully.
+2020-07-27 11:28:19.917 INFO  The circuit breaker for 'AccountNSB MessagePump' is now disarmed
+2020-07-27 11:30:14.603 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 11:30:16.083 INFO  Auditing processed messages to 'audit'
+2020-07-27 11:30:16.966 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 11:30:28.196 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 11:30:43.747 INFO  Immediate Retry is going to retry message 'c1f502a2-fdc0-4d01-a1a4-ac0500875fa2' because of an exception:
+Exceptions.AccountNotFoundException: Exception of type 'Exceptions.AccountNotFoundException' was thrown.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:30:32:809009 Z
+	Handler failure time: 2020-07-27 08:30:43:707699 Z
+	Message ID: c1f502a2-fdc0-4d01-a1a4-ac0500875fa2
+2020-07-27 11:30:47.467 WARN  Delayed Retry will reschedule message 'c1f502a2-fdc0-4d01-a1a4-ac0500875fa2' after a delay of 00:00:02 because of an exception:
+Exceptions.AccountNotFoundException: Exception of type 'Exceptions.AccountNotFoundException' was thrown.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:30:43:880641 Z
+	Handler failure time: 2020-07-27 08:30:47:459054 Z
+	Message ID: c1f502a2-fdc0-4d01-a1a4-ac0500875fa2
+2020-07-27 11:36:13.724 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 11:36:15.425 INFO  Auditing processed messages to 'audit'
+2020-07-27 11:36:16.636 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 11:36:25.962 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 11:36:45.263 INFO  Immediate Retry is going to retry message 'c1f502a2-fdc0-4d01-a1a4-ac0500875fa2' because of an exception:
+Exceptions.AccountNotFoundException: Exception of type 'Exceptions.AccountNotFoundException' was thrown.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:36:28:078731 Z
+	Handler failure time: 2020-07-27 08:36:45:232021 Z
+	Message ID: c1f502a2-fdc0-4d01-a1a4-ac0500875fa2
+2020-07-27 11:36:47.116 ERROR Moving message 'c1f502a2-fdc0-4d01-a1a4-ac0500875fa2' to the error queue 'error' because processing failed due to an exception:
+Exceptions.AccountNotFoundException: Exception of type 'Exceptions.AccountNotFoundException' was thrown.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 41
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 08:36:45:374044 Z
+	Handler failure time: 2020-07-27 08:36:47:109853 Z
+	Message ID: c1f502a2-fdc0-4d01-a1a4-ac0500875fa2
+2020-07-27 11:53:22.254 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 11:56:19.416 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 11:58:38.143 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 12:04:44.630 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 12:06:18.856 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 12:06:19.792 INFO  Auditing processed messages to 'audit'
+2020-07-27 12:06:20.227 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 12:06:40.194 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 12:10:49.417 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 12:10:50.271 INFO  Auditing processed messages to 'audit'
+2020-07-27 12:10:51.032 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 12:10:58.886 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 12:13:44.831 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 12:13:45.999 INFO  Auditing processed messages to 'audit'
+2020-07-27 12:13:46.384 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 12:13:52.776 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 12:14:03.393 INFO  Immediate Retry is going to retry message 'ce7ca344-1132-4b5c-99c0-ac050094d9fa' because of an exception:
+Exceptions.AccountNotFoundException: Exception of type 'Exceptions.AccountNotFoundException' was thrown.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 42
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 09:13:54:997476 Z
+	Handler failure time: 2020-07-27 09:14:03:357830 Z
+	Message ID: ce7ca344-1132-4b5c-99c0-ac050094d9fa
+2020-07-27 12:14:06.660 WARN  Delayed Retry will reschedule message 'ce7ca344-1132-4b5c-99c0-ac050094d9fa' after a delay of 00:00:02 because of an exception:
+Exceptions.AccountNotFoundException: Exception of type 'Exceptions.AccountNotFoundException' was thrown.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 42
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 09:14:03:523108 Z
+	Handler failure time: 2020-07-27 09:14:06:651292 Z
+	Message ID: ce7ca344-1132-4b5c-99c0-ac050094d9fa
+2020-07-27 12:14:10.749 INFO  Immediate Retry is going to retry message 'ce7ca344-1132-4b5c-99c0-ac050094d9fa' because of an exception:
+Exceptions.AccountNotFoundException: Exception of type 'Exceptions.AccountNotFoundException' was thrown.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 42
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 09:14:08:798852 Z
+	Handler failure time: 2020-07-27 09:14:10:744528 Z
+	Message ID: ce7ca344-1132-4b5c-99c0-ac050094d9fa
+2020-07-27 12:14:12.994 ERROR Moving message 'ce7ca344-1132-4b5c-99c0-ac050094d9fa' to the error queue 'error' because processing failed due to an exception:
+Exceptions.AccountNotFoundException: Exception of type 'Exceptions.AccountNotFoundException' was thrown.
+   at Account.Data.AccountRepository.CheckAccountsCorrectness(Guid fromAccountId, Guid toAccountId) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\AccountService.Data\AccountRepository.cs:line 42
+   at Account.NSB.AccountHendler.Handle(UpdateAccounts message, IMessageHandlerContext context) in C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\AccountHandler.cs:line 27
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Commands.UpdateAccounts
+	Handler type: Account.NSB.AccountHendler
+	Handler start time: 2020-07-27 09:14:10:814499 Z
+	Handler failure time: 2020-07-27 09:14:12:989161 Z
+	Message ID: ce7ca344-1132-4b5c-99c0-ac050094d9fa
+2020-07-27 12:17:57.508 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 12:17:58.584 INFO  Auditing processed messages to 'audit'
+2020-07-27 12:17:59.101 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 12:18:06.107 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 12:23:49.715 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 12:23:51.081 INFO  Auditing processed messages to 'audit'
+2020-07-27 12:23:51.466 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 12:24:00.056 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 12:27:31.165 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 12:27:33.120 INFO  Auditing processed messages to 'audit'
+2020-07-27 12:27:34.424 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 12:27:46.756 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 12:31:17.838 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 12:31:19.370 INFO  Auditing processed messages to 'audit'
+2020-07-27 12:31:20.150 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 12:31:26.294 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 12:32:48.394 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 12:32:50.133 INFO  Auditing processed messages to 'audit'
+2020-07-27 12:32:50.969 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 12:33:01.455 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 12:40:02.659 INFO  Logging to 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 12:40:03.592 INFO  Auditing processed messages to 'audit'
+2020-07-27 12:40:04.069 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-27 12:40:09.555 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'

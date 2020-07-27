@@ -16,12 +16,14 @@ namespace Transaction.NSB
         public async Task Handle(UpdateTransactionStatus message, IMessageHandlerContext context)
         {
             await _transactionRepository.UpdateTransactionStatusAsync(message);
-            TransactionUpdated transactionUpdated = new TransactionUpdated()
-            {
-                TransactionId = message.TransactionId
-            };
-            await context.Publish(transactionUpdated)
-                .ConfigureAwait(false);
+            await Task.CompletedTask;
+            //TransactionUpdated transactionUpdated = new TransactionUpdated()
+            //{
+            //    TransactionId = message.TransactionId
+            //};
+            //await context.Publish(transactionUpdated)
+            //    .ConfigureAwait(false);
+            
         }
     }
 }

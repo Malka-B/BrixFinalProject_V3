@@ -8,5 +8,6 @@ namespace Messages.Commands
     {
         public Guid TransactionId { get; set; }
         public bool IsTransactionSucceeded { get; set; }
+        public string FailureReason { get; set; }
     }
 }
