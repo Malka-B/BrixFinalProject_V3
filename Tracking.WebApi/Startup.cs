@@ -72,7 +72,7 @@ namespace Tracking.WebApi
             }
 
             app.UseHttpsRedirection();
-
+            app.UseCors();
             app.UseRouting();
             app.UseSwagger();
             app.UseSwaggerUI(setupAction =>

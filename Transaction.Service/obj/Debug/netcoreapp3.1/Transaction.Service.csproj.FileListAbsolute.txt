@@ -48,3 +48,17 @@ C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרוי�
 C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.csproj.CopyComplete
 C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.dll
 C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Service\bin\Debug\netcoreapp3.1\Transaction.Service.deps.json
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Service\bin\Debug\netcoreapp3.1\Transaction.Service.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Service\bin\Debug\netcoreapp3.1\Transaction.Service.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Service\bin\Debug\netcoreapp3.1\Messages.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Service\bin\Debug\netcoreapp3.1\Transaction.Share.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Service\bin\Debug\netcoreapp3.1\Messages.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Service\bin\Debug\netcoreapp3.1\Transaction.Share.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.csprojAssemblyReference.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.csproj.CoreCompileInputs.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.AssemblyInfoInputs.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.AssemblyInfo.cs
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.csproj.CopyComplete
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Service\obj\Debug\netcoreapp3.1\Transaction.Service.pdb

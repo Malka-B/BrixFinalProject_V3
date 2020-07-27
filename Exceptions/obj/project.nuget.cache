@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Yli07FjtWKAFpc0AvPPCx0YlPmBhYg+SRyt0sIlSzcZJAK93qJlqy5pr7EAYFK3UTjoJPzLfjSKX6zcE2CUjcw==",
+  "dgSpecHash": "lkzXaF3kKSb+53my54c64eomVdj7wVlRNd2hTcHNgrx3pxf8oZLEe+CkEnw7ghXqG5BCDMQKXercR0/p5MHw4w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\BH-brix_finalGibui\\jm_VOexf6FFpkiZ5il\\גיבוי פרויקט סופי בנק\\Brix final project\\Exceptions\\Exceptions.csproj",
+  "projectFilePath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Exceptions\\Exceptions.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\3.1.6\\microsoft.aspnetcore.authentication.google.3.1.6.nupkg.sha512"
+    "C:\\Users\\WIN10\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\3.1.6\\microsoft.aspnetcore.authentication.google.3.1.6.nupkg.sha512"
   ],
   "logs": []
 }

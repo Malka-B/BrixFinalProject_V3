@@ -25,9 +25,9 @@ namespace Account.Data
             try
             {
                 var fromAccount = await _accountContext.Accounts
-                .FirstOrDefaultAsync(account => account.Id == fromAccountId);
+                .FirstOrDefaultAsync(account => account.CustomerId == fromAccountId);
                 var toAccount = await _accountContext.Accounts
-                    .FirstOrDefaultAsync(account => account.Id == toAccountId);
+                    .FirstOrDefaultAsync(account => account.CustomerId == toAccountId);
                 if (fromAccount == null || toAccount == null)
                 {
                     return false;
@@ -45,7 +45,7 @@ namespace Account.Data
             try
             {
                 var account = await _accountContext.Accounts
-                .FirstOrDefaultAsync(account => account.Id == fromAccountId);
+                .FirstOrDefaultAsync(account => account.CustomerId == fromAccountId);
                 if (account.Balance < amount)
                 {
                     return false;
@@ -63,10 +63,10 @@ namespace Account.Data
             try
             {
                 var fromAccount = await _accountContext.Accounts
-                .FirstOrDefaultAsync(account => account.Id == message.FromAccountId);
+                .FirstOrDefaultAsync(account => account.CustomerId == message.FromAccountId);
                 fromAccount.Balance -= message.Amount;
                 var toAccount = await _accountContext.Accounts
-                    .FirstOrDefaultAsync(account => account.Id == message.ToAccountId);
+                    .FirstOrDefaultAsync(account => account.CustomerId == message.ToAccountId);
                 toAccount.Balance += message.Amount;
                 await _accountContext.SaveChangesAsync();
                 return true;

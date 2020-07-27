@@ -33,7 +33,7 @@ namespace Transaction.NSB
             containerSettings.ServiceCollection.AddScoped<ITransactionRepository, TransactionRepository>();
             containerSettings.ServiceCollection.AddDbContext<TransactionContext>(
            options => options.UseSqlServer(configuration.GetConnectionString("FinalProject_Transaction")));
-           //options => options.UseSqlServer("Server = C1; Database = BrixFinalProject_Transaction ;Trusted_Connection=True;"));
+           //options => options.UseSqlServer("Server = myComputer; Database = BrixFinalProject_Transaction ;Trusted_Connection=True;"));
             var mappingConfig = new MapperConfiguration(mc =>
             {
                 mc.AddProfile(new TransactionProfile());
@@ -44,7 +44,7 @@ namespace Transaction.NSB
             endpointConfiguration.EnableOutbox();
             endpointConfiguration.EnableInstallers();
             var connection = configuration.GetConnectionString("TransactionOutbox");
-            //var connection = "Server = C1; Database = TransactionNSBOutbox ;Trusted_Connection=True;";
+            //var connection = "Server = myComputer; Database = TransactionNSBOutbox ;Trusted_Connection=True;";
             var persistence = endpointConfiguration.UsePersistence<SqlPersistence>();
             persistence.SqlDialect<SqlDialect.MsSqlServer>();
             persistence.ConnectionBuilder(

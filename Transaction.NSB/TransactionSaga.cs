@@ -40,10 +40,10 @@ namespace Transaction.NSB
 
         //public Task Handle(TransactionUpdated message, IMessageHandlerContext context)
         //{
-        //    Func1();
+        //    FunmyComputer();
         //    //MarkAsComplete();
         //}
-        //private void Func1()
+        //private void FunmyComputer()
         //{
         //    MarkAsComplete();
         //}
