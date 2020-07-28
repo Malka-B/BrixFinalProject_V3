@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Transaction.Service;
 using Transaction.Share.Models;
 
 namespace Transaction.Data.Entities

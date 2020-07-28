@@ -21,3 +21,41 @@ C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרוי�
 C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.dll
 C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.pdb
 C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.genruntimeconfig.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Data.deps.json
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Data.runtimeconfig.json
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Data.runtimeconfig.dev.json
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Data.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Data.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\bin\Debug\netcoreapp3.1\Messages.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Service.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Share.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Service.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Share.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\bin\Debug\netcoreapp3.1\Messages.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.csprojAssemblyReference.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.csproj.CoreCompileInputs.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.AssemblyInfoInputs.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.AssemblyInfo.cs
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.csproj.CopyComplete
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.genruntimeconfig.cache
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Data.deps.json
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Data.runtimeconfig.json
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Data.runtimeconfig.dev.json
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Data.dll
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Data.pdb
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Messages.dll
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Service.dll
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Share.dll
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Service.pdb
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Share.pdb
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Messages.pdb
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.csprojAssemblyReference.cache
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.AssemblyInfo.cs
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.csproj.CopyComplete
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.dll
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.pdb
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.genruntimeconfig.cache

@@ -13,6 +13,7 @@ namespace Transaction.Data
     {
         private readonly IMapper _mapper;
         private readonly TransactionContext _transactionContext;
+
         public TransactionRepository(IMapper mapper, TransactionContext transactionContext)
         {
             _mapper = mapper;

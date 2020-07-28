@@ -9,10 +9,12 @@ namespace Transaction.Service
     public class TransactionService : ITransactionService
     {
         private readonly ITransactionRepository _transactionRepository;
+       
         public TransactionService(ITransactionRepository transactionRepository)
         {
             _transactionRepository = transactionRepository;
         }
+       
         public async Task<Guid> CreateTransactionAsync(TransactionModel transactionModel)
         {            
             transactionModel.Status = eStatus.proccessing;            

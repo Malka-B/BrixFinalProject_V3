@@ -15,9 +15,9 @@ namespace Account.Service
             _accountRepository = accountRepository;
         }
 
-        public async Task<AccountModel> GetAccountInfoAsync(Guid CustomerId)
+        public async Task<AccountModel> GetAccountInfoAsync(Guid accountId)
         {
-            return await _accountRepository.GetAccountInfoAsync(CustomerId);
+            return await _accountRepository.GetAccountInfoAsync(accountId);
         }        
     }
 }

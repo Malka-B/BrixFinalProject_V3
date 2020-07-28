@@ -6,7 +6,6 @@ namespace Exceptions
     {
         public AccountNotFoundException()
         {
-
         }
     }
 }

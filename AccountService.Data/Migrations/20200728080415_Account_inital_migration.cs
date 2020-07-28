@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Account.Data.Migrations
 {
-    public partial class Account_initial_migration : Migration
+    public partial class Account_inital_migration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -21,6 +21,40 @@ namespace Account.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Customers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "FailedOperations",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(nullable: false),
+                    AccountId = table.Column<Guid>(nullable: false),
+                    TransactionId = table.Column<Guid>(nullable: false),
+                    CreditOrDebit = table.Column<bool>(nullable: false),
+                    TransactionAmount = table.Column<int>(nullable: false),
+                    Balance = table.Column<int>(nullable: false),
+                    Date = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_FailedOperations", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "SucceededOperations",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(nullable: false),
+                    AccountId = table.Column<Guid>(nullable: false),
+                    TransactionId = table.Column<Guid>(nullable: false),
+                    CreditOrDebit = table.Column<bool>(nullable: false),
+                    TransactionAmount = table.Column<int>(nullable: false),
+                    Balance = table.Column<int>(nullable: false),
+                    Date = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SucceededOperations", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -53,6 +87,12 @@ namespace Account.Data.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Accounts");
+
+            migrationBuilder.DropTable(
+                name: "FailedOperations");
+
+            migrationBuilder.DropTable(
+                name: "SucceededOperations");
 
             migrationBuilder.DropTable(
                 name: "Customers");

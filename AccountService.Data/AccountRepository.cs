@@ -54,11 +54,11 @@ namespace Account.Data
             return true;
         }
 
-        public async Task<AccountModel> GetAccountInfoAsync(Guid CustomerId)
+        public async Task<AccountModel> GetAccountInfoAsync(Guid accountId)
         {
             AccountEntity accountEntity = await _accountContext.Accounts
                 .Include(c => c.Customer)
-                .FirstOrDefaultAsync(a => a.Id == CustomerId);
+                .FirstOrDefaultAsync(a => a.Id == accountId);
             if (accountEntity != null)
             {
                 AccountModel accountModel = _mapper.Map<AccountModel>(accountEntity);

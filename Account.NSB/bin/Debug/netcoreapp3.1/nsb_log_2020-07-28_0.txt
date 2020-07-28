@@ -3,3 +3,97 @@
 2020-07-28 00:08:08.785 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
 License Expiration: 2020-10-04
 2020-07-28 00:08:17.682 INFO  Executing 'C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-28 11:36:18.321 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-28 11:36:18.699 INFO  Auditing processed messages to 'audit'
+2020-07-28 11:36:18.910 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-28 11:37:58.407 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-28 11:37:59.598 INFO  Auditing processed messages to 'audit'
+2020-07-28 11:38:00.040 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-28 11:38:09.682 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-28 11:43:20.657 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-28 11:43:26.937 INFO  Auditing processed messages to 'audit'
+2020-07-28 11:43:28.321 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-28 11:43:38.823 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-28 11:46:15.472 INFO  Immediate Retry is going to retry message 'edaba65c-aa79-4b6a-8729-ac0600907c91' because of an exception:
+System.NotImplementedException: The method or operation is not implemented.
+   at Account.NSB.AccountHistoryForSuccessTransaction.Handle(TransactionSucceeded message, IMessageHandlerContext context) in C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\AccountHistoryForSuccessTransaction.cs:line 13
+   at NServiceBus.Pipeline.MessageHandler.Invoke(Object message, IMessageHandlerContext handlerContext)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Events.TransactionSucceeded
+	Handler type: Account.NSB.AccountHistoryForSuccessTransaction
+	Handler start time: 2020-07-28 08:46:03:617273 Z
+	Handler failure time: 2020-07-28 08:46:15:464923 Z
+	Message ID: edaba65c-aa79-4b6a-8729-ac0600907c91
+2020-07-28 11:46:18.405 WARN  Delayed Retry will reschedule message 'edaba65c-aa79-4b6a-8729-ac0600907c91' after a delay of 00:00:02 because of an exception:
+System.NotImplementedException: The method or operation is not implemented.
+   at Account.NSB.AccountHistoryForSuccessTransaction.Handle(TransactionSucceeded message, IMessageHandlerContext context) in C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\AccountHistoryForSuccessTransaction.cs:line 13
+   at NServiceBus.Pipeline.MessageHandler.Invoke(Object message, IMessageHandlerContext handlerContext)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Events.TransactionSucceeded
+	Handler type: Account.NSB.AccountHistoryForSuccessTransaction
+	Handler start time: 2020-07-28 08:46:15:569235 Z
+	Handler failure time: 2020-07-28 08:46:18:400505 Z
+	Message ID: edaba65c-aa79-4b6a-8729-ac0600907c91
+2020-07-28 11:46:22.582 INFO  Immediate Retry is going to retry message 'edaba65c-aa79-4b6a-8729-ac0600907c91' because of an exception:
+System.NotImplementedException: The method or operation is not implemented.
+   at Account.NSB.AccountHistoryForSuccessTransaction.Handle(TransactionSucceeded message, IMessageHandlerContext context) in C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\AccountHistoryForSuccessTransaction.cs:line 13
+   at NServiceBus.Pipeline.MessageHandler.Invoke(Object message, IMessageHandlerContext handlerContext)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Events.TransactionSucceeded
+	Handler type: Account.NSB.AccountHistoryForSuccessTransaction
+	Handler start time: 2020-07-28 08:46:20:449487 Z
+	Handler failure time: 2020-07-28 08:46:22:579827 Z
+	Message ID: edaba65c-aa79-4b6a-8729-ac0600907c91
+2020-07-28 11:46:23.374 ERROR Moving message 'edaba65c-aa79-4b6a-8729-ac0600907c91' to the error queue 'error' because processing failed due to an exception:
+System.NotImplementedException: The method or operation is not implemented.
+   at Account.NSB.AccountHistoryForSuccessTransaction.Handle(TransactionSucceeded message, IMessageHandlerContext context) in C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\AccountHistoryForSuccessTransaction.cs:line 13
+   at NServiceBus.Pipeline.MessageHandler.Invoke(Object message, IMessageHandlerContext handlerContext)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.Events.TransactionSucceeded
+	Handler type: Account.NSB.AccountHistoryForSuccessTransaction
+	Handler start time: 2020-07-28 08:46:22:606297 Z
+	Handler failure time: 2020-07-28 08:46:23:369529 Z
+	Message ID: edaba65c-aa79-4b6a-8729-ac0600907c91

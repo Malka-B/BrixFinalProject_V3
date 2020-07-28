@@ -44,3 +44,35 @@ C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרוי�
 C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.csproj.CopyComplete
 C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.dll
 C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Service\bin\Debug\netcoreapp3.1\Account.Service.deps.json
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Service\bin\Debug\netcoreapp3.1\Account.Service.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Service\bin\Debug\netcoreapp3.1\Account.Service.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Service\bin\Debug\netcoreapp3.1\Account.Share.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Service\bin\Debug\netcoreapp3.1\Exceptions.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Service\bin\Debug\netcoreapp3.1\Messages.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Service\bin\Debug\netcoreapp3.1\Account.Share.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Service\bin\Debug\netcoreapp3.1\Exceptions.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Service\bin\Debug\netcoreapp3.1\Messages.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.csprojAssemblyReference.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.csproj.CoreCompileInputs.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.AssemblyInfoInputs.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.AssemblyInfo.cs
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.csproj.CopyComplete
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.pdb
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Service\bin\Debug\netcoreapp3.1\Account.Service.deps.json
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Service\bin\Debug\netcoreapp3.1\Account.Service.dll
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Service\bin\Debug\netcoreapp3.1\Account.Service.pdb
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Service\bin\Debug\netcoreapp3.1\Account.Share.dll
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Service\bin\Debug\netcoreapp3.1\Exceptions.dll
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Service\bin\Debug\netcoreapp3.1\Messages.dll
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Service\bin\Debug\netcoreapp3.1\Account.Share.pdb
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Service\bin\Debug\netcoreapp3.1\Exceptions.pdb
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Service\bin\Debug\netcoreapp3.1\Messages.pdb
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.csprojAssemblyReference.cache
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.AssemblyInfo.cs
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.csproj.CopyComplete
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.dll
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.pdb
