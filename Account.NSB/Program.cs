@@ -28,6 +28,7 @@ namespace Account.NSB
 
             var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
             containerSettings.ServiceCollection.AddScoped<IAccountRepository, AccountRepository>();
+            containerSettings.ServiceCollection.AddScoped<IOperationHistoryRepository, OperationHistoryRepository>();
             containerSettings.ServiceCollection.AddDbContext<AccountContext>(
                   options => options.UseSqlServer(configuration.GetConnectionString("FinalProject_Account")));
             var mappingConfig = new MapperConfiguration(mc =>

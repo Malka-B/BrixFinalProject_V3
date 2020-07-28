@@ -51,7 +51,9 @@ namespace Transaction.Data
                 FromAccountId = transactionEntity.FromAccountId,
                 ToAccountId = transactionEntity.ToAccountId,
                 isTransactionSucceeded = message.IsTransactionSucceeded,
-                TransactionId = transactionEntity.Id
+                TransactionId = transactionEntity.Id,
+                Amount = transactionEntity.Amount,
+                FailureReason = message.FailureReason
             };
             return transactionForHistory;
         }

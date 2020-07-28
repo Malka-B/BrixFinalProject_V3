@@ -7,6 +7,9 @@ using Account.WebApi.Profiles;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,14 +25,15 @@ namespace Account.Api
         }
 
         public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
+        
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ILoginRepository, LoginRepository>();
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<ILoginService, LoginService>();
             services.AddScoped<IAccountService, AccountService>();
+            services.AddScoped<IOperationHistoryService, OperationHistoryService>();
+            services.AddScoped<IOperationHistoryRepository, OperationHistoryRepository>();            
             services.AddDbContext<AccountContext>(options =>
                           options.UseSqlServer(
                               Configuration.GetConnectionString("FinalProject_Account")));
@@ -42,6 +46,15 @@ namespace Account.Api
             IMapper mapper = mappingConfig.CreateMapper();
             services.AddSingleton(mapper);
 
+            //for pagination
+            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+            services.AddScoped<IUrlHelper>(x =>
+            {
+                var actionContext = x.GetRequiredService<IActionContextAccessor>().ActionContext;
+                var factory = x.GetRequiredService<IUrlHelperFactory>();
+                return factory.GetUrlHelper(actionContext);
+            });
+            //for pagination
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Account.Data.Migrations
 {
     [DbContext(typeof(AccountContext))]
-    [Migration("20200728080415_Account_inital_migration")]
-    partial class Account_inital_migration
+    [Migration("20200728104245_account_migration")]
+    partial class account_migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -81,17 +81,20 @@ namespace Account.Data.Migrations
                     b.Property<int>("Balance")
                         .HasColumnType("int");
 
-                    b.Property<bool>("CreditOrDebit")
-                        .HasColumnType("bit");
-
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("FailureReason")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("TransactionAmount")
                         .HasColumnType("int");
 
                     b.Property<Guid>("TransactionId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("operationType")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
@@ -110,9 +113,6 @@ namespace Account.Data.Migrations
                     b.Property<int>("Balance")
                         .HasColumnType("int");
 
-                    b.Property<bool>("CreditOrDebit")
-                        .HasColumnType("bit");
-
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
@@ -121,6 +121,9 @@ namespace Account.Data.Migrations
 
                     b.Property<Guid>("TransactionId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("operationType")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 

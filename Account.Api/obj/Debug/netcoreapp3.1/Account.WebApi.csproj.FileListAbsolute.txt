@@ -781,3 +781,4 @@ C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\obj\Debug\netco
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.dll
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.pdb
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.genruntimeconfig.cache
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\System.Linq.Dynamic.Core.dll

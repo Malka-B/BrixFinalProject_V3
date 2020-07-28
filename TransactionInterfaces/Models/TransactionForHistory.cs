@@ -9,5 +9,7 @@ namespace Transaction.Share.Models
         public Guid ToAccountId { get; set; }
         public bool isTransactionSucceeded { get; set; }
         public DateTime Date { get; set; }
+        public int Amount { get; set; }
+        public string FailureReason { get; set; }
     }
 }

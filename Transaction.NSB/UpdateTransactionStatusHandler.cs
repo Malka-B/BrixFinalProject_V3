@@ -27,7 +27,8 @@ namespace Transaction.NSB
                     TransactionId = message.TransactionId,
                     FromAccountId = transactionForHistory.FromAccountId,
                     ToAccountId = transactionForHistory.ToAccountId,
-                    Date = transactionForHistory.Date
+                    Date = transactionForHistory.Date,
+                    Amount = transactionForHistory.Amount
                 };
                 await context.Publish(transactionSucceeded);
             }
@@ -38,7 +39,9 @@ namespace Transaction.NSB
                     TransactionId = message.TransactionId,
                     FromAccountId = transactionForHistory.FromAccountId,
                     ToAccountId = transactionForHistory.ToAccountId,
-                    Date = transactionForHistory.Date
+                    Date = transactionForHistory.Date,
+                    Amount = transactionForHistory.Amount,
+                    FailureReason = transactionForHistory.FailureReason
                 };
                 await context.Publish(transactionFailed);
             }           

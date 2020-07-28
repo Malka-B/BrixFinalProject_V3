@@ -3,6 +3,7 @@ using Account.Service.Models;
 using Account.Share.Models;
 using Account.WebApi.DTO;
 using AutoMapper;
+using System.Linq;
 
 namespace Account.WebApi.Profiles
 {
@@ -22,6 +23,9 @@ namespace Account.WebApi.Profiles
             CreateMap<CustomerModel, CustomerEntity>();
             CreateMap<CustomerEntity, CustomerModel>();
             CreateMap<AccountRegisterModel, AccountEntity>();
+            CreateMap<OperationHistorySucceededEntity, HistoryModel>();
+            CreateMap<IQueryable<HistoryModel>, HistoryDTO>();
+
         }
     }
 }

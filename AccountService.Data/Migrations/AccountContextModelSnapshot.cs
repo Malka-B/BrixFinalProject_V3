@@ -79,17 +79,20 @@ namespace Account.Data.Migrations
                     b.Property<int>("Balance")
                         .HasColumnType("int");
 
-                    b.Property<bool>("CreditOrDebit")
-                        .HasColumnType("bit");
-
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("FailureReason")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("TransactionAmount")
                         .HasColumnType("int");
 
                     b.Property<Guid>("TransactionId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("operationType")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
@@ -108,9 +111,6 @@ namespace Account.Data.Migrations
                     b.Property<int>("Balance")
                         .HasColumnType("int");
 
-                    b.Property<bool>("CreditOrDebit")
-                        .HasColumnType("bit");
-
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
@@ -119,6 +119,9 @@ namespace Account.Data.Migrations
 
                     b.Property<Guid>("TransactionId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("operationType")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 

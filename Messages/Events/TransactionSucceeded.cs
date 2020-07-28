@@ -10,5 +10,6 @@ namespace Messages.Events
         public Guid FromAccountId { get; set; }
         public Guid ToAccountId { get; set; }
         public DateTime Date { get; set; }
+        public int Amount { get; set; }
     }
 }
