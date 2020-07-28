@@ -51,6 +51,7 @@ namespace Account.NSB
                 }
             }
             //AccountsUpdated accountsUpdated = await CreateTransaction(message);
+
             await context.Publish(accountsUpdated)
                 .ConfigureAwait(false);
         }

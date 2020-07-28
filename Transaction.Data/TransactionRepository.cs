@@ -29,7 +29,7 @@ namespace Transaction.Data
             return transactionEntity.Id;
         }
 
-        public async Task UpdateTransactionStatusAsync(UpdateTransactionStatus message)
+        public async Task<TransactionForHistory> UpdateTransactionStatusAsync(UpdateTransactionStatus message)
         {
             TransactionEntity transactionEntity = await _transactionContext.Transactions
                 .FirstOrDefaultAsync(t => t.Id == message.TransactionId);
@@ -43,6 +43,16 @@ namespace Transaction.Data
                 transactionEntity.Status = eStatus.success;
             }
             await _transactionContext.SaveChangesAsync();
+
+            TransactionForHistory transactionForHistory = new TransactionForHistory()
+            {
+                Date = transactionEntity.Date,
+                FromAccountId = transactionEntity.FromAccountId,
+                ToAccountId = transactionEntity.ToAccountId,
+                isTransactionSucceeded = message.IsTransactionSucceeded,
+                TransactionId = transactionEntity.Id
+            };
+            return transactionForHistory;
         }
     }
 }
