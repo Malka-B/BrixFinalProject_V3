@@ -72,7 +72,7 @@ namespace Account.Api
             }
             app.UseHttpsRedirection();
             app.UseRouting();
-            app.UseMiddleware(typeof(AccountErrorHandlerMiddleware));þ
+         //   app.UseMiddleware(typeof(AccountErrorHandlerMiddleware));þ
             app.UseCors();
             app.UseSwagger();
             app.UseSwaggerUI(setupAction =>

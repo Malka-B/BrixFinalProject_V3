@@ -15,7 +15,8 @@ namespace Account.Data
 
         public DbSet<AccountEntity> Accounts { get; set; }
         public DbSet<CustomerEntity> Customers { get; set; }
-
+        public DbSet<OperationHistorySucceededEntity> SucceededOperations { get; set; }
+        public DbSet<OperationHistoryFailedEntity> FailedOperations { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

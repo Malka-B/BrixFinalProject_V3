@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Account.Data.Migrations
 {
     [DbContext(typeof(AccountContext))]
-    [Migration("20200726090654_Account_initial_migration")]
-    partial class Account_initial_migration
+    [Migration("20200728080415_Account_inital_migration")]
+    partial class Account_inital_migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -67,6 +67,64 @@ namespace Account.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("Account.Data.Entites.OperationHistoryFailedEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("AccountId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Balance")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("CreditOrDebit")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("TransactionAmount")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("TransactionId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("FailedOperations");
+                });
+
+            modelBuilder.Entity("Account.Data.Entites.OperationHistorySucceededEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("AccountId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Balance")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("CreditOrDebit")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("TransactionAmount")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("TransactionId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SucceededOperations");
                 });
 
             modelBuilder.Entity("Account.Data.Entites.AccountEntity", b =>

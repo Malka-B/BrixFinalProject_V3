@@ -1384,3 +1384,13 @@ License Expiration: 2020-10-04
 2020-07-27 17:14:34.999 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
 2020-07-27 17:14:35.011 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
 2020-07-27 17:14:45.873 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 23:25:14.830 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 23:25:15.276 INFO  Auditing processed messages to 'audit'
+2020-07-27 23:25:15.355 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-07-27 23:25:15.395 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-27 23:25:15.422 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-27 23:25:24.715 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 23:29:28.179 ERROR Your license has expired
+2020-07-27 23:29:30.786 ERROR Your license has expired
+2020-07-27 23:30:45.079 ERROR Your license has expired
+2020-07-27 23:30:45.543 ERROR Your license has expired

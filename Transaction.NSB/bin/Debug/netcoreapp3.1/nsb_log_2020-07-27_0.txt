@@ -1010,3 +1010,22 @@ F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcore
 2020-07-27 17:14:43.324 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
 2020-07-27 17:14:43.958 INFO  Executing saga creation scripts:
 F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-27 23:25:17.625 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-27 23:25:18.273 INFO  Auditing processed messages to 'audit'
+2020-07-27 23:25:18.319 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-07-27 23:25:18.371 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-27 23:25:24.646 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-27 23:25:24.837 INFO  Executing saga creation scripts:
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-27 23:29:26.000 ERROR Your license has expired
+2020-07-27 23:29:27.967 ERROR Your license has expired
+2020-07-27 23:29:31.095 ERROR Your license has expired
+2020-07-27 23:29:41.809 ERROR Your license has expired
+2020-07-27 23:29:41.893 ERROR Your license has expired
+2020-07-27 23:29:44.862 ERROR Your license has expired
+2020-07-27 23:30:44.302 ERROR Your license has expired
+2020-07-27 23:30:45.054 ERROR Your license has expired
+2020-07-27 23:30:45.618 ERROR Your license has expired
+2020-07-27 23:30:46.100 ERROR Your license has expired
+2020-07-27 23:30:46.125 ERROR Your license has expired
+2020-07-27 23:30:48.518 ERROR Your license has expired
