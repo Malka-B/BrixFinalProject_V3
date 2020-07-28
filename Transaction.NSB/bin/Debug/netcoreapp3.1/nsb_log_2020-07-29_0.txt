@@ -1,0 +1,60 @@
+﻿2020-07-29 00:24:09.949 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 00:24:10.919 INFO  Auditing processed messages to 'audit'
+2020-07-29 00:24:11.252 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 00:24:15.183 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 00:24:15.927 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 00:30:46.574 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 00:30:47.750 INFO  Auditing processed messages to 'audit'
+2020-07-29 00:30:48.149 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 00:30:52.303 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 00:30:53.068 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 00:31:54.009 INFO  Could not find a started saga for 'Messages.Events.AccountsUpdated' message type. Going to invoke SagaNotFoundHandlers.
+2020-07-29 00:31:54.354 INFO  Immediate Retry is going to retry message '010feb16-6db5-4631-9496-ac060161d825' because of an exception:
+System.Exception: Failed to ExecuteNonQuery. CommandText:
+
+insert into [dbo].[TransactionNSB_OutboxData]
+(
+    MessageId,
+    Operations,
+    PersistenceVersion
+)
+values
+(
+    @MessageId,
+    @Operations,
+    @PersistenceVersion
+)
+ ---> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__Transact__C87C0C9D4E5751A3'. Cannot insert duplicate key in object 'dbo.TransactionNSB_OutboxData'. The duplicate key value is (010feb16-6db5-4631-9496-ac060161d825).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Extensions.ExecuteNonQueryEx(DbCommand command, CancellationToken cancellationToken) in /_/src/SqlPersistence/Extensions.cs:line 107
+ClientConnectionId:71c18192-36bf-4c6d-96de-3b409951ed23
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Extensions.ExecuteNonQueryEx(DbCommand command, CancellationToken cancellationToken) in /_/src/SqlPersistence/Extensions.cs:line 112
+   at OptimisticConcurrencyControlStrategy.Complete(OutboxMessage outboxMessage, DbConnection connection, DbTransaction transaction, ContextBag context) in /_/src/SqlPersistence/Outbox/OptimisticConcurrencyControlStrategy.cs:line 32
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 010feb16-6db5-4631-9496-ac060161d825
+2020-07-29 00:37:35.721 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 00:37:37.303 INFO  Auditing processed messages to 'audit'
+2020-07-29 00:37:38.134 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 00:37:45.029 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 00:37:46.587 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql

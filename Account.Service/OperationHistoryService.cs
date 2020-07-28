@@ -22,8 +22,7 @@ namespace Account.Service
         public PagingReturn GetAll(QueryParameters queryParameters)
         {
             List<HistoryModel> accountHistory = _operationHistoryRepository
-                .GetAll(queryParameters)
-                .ToList();
+                .GetAll(queryParameters);
 
             int allItemCount =  _operationHistoryRepository.Count(queryParameters.AccountId);
 

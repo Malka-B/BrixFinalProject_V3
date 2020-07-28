@@ -1,4 +1,6 @@
 ﻿using Account.Share.Interfaces;
+using Account.Share.Models;
+using AutoMapper;
 using Messages.Commands;
 using Messages.Events;
 using NServiceBus;
@@ -10,10 +12,12 @@ namespace Account.NSB
     public class AccountHendler : IHandleMessages<UpdateAccounts>
     {
         private readonly IAccountRepository _accountRepository;
+        private readonly IMapper _mapper;
 
-        public AccountHendler(IAccountRepository accountRepository)
+        public AccountHendler(IAccountRepository accountRepository, IMapper mapper)
         {
             _accountRepository = accountRepository;
+            _mapper = mapper;
         }
 
         public async Task Handle(UpdateAccounts message, IMessageHandlerContext context)
@@ -23,90 +27,84 @@ namespace Account.NSB
                 TransactionId = message.TransactionId
             };
 
-            bool isFromAccountExist = await _accountRepository
-                .CheckAccountCorrectness(message.FromAccountId);
-
-            bool isToAccountExist = await _accountRepository
-                .CheckAccountCorrectness(message.ToAccountId);
-
-            if (isFromAccountExist == false || isToAccountExist == false)
+            TransactionDetailsForHistory transactionDetails = _mapper.Map<TransactionDetailsForHistory>(message);
+             
+            AccountsUpdated transactionCorrectness = await AccountIdsCorrectness(message.FromAccountId, message.ToAccountId);
+            if (transactionCorrectness.isAccountsUpdateSuccess == true)
             {
-                accountsUpdated.FailureReason = "One of the accounts Id is not coorrect";
-                accountsUpdated.isAccountsUpdateSuccess = false;
+                transactionCorrectness = await CheckBalance(message.FromAccountId, message.Amount);
+                if (transactionCorrectness.isAccountsUpdateSuccess == true)
+                {
+                    AccountsBalance accountsBalance = await DoTransaction(message);
+                    transactionDetails.BalanceOfFromAccount = accountsBalance.BalanceOfFromAccount;
+                    transactionDetails.BalanceOfToAccount = accountsBalance.BalanceOfToAccount;
+                }
+            }
+            if (transactionCorrectness.isAccountsUpdateSuccess)
+            {
+                UpdateSucceededTransaction transactionSucceeded = new UpdateSucceededTransaction()
+                {
+                    TransactionId = message.TransactionId,
+                    FromAccountId = message.FromAccountId,
+                    ToAccountId = message.ToAccountId,
+                    Date = message.Date,
+                    Amount = message.Amount,
+                    BalanceOfToAccount = transactionDetails.BalanceOfToAccount,
+                    BalanceOfFromAccount = transactionDetails.BalanceOfFromAccount                    
+                };
+                await context.SendLocal(transactionSucceeded);
             }
             else
             {
-                bool isBalanceEnough = await _accountRepository
-                                .CheckBalance(message.FromAccountId, message.Amount);
-
-                if (isBalanceEnough == false)
+                UpdateFailedTransaction transactionFailed = new UpdateFailedTransaction()
                 {
-                    accountsUpdated.FailureReason = $"Account Id: {message.FromAccountId} no have enough balance";
-                    accountsUpdated.isAccountsUpdateSuccess = false;
-                }
-                else
-                {
-                    await _accountRepository.UpdateAccounts(message);
-                    accountsUpdated.isAccountsUpdateSuccess = true;
-                }
+                    TransactionId = message.TransactionId,
+                    FromAccountId = message.FromAccountId,
+                    ToAccountId = message.ToAccountId,
+                    Date = message.Date,
+                    Amount = message.Amount,                    
+                    FailureReason = transactionCorrectness.FailureReason
+                };
+                await context.SendLocal(transactionFailed);
             }
-            //AccountsUpdated accountsUpdated = await CreateTransaction(message);
-
+            accountsUpdated.isAccountsUpdateSuccess = transactionCorrectness.isAccountsUpdateSuccess;
+            accountsUpdated.FailureReason = transactionCorrectness.FailureReason;
             await context.Publish(accountsUpdated)
                 .ConfigureAwait(false);
         }
+                
+        private async Task<AccountsUpdated> AccountIdsCorrectness(Guid fromAccountId, Guid toAccountId)
+        {
+            AccountsUpdated transactionCorrectness = new AccountsUpdated(true);
+            if (await _accountRepository.CheckAccountCorrectness(fromAccountId) == false)
+            {
+                transactionCorrectness.isAccountsUpdateSuccess = false;
+                transactionCorrectness.FailureReason = "The FromAccountId doesn't exist";
+            }
+            else if (await _accountRepository.CheckAccountCorrectness(toAccountId) == false)
+            {
+                transactionCorrectness.isAccountsUpdateSuccess = false;
+                transactionCorrectness.FailureReason = "The ToAccountId doesn't exist";
+            }
+            return transactionCorrectness;
+        }
 
-        //private async Task<AccountsUpdated> CreateTransaction(UpdateAccounts transaction)
-        //{
-        //    AccountsUpdated transactionCorrectness = await AccountIdsCorrectness(transaction.FromAccountId, transaction.ToAccountId);
-        //    if (transactionCorrectness.isAccountsUpdateSuccess == true)
-        //    {
-        //        transactionCorrectness = await HasBalance(transaction.FromAccountId, transaction.Amount);
-        //        if (transactionCorrectness.isAccountsUpdateSuccess == true)
-        //        {
-        //            await DoTransaction(transaction);
-        //        }
-        //    }
-        //    return new AccountsUpdated()
-        //    {
-        //        TransactionId = transaction.TransactionId,
-        //        isAccountsUpdateSuccess = transactionCorrectness.isAccountsUpdateSuccess,
-        //        FailureReason = transactionCorrectness.FailureReason
-        //    };
-        //}
-        //private async Task<AccountsUpdated> AccountIdsCorrectness(Guid fromAccountId, Guid toAccountId)
-        //{
-        //    AccountsUpdated transactionCorrectness = new AccountsUpdated();
-        //    if (await _accountRepository.CheckAccountCorrectness(fromAccountId) == false)
-        //    {
-        //        transactionCorrectness.isAccountsUpdateSuccess = false;
-        //        transactionCorrectness.FailureReason = "The fromAccountId doesn't exist";
-        //    }
-        //    else if (await _accountRepository.CheckAccountCorrectness(toAccountId) == false)
-        //    {
-        //        transactionCorrectness.isAccountsUpdateSuccess = false;
-        //        transactionCorrectness.FailureReason = "The toAccountId doesn't exist";
-        //    }
-        //    return transactionCorrectness;
-        //}
+        private async Task<AccountsUpdated> CheckBalance(Guid fromAccountId, int amount)
+        {
+            AccountsUpdated transactionCorrectness = new AccountsUpdated(true);
+            int balance = await _accountRepository.CheckBalance(fromAccountId, amount);
+            if(balance < amount)
+            {
+                transactionCorrectness.isAccountsUpdateSuccess = false;
+                transactionCorrectness.FailureReason = $"There is not enough money in the account. accountId: {fromAccountId}, CurrentBalance: {balance}";
+            }
+            return transactionCorrectness;
+        }
 
-        //private async Task<AccountsUpdated> HasBalance(Guid fromAccountId, int amount)
-        //{
-        //    AccountsUpdated transactionCorrectness = new AccountsUpdated();
-        //    bool isBbalanceEnough = await _accountRepository.CheckBalance(fromAccountId, amount);
-        //    if (isBbalanceEnough == false)
-        //    {
-        //        transactionCorrectness.isAccountsUpdateSuccess = false;
-        //        transactionCorrectness.FailureReason = $"There is not enough money in the account. accountId: {fromAccountId}";
-        //    }
-        //    return transactionCorrectness;
-        //}
-
-        //private Task DoTransaction(UpdateAccounts transaction)
-        //{
-        //    _accountRepository.UpdateAccounts(transaction);
-        //    return Task.CompletedTask;
-        //}
+        private async Task<AccountsBalance> DoTransaction(UpdateAccounts transaction)
+        {           
+            return await _accountRepository.UpdateAccounts(transaction);
+        }
     }
 }
 

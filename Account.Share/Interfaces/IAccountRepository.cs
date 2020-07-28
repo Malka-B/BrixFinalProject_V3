@@ -10,7 +10,7 @@ namespace Account.Share.Interfaces
     {
         Task<AccountModel> GetAccountInfoAsync(Guid accountId);
         Task<bool> CheckAccountCorrectness(Guid accountId);
-        Task<bool> CheckBalance(Guid fromAccountId, int amount);
-        Task<bool> UpdateAccounts(UpdateAccounts message);
+        Task<int> CheckBalance(Guid fromAccountId, int amount);
+        Task<AccountsBalance> UpdateAccounts(UpdateAccounts message);
     }
 }

@@ -15,6 +15,9 @@ namespace Account.NSB
 {
     class Program
     {
+        //לשנות את טבלת היסטוריה של כישלון
+        //לסדר מידלואר עם לוגים לד"ב
+        //לעשות מאפר בשכבת דאטה
         static async Task Main()
         {
             var builder = new ConfigurationBuilder()

@@ -53,3 +53,31 @@ License Expiration: 2020-10-04
 2020-07-28 14:16:22.317 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
 License Expiration: 2020-10-04
 2020-07-28 14:16:28.635 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-28 18:21:11.758 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-28 18:21:12.351 INFO  Auditing processed messages to 'audit'
+2020-07-28 18:21:12.610 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-28 18:21:21.039 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-28 18:41:21.503 WARN  'Transaction MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-28 18:41:21.503 WARN  'Transaction Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-28 18:41:21.534 INFO  Attempting to reconnect in 10 seconds.
+2020-07-28 18:41:21.536 WARN  The circuit breaker for 'Transaction MessagePump' is now in the armed state
+2020-07-28 18:41:31.505 INFO  The circuit breaker for 'Transaction MessagePump' is now disarmed
+2020-07-28 18:41:31.569 INFO  Connection to the broker reestablished successfully.
+2020-07-28 18:45:01.239 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-28 18:45:01.557 INFO  Auditing processed messages to 'audit'
+2020-07-28 18:45:01.794 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-28 18:45:03.415 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'

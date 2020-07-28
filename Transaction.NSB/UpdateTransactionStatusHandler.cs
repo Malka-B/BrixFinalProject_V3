@@ -1,9 +1,7 @@
 ﻿using Messages.Commands;
-using Messages.Events;
 using NServiceBus;
 using System.Threading.Tasks;
 using Transaction.Share.Interfaces;
-using Transaction.Share.Models;
 
 namespace Transaction.NSB
 {
@@ -18,33 +16,36 @@ namespace Transaction.NSB
 
         public async Task Handle(UpdateTransactionStatus message, IMessageHandlerContext context)
         {
-            TransactionForHistory transactionForHistory = await _transactionRepository.UpdateTransactionStatusAsync(message);
+            //TransactionForHistory transactionForHistory = 
+                await _transactionRepository.UpdateTransactionStatusAsync(message);
 
-            if (transactionForHistory.isTransactionSucceeded)
-            {
-                TransactionSucceeded transactionSucceeded = new TransactionSucceeded()
-                {
-                    TransactionId = message.TransactionId,
-                    FromAccountId = transactionForHistory.FromAccountId,
-                    ToAccountId = transactionForHistory.ToAccountId,
-                    Date = transactionForHistory.Date,
-                    Amount = transactionForHistory.Amount
-                };
-                await context.Publish(transactionSucceeded);
-            }
-            else
-            {
-                TransactionFailed transactionFailed = new TransactionFailed()
-                {
-                    TransactionId = message.TransactionId,
-                    FromAccountId = transactionForHistory.FromAccountId,
-                    ToAccountId = transactionForHistory.ToAccountId,
-                    Date = transactionForHistory.Date,
-                    Amount = transactionForHistory.Amount,
-                    FailureReason = transactionForHistory.FailureReason
-                };
-                await context.Publish(transactionFailed);
-            }           
+
+            //if (transactionForHistory.isTransactionSucceeded)
+            //{
+            //    TransactionSucceeded transactionSucceeded = new TransactionSucceeded()
+            //    {
+            //        TransactionId = message.TransactionId,
+            //        FromAccountId = transactionForHistory.FromAccountId,
+            //        ToAccountId = transactionForHistory.ToAccountId,
+            //        Date = transactionForHistory.Date,
+            //        Amount = transactionForHistory.Amount
+            //    };
+            //    await context.Publish(transactionSucceeded);
+            //}
+            //else
+            //{
+            //    TransactionFailed transactionFailed = new TransactionFailed()
+            //    {
+            //        TransactionId = message.TransactionId,
+            //        FromAccountId = transactionForHistory.FromAccountId,
+            //        ToAccountId = transactionForHistory.ToAccountId,
+            //        Date = transactionForHistory.Date,
+            //        Amount = transactionForHistory.Amount,
+            //        FailureReason = transactionForHistory.FailureReason
+            //    };
+            //    await context.Publish(transactionFailed);
+            //}
+            await Task.CompletedTask;
         }
     }
 }

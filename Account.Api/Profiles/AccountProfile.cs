@@ -3,7 +3,7 @@ using Account.Service.Models;
 using Account.Share.Models;
 using Account.WebApi.DTO;
 using AutoMapper;
-using System.Linq;
+using Messages.Commands;
 
 namespace Account.WebApi.Profiles
 {
@@ -22,10 +22,12 @@ namespace Account.WebApi.Profiles
             CreateMap<CustomerDTO, CustomerModel>();
             CreateMap<CustomerModel, CustomerEntity>();
             CreateMap<CustomerEntity, CustomerModel>();
-            CreateMap<AccountRegisterModel, AccountEntity>();
-            CreateMap<OperationHistorySucceededEntity, HistoryModel>();
-            CreateMap<IQueryable<HistoryModel>, HistoryDTO>();
-
+            CreateMap<AccountRegisterModel, AccountEntity>();            
+            CreateMap<OperationHistorySucceededEntity, HistoryModel>()
+                .ForMember(destination => destination.Amount, option => option.MapFrom(src =>
+              src.TransactionAmount));
+            CreateMap<HistoryModel, HistoryDTO>();
+            CreateMap<UpdateAccounts, TransactionDetailsForHistory>(); 
         }
     }
 }

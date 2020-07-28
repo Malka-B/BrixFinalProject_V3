@@ -1357,6 +1357,14 @@
           "System.Runtime.Extensions": "4.3.0"
         }
       },
+      "System.Linq.Dynamic.Core/1.2.0": {
+        "runtime": {
+          "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
+      },
       "System.Linq.Expressions/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -1923,7 +1931,8 @@
           "Exceptions": "1.0.0",
           "Microsoft.AspNetCore.Authentication.Google": "3.1.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.6",
-          "Microsoft.Extensions.DependencyInjection": "3.1.6"
+          "Microsoft.Extensions.DependencyInjection": "3.1.6",
+          "System.Linq.Dynamic.Core": "1.2.0"
         },
         "runtime": {
           "Account.Data.dll": {}
@@ -2822,6 +2831,13 @@
       "sha512": "sha512-5DbqIUpsDp0dFftytzuMmc0oeMdQwjcP/EWxsksIz/w1TcFRkZ3yKKz0PqiYFMmEwPSWw+qNVqD7PJ889JzHbw==",
       "path": "system.linq/4.3.0",
       "hashPath": "system.linq.4.3.0.nupkg.sha512"
+    },
+    "System.Linq.Dynamic.Core/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nbeI4oOTBNsS2gErl9M0FS2gYW7626DaiFGH2wyx3FS3VdRy3wPZxyFJEFgvCc0/WzySG4z3afOS4qyab51Tng==",
+      "path": "system.linq.dynamic.core/1.2.0",
+      "hashPath": "system.linq.dynamic.core.1.2.0.nupkg.sha512"
     },
     "System.Linq.Expressions/4.3.0": {
       "type": "package",
