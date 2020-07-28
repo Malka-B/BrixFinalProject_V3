@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\BH-brix_finalGibui\\jm_VOexf6FFpkiZ5il\\גיבוי פרויקט סופי בנק\\Brix final project\\Messages\\Messages.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\Messages.csproj",
       "projectName": "Messages",
-      "projectPath": "C:\\Users\\User\\Desktop\\BH-brix_finalGibui\\jm_VOexf6FFpkiZ5il\\גיבוי פרויקט סופי בנק\\Brix final project\\Messages\\Messages.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\Messages.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\BH-brix_finalGibui\\jm_VOexf6FFpkiZ5il\\גיבוי פרויקט סופי בנק\\Brix final project\\Messages\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

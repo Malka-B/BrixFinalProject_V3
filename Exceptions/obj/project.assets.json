@@ -45,11 +45,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\BH-brix_finalGibui\\jm_VOexf6FFpkiZ5il\\גיבוי פרויקט סופי בנק\\Brix final project\\Exceptions\\Exceptions.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Exceptions\\Exceptions.csproj",
       "projectName": "Exceptions",
-      "projectPath": "C:\\Users\\User\\Desktop\\BH-brix_finalGibui\\jm_VOexf6FFpkiZ5il\\גיבוי פרויקט סופי בנק\\Brix final project\\Exceptions\\Exceptions.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Exceptions\\Exceptions.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\BH-brix_finalGibui\\jm_VOexf6FFpkiZ5il\\גיבוי פרויקט סופי בנק\\Brix final project\\Exceptions\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Exceptions\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -5140,11 +5140,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\BH-brix_finalGibui\\jm_VOexf6FFpkiZ5il\\גיבוי פרויקט סופי בנק\\Brix final project\\AccountService.Data\\Account.Data.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\AccountService.Data\\Account.Data.csproj",
       "projectName": "Account.Data",
-      "projectPath": "C:\\Users\\User\\Desktop\\BH-brix_finalGibui\\jm_VOexf6FFpkiZ5il\\גיבוי פרויקט סופי בנק\\Brix final project\\AccountService.Data\\Account.Data.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\AccountService.Data\\Account.Data.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\BH-brix_finalGibui\\jm_VOexf6FFpkiZ5il\\גיבוי פרויקט סופי בנק\\Brix final project\\AccountService.Data\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\AccountService.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5163,14 +5163,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\BH-brix_finalGibui\\jm_VOexf6FFpkiZ5il\\גיבוי פרויקט סופי בנק\\Brix final project\\Account.Service\\Account.Service.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\BH-brix_finalGibui\\jm_VOexf6FFpkiZ5il\\גיבוי פרויקט סופי בנק\\Brix final project\\Account.Service\\Account.Service.csproj"
+            "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Service\\Account.Service.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Service\\Account.Service.csproj"
             },
-            "C:\\Users\\User\\Desktop\\BH-brix_finalGibui\\jm_VOexf6FFpkiZ5il\\גיבוי פרויקט סופי בנק\\Brix final project\\Account.Share\\Account.Share.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\BH-brix_finalGibui\\jm_VOexf6FFpkiZ5il\\גיבוי פרויקט סופי בנק\\Brix final project\\Account.Share\\Account.Share.csproj"
+            "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Share\\Account.Share.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Share\\Account.Share.csproj"
             },
-            "C:\\Users\\User\\Desktop\\BH-brix_finalGibui\\jm_VOexf6FFpkiZ5il\\גיבוי פרויקט סופי בנק\\Brix final project\\Exceptions\\Exceptions.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\BH-brix_finalGibui\\jm_VOexf6FFpkiZ5il\\גיבוי פרויקט סופי בנק\\Brix final project\\Exceptions\\Exceptions.csproj"
+            "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Exceptions\\Exceptions.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Exceptions\\Exceptions.csproj"
             }
           }
         }
