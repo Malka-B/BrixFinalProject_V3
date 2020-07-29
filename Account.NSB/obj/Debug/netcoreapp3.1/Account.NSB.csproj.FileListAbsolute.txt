@@ -535,3 +535,4 @@ C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\obj\Debug\netco
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.dll
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.pdb
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.genruntimeconfig.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\System.Linq.Dynamic.Core.dll
