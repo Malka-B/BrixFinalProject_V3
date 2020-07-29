@@ -20,14 +20,18 @@ namespace Transaction.Data
             _transactionContext = transactionContext;
         }
 
-        public async Task<Guid> CreateTransactionAsync(TransactionModel transactionModel)
+        public async Task<TransactionDetails> CreateTransactionAsync(TransactionModel transactionModel)
         {            
             TransactionEntity transactionEntity = _mapper.Map<TransactionEntity>(transactionModel);
             transactionEntity.Id = new Guid();
             transactionEntity.Date = DateTime.Now;
             await _transactionContext.Transactions.AddAsync(transactionEntity);
             await _transactionContext.SaveChangesAsync();
-            return transactionEntity.Id;
+            return new TransactionDetails()
+            {
+                TransactionId = transactionEntity.Id,
+                Date = transactionEntity.Date
+            };
         }
 
         public async /*Task<TransactionForHistory>*/Task UpdateTransactionStatusAsync(UpdateTransactionStatus message)

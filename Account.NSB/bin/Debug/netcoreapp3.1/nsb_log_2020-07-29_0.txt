@@ -52,3 +52,158 @@ Exception details:
 2020-07-29 00:37:31.152 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
 License Expiration: 2020-10-04
 2020-07-29 00:37:43.197 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 10:26:28.272 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 10:26:28.763 INFO  Auditing processed messages to 'audit'
+2020-07-29 10:26:29.254 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 10:26:35.069 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 10:50:56.218 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 10:50:57.359 INFO  Auditing processed messages to 'audit'
+2020-07-29 10:50:58.226 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 10:51:10.238 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 10:54:26.829 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 10:54:27.657 INFO  Auditing processed messages to 'audit'
+2020-07-29 10:54:28.354 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 10:54:39.450 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 11:48:33.532 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 11:48:34.318 INFO  Auditing processed messages to 'audit'
+2020-07-29 11:48:34.850 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 11:48:42.414 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 12:07:27.089 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 12:07:27.969 INFO  Auditing processed messages to 'audit'
+2020-07-29 12:07:28.377 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 12:07:35.730 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 12:52:50.142 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 12:52:51.198 INFO  Auditing processed messages to 'audit'
+2020-07-29 12:52:51.852 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 12:52:58.981 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 13:07:24.453 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 13:07:26.099 INFO  Auditing processed messages to 'audit'
+2020-07-29 13:07:27.166 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 13:07:35.013 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 13:20:08.654 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 13:20:09.726 INFO  Auditing processed messages to 'audit'
+2020-07-29 13:20:10.224 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 13:20:16.880 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 13:25:29.658 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 13:25:30.771 INFO  Auditing processed messages to 'audit'
+2020-07-29 13:25:31.129 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 13:25:36.899 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 13:31:50.017 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 13:31:51.191 INFO  Auditing processed messages to 'audit'
+2020-07-29 13:31:51.602 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 13:31:57.605 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 13:38:10.606 INFO  Immediate Retry is going to retry message '34d33de4-15bc-4780-8da7-ac0700aeb57b' because of an exception:
+System.NotSupportedException: Pipelining of requests forbidden
+   at RabbitMQ.Client.Impl.RpcContinuationQueue.Enqueue(IRpcContinuation k)
+   at RabbitMQ.Client.Impl.ModelBase.Enqueue(IRpcContinuation k)
+   at RabbitMQ.Client.Impl.ModelBase.TransmitAndEnqueue(Command cmd, IRpcContinuation k)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeBind(String destination, String source, String routingKey, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeBind(String destination, String source, String routingKey, IDictionary`2 arguments)
+   at NServiceBus.Transport.RabbitMQ.ConventionalRoutingTopology.SetupTypeSubscriptions(IModel channel, Type type)
+   at NServiceBus.Transport.RabbitMQ.ConventionalRoutingTopology.Publish(IModel channel, Type type, OutgoingMessage message, IBasicProperties properties)
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel.PublishMessage(Type type, OutgoingMessage message, IBasicProperties properties)
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.PublishMessage(MulticastTransportOperation transportOperation, ConfirmsAwareChannel channel)
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context)
+   at NServiceBus.ImmediateDispatchTerminator.Terminate(IDispatchContext context)
+   at NServiceBus.BatchToDispatchConnector.Invoke(IBatchDispatchContext context, Func`2 stage)
+   at NServiceBus.Pipeline`1.Invoke(TContext context)
+   at NServiceBus.PipelineInvocationExtensions.InvokePipeline[TContext](TContext context)
+   at NServiceBus.ForkExtensions.Fork[TFromContext,TToContext,TForkContext](IForkConnector`3 forkConnector, TForkContext context)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 34d33de4-15bc-4780-8da7-ac0700aeb57b
+2020-07-29 13:58:53.110 WARN  'AccountNSB MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-29 13:58:53.110 WARN  'AccountNSB Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-29 13:58:53.536 WARN  The circuit breaker for 'AccountNSB MessagePump' is now in the armed state
+2020-07-29 13:58:53.651 INFO  Attempting to reconnect in 10 seconds.
+2020-07-29 13:59:03.203 INFO  The circuit breaker for 'AccountNSB MessagePump' is now disarmed
+2020-07-29 13:59:03.852 INFO  Connection to the broker reestablished successfully.
+2020-07-29 14:11:46.773 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 14:11:47.863 INFO  Auditing processed messages to 'audit'
+2020-07-29 14:11:48.505 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 14:11:58.032 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 14:39:38.883 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 14:39:42.085 INFO  Auditing processed messages to 'audit'
+2020-07-29 14:39:42.507 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 14:39:49.149 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 14:51:24.459 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 14:51:25.135 INFO  Auditing processed messages to 'audit'
+2020-07-29 14:51:25.443 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 14:51:29.971 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 14:57:26.382 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 14:57:32.595 INFO  Auditing processed messages to 'audit'
+2020-07-29 14:57:32.904 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 14:57:38.883 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 14:58:13.677 INFO  Immediate Retry is going to retry message '2c5a3e37-4c43-4952-aef1-ac0700c3a44e' because of an exception:
+System.Exception: Failed to ExecuteNonQuery. CommandText:
+
+insert into [dbo].[AccountNSB_OutboxData]
+(
+    MessageId,
+    Operations,
+    PersistenceVersion
+)
+values
+(
+    @MessageId,
+    @Operations,
+    @PersistenceVersion
+)
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__AccountN__C87C0C9DDA9ACB48'. Cannot insert duplicate key in object 'dbo.AccountNSB_OutboxData'. The duplicate key value is (2c5a3e37-4c43-4952-aef1-ac0700c3a44e).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Extensions.ExecuteNonQueryEx(DbCommand command, CancellationToken cancellationToken) in /_/src/SqlPersistence/Extensions.cs:line 107
+ClientConnectionId:6a8b99dd-f014-4b4d-8e99-01677840c953
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Extensions.ExecuteNonQueryEx(DbCommand command, CancellationToken cancellationToken) in /_/src/SqlPersistence/Extensions.cs:line 112
+   at OptimisticConcurrencyControlStrategy.Complete(OutboxMessage outboxMessage, DbConnection connection, DbTransaction transaction, ContextBag context) in /_/src/SqlPersistence/Outbox/OptimisticConcurrencyControlStrategy.cs:line 32
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 2c5a3e37-4c43-4952-aef1-ac0700c3a44e
+2020-07-29 15:40:20.533 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 15:40:21.389 INFO  Auditing processed messages to 'audit'
+2020-07-29 15:40:22.478 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 15:40:30.026 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'

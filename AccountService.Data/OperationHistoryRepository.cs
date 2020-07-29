@@ -29,11 +29,21 @@ namespace Account.Data
             return accountHistory.Count();
         }
 
-        public List<HistoryModel> GetAll(QueryParameters queryParameters)
+        public  List<HistoryModel> GetAll(QueryParameters queryParameters)
         {
-            IQueryable<OperationHistorySucceededEntity> historyPage = _accountContext
+            IQueryable<OperationHistorySucceededEntity> historyPage;
+            if (queryParameters.OrderBy == "date")
+            {
+                historyPage = _accountContext
                 .SucceededOperations.Where(a => a.AccountId == queryParameters.AccountId)
-                .OrderBy(queryParameters.OrderBy,queryParameters.IsDescending());
+                .OrderByDescending(a => a.Date);
+            }
+            else
+            {
+                historyPage = _accountContext
+               .SucceededOperations.Where(a => a.AccountId == queryParameters.AccountId)
+               .OrderBy(queryParameters.OrderBy, queryParameters.IsDescending());
+            }           
 
             //filter
             if (queryParameters.HasQuery())
@@ -45,63 +55,32 @@ namespace Account.Data
             List<OperationHistorySucceededEntity> historyPage1 = historyPage
                 .Skip(queryParameters.PageCount * (queryParameters.Page - 1))
                 .Take(queryParameters.PageCount).ToList();
+
             List<HistoryModel> history = _mapper.Map<List<HistoryModel>>(historyPage1);
             return history;
         }
 
         public async Task UpdateFailedTransactionHistory(UpdateFailedTransaction message)
-        {
-            
-            OperationHistoryFailedEntity HistoryFailedDebit = new OperationHistoryFailedEntity()
-            {
-                Id = new Guid(),
-                AccountId = message.FromAccountId,                
-                Date = message.Date,
-                operationType = false,
-                TransactionAmount = message.Amount,
-                TransactionId = message.TransactionId,
-                FailureReason = message.FailureReason
-            };
+        {        
+            OperationHistoryFailedEntity operationFailedDebit = _mapper.Map<OperationHistoryFailedEntity>(message);
+            operationFailedDebit.FillFields(message.FromAccountId, false);            
 
-            OperationHistoryFailedEntity HistoryFailedCredit = new OperationHistoryFailedEntity()
-            {
-                Id = new Guid(),
-                AccountId = message.ToAccountId,
-                Date = message.Date,
-                operationType = true,
-                TransactionAmount = message.Amount,
-                TransactionId = message.TransactionId,
-                FailureReason = message.FailureReason
-            };
-            await _accountContext.FailedOperations.AddRangeAsync(HistoryFailedDebit, HistoryFailedCredit);
+            OperationHistoryFailedEntity operationFailedCredit = _mapper.Map<OperationHistoryFailedEntity>(message);
+            operationFailedCredit.FillFields(message.ToAccountId, true);
+            
+            await _accountContext.FailedOperations.AddRangeAsync(operationFailedDebit, operationFailedCredit);
             await _accountContext.SaveChangesAsync();
         }
 
         public async Task UpdateSucceededTransactionHistory(UpdateSucceededTransaction message)
-        {
+        {      
+            OperationHistorySucceededEntity operationSucceededDebit = _mapper.Map<OperationHistorySucceededEntity>(message);
+            operationSucceededDebit.FillFields(message.FromAccountId, false, message.BalanceOfFromAccount);
             
-            OperationHistorySucceededEntity HistorySucceededDebit = new OperationHistorySucceededEntity()
-            {
-                Id = new Guid(),
-                AccountId = message.FromAccountId,
-                Balance = message.BalanceOfFromAccount,
-                Date = message.Date,
-                operationType = false,
-                TransactionAmount = message.Amount,
-                TransactionId = message.TransactionId
-            };
+            OperationHistorySucceededEntity operationSucceededCredit = _mapper.Map<OperationHistorySucceededEntity>(message);
+            operationSucceededCredit.FillFields(message.ToAccountId, true, message.BalanceOfToAccount);
 
-            OperationHistorySucceededEntity HistorySucceededCredit = new OperationHistorySucceededEntity()
-            {
-                Id = new Guid(),
-                AccountId = message.ToAccountId,
-                Balance = message.BalanceOfToAccount,
-                Date = message.Date,
-                operationType = true,
-                TransactionAmount = message.Amount,
-                TransactionId = message.TransactionId
-            };
-            await _accountContext.SucceededOperations.AddRangeAsync(HistorySucceededDebit, HistorySucceededCredit);
+            await _accountContext.SucceededOperations.AddRangeAsync(operationSucceededDebit, operationSucceededCredit);
             await _accountContext.SaveChangesAsync();
         }
     }

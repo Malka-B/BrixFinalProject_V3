@@ -12,3 +12,96 @@ License Expiration: 2020-10-04
 2020-07-29 00:37:42.100 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
 License Expiration: 2020-10-04
 2020-07-29 00:37:50.663 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 10:26:32.807 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 10:26:33.209 INFO  Auditing processed messages to 'audit'
+2020-07-29 10:26:33.422 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 10:26:37.255 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 10:51:10.186 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 10:51:10.695 INFO  Auditing processed messages to 'audit'
+2020-07-29 10:51:11.083 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 10:51:17.863 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 10:54:38.649 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 10:54:39.533 INFO  Auditing processed messages to 'audit'
+2020-07-29 10:54:39.944 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 10:54:45.856 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 11:48:39.360 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 11:48:39.994 INFO  Auditing processed messages to 'audit'
+2020-07-29 11:48:40.688 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 11:48:44.338 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 12:07:37.404 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 12:07:38.135 INFO  Auditing processed messages to 'audit'
+2020-07-29 12:07:38.431 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 12:07:41.282 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 12:53:00.820 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 12:53:02.596 INFO  Auditing processed messages to 'audit'
+2020-07-29 12:53:02.890 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 12:53:07.228 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 13:07:33.062 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 13:07:34.927 INFO  Auditing processed messages to 'audit'
+2020-07-29 13:07:35.217 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 13:07:39.408 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 13:20:18.408 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 13:20:19.058 INFO  Auditing processed messages to 'audit'
+2020-07-29 13:20:19.376 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 13:20:21.699 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 13:26:27.120 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 13:26:36.192 INFO  Auditing processed messages to 'audit'
+2020-07-29 13:26:36.504 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 13:27:04.999 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 13:31:56.165 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 13:31:56.648 INFO  Auditing processed messages to 'audit'
+2020-07-29 13:31:56.837 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 13:32:01.306 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 13:58:53.519 WARN  'Transaction MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-29 13:58:53.533 WARN  'Transaction Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-29 13:58:53.800 WARN  The circuit breaker for 'Transaction MessagePump' is now in the armed state
+2020-07-29 13:58:53.940 INFO  Attempting to reconnect in 10 seconds.
+2020-07-29 13:59:03.199 INFO  The circuit breaker for 'Transaction MessagePump' is now disarmed
+2020-07-29 13:59:04.017 INFO  Connection to the broker reestablished successfully.
+2020-07-29 14:11:57.238 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 14:11:57.876 INFO  Auditing processed messages to 'audit'
+2020-07-29 14:11:58.145 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 14:12:02.451 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 14:39:49.331 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 14:39:49.984 INFO  Auditing processed messages to 'audit'
+2020-07-29 14:39:51.065 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 14:39:53.794 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 14:51:29.957 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 14:51:30.503 INFO  Auditing processed messages to 'audit'
+2020-07-29 14:51:30.780 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 14:51:33.170 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 14:57:40.962 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 14:58:04.619 INFO  Auditing processed messages to 'audit'
+2020-07-29 14:58:06.721 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 14:58:15.873 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 15:40:29.768 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 15:40:30.173 INFO  Auditing processed messages to 'audit'
+2020-07-29 15:40:30.318 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 15:41:11.257 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'

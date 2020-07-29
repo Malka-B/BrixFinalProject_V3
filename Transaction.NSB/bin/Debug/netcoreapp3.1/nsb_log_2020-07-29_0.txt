@@ -58,3 +58,165 @@ License Expiration: 2020-10-04
 2020-07-29 00:37:45.029 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
 2020-07-29 00:37:46.587 INFO  Executing saga creation scripts:
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 10:26:31.668 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 10:26:32.449 INFO  Auditing processed messages to 'audit'
+2020-07-29 10:26:32.680 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 10:26:34.843 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 10:26:35.713 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 10:51:08.133 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 10:51:08.944 INFO  Auditing processed messages to 'audit'
+2020-07-29 10:51:09.234 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 10:51:11.806 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 10:51:12.471 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 10:54:33.407 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 10:54:34.885 INFO  Auditing processed messages to 'audit'
+2020-07-29 10:54:35.596 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 10:54:39.988 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 10:54:40.232 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 11:48:35.645 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 11:48:36.561 INFO  Auditing processed messages to 'audit'
+2020-07-29 11:48:37.013 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 11:48:40.931 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 11:48:41.228 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 12:07:29.443 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 12:07:30.187 INFO  Auditing processed messages to 'audit'
+2020-07-29 12:07:30.618 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 12:07:34.553 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 12:07:34.986 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 12:52:55.131 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 12:52:56.585 INFO  Auditing processed messages to 'audit'
+2020-07-29 12:52:57.165 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 12:52:59.373 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 12:52:59.869 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 13:07:29.746 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 13:07:30.352 INFO  Auditing processed messages to 'audit'
+2020-07-29 13:07:31.246 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 13:07:35.324 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 13:07:36.178 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 13:20:14.175 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 13:20:15.950 INFO  Auditing processed messages to 'audit'
+2020-07-29 13:20:16.457 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 13:20:19.600 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 13:20:19.903 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 13:25:34.184 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 13:25:34.926 INFO  Auditing processed messages to 'audit'
+2020-07-29 13:25:35.358 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 13:25:38.021 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 13:25:38.422 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 13:31:53.672 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 13:31:54.439 INFO  Auditing processed messages to 'audit'
+2020-07-29 13:31:54.722 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 13:31:57.224 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 13:31:58.008 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 13:58:53.887 WARN  'TransactionNSB Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-29 13:58:53.898 WARN  'TransactionNSB MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-29 13:58:54.134 INFO  Attempting to reconnect in 10 seconds.
+2020-07-29 13:58:54.249 WARN  The circuit breaker for 'TransactionNSB MessagePump' is now in the armed state
+2020-07-29 13:59:03.687 INFO  The circuit breaker for 'TransactionNSB MessagePump' is now disarmed
+2020-07-29 13:59:04.259 INFO  Connection to the broker reestablished successfully.
+2020-07-29 14:11:56.655 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 14:11:57.661 INFO  Auditing processed messages to 'audit'
+2020-07-29 14:11:58.038 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 14:12:00.875 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 14:12:01.365 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 14:39:44.724 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 14:39:45.443 INFO  Auditing processed messages to 'audit'
+2020-07-29 14:39:45.800 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 14:39:49.406 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 14:39:50.031 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 14:51:29.164 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 14:51:29.611 INFO  Auditing processed messages to 'audit'
+2020-07-29 14:51:29.896 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 14:51:31.715 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 14:51:31.840 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 14:57:36.268 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 14:57:36.999 INFO  Auditing processed messages to 'audit'
+2020-07-29 14:57:37.347 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 14:57:39.773 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 14:57:40.147 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-29 14:58:07.062 INFO  Could not find a started saga for 'Messages.Events.AccountsUpdated' message type. Going to invoke SagaNotFoundHandlers.
+2020-07-29 14:58:07.101 INFO  Immediate Retry is going to retry message '354c36fc-9b89-45a4-b6c0-ac0700c3a466' because of an exception:
+System.Exception: Failed to ExecuteNonQuery. CommandText:
+
+insert into [dbo].[TransactionNSB_OutboxData]
+(
+    MessageId,
+    Operations,
+    PersistenceVersion
+)
+values
+(
+    @MessageId,
+    @Operations,
+    @PersistenceVersion
+)
+ ---> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__Transact__C87C0C9D4E5751A3'. Cannot insert duplicate key in object 'dbo.TransactionNSB_OutboxData'. The duplicate key value is (354c36fc-9b89-45a4-b6c0-ac0700c3a466).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Extensions.ExecuteNonQueryEx(DbCommand command, CancellationToken cancellationToken) in /_/src/SqlPersistence/Extensions.cs:line 107
+ClientConnectionId:887e60bd-ac11-4e85-9928-d35ce4b54043
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Extensions.ExecuteNonQueryEx(DbCommand command, CancellationToken cancellationToken) in /_/src/SqlPersistence/Extensions.cs:line 112
+   at OptimisticConcurrencyControlStrategy.Complete(OutboxMessage outboxMessage, DbConnection connection, DbTransaction transaction, ContextBag context) in /_/src/SqlPersistence/Outbox/OptimisticConcurrencyControlStrategy.cs:line 32
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 354c36fc-9b89-45a4-b6c0-ac0700c3a466
+2020-07-29 15:40:27.595 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 15:40:27.952 INFO  Auditing processed messages to 'audit'
+2020-07-29 15:40:28.105 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 15:40:29.964 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 15:40:30.348 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql

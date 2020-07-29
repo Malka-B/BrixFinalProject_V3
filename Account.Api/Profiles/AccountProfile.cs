@@ -27,7 +27,17 @@ namespace Account.WebApi.Profiles
                 .ForMember(destination => destination.Amount, option => option.MapFrom(src =>
               src.TransactionAmount));
             CreateMap<HistoryModel, HistoryDTO>();
-            CreateMap<UpdateAccounts, TransactionDetailsForHistory>(); 
+            CreateMap<HistoryDTO, HistoryModel>();
+            CreateMap<UpdateAccounts, TransactionDetailsForHistory>();
+            CreateMap<UpdateAccounts, UpdateSucceededTransaction>();
+            CreateMap<UpdateAccounts, UpdateFailedTransaction>();
+            CreateMap<UpdateFailedTransaction, OperationHistoryFailedEntity>()
+                .ForMember(destination => destination.TransactionAmount, option => option.MapFrom(src =>
+              src.Amount));
+            CreateMap<UpdateSucceededTransaction, OperationHistorySucceededEntity>()
+                .ForMember(destination => destination.TransactionAmount, option => option.MapFrom(src =>
+              src.Amount));          
+
         }
     }
 }

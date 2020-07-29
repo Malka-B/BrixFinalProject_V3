@@ -2,7 +2,6 @@
 using Messages.Commands;
 using Microsoft.AspNetCore.Mvc;
 using NServiceBus;
-using System;
 using System.Threading.Tasks;
 using Tracking.WebApi.DTO;
 using Transaction.Service.Interfaces;
@@ -29,14 +28,14 @@ namespace Transaction.WebApi.Controllers
         public async Task<bool> CreateTransactionAsync([FromBody] TransactionDTO transactionDTO)
         {
             TransactionModel transactionModel = _mapper.Map<TransactionModel>(transactionDTO);
-            Guid transactionId = await _transactionService.CreateTransactionAsync(transactionModel);
+            var transactionDetails = await _transactionService.CreateTransactionAsync(transactionModel);
             StartTransaction startTransaction = new StartTransaction()
             {
                 Amount = transactionModel.Amount,
                 FromAccountId = transactionModel.FromAccountId,
                 ToAccountId = transactionModel.ToAccountId,
-                TransactionId = transactionId,
-                Date = transactionModel.Date
+                TransactionId = transactionDetails.TransactionId,
+                Date = transactionDetails.Date
             };
             await _messageSession.Send(startTransaction)
               .ConfigureAwait(false);            
