@@ -12,5 +12,6 @@ namespace Account.WebApi.DTO
         public int Amount { get; set; }
         public int Balance { get; set; }
         public DateTime Date { get; set; }
+        public Guid TransactionId { get; set; }
     }
 }
