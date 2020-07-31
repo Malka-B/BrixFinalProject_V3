@@ -56,7 +56,7 @@ namespace Account.Data
             return a;
         }
 
-        public IQueryable<OperationHistorySucceededEntity> FilterByFromDate(QueryParameters queryParameters/*, DateTime fromDate*/)
+        public IQueryable<OperationHistorySucceededEntity> FilterByFromDate(QueryParameters queryParameters)
         {
             return _accountContext.SucceededOperations.Where(t =>t.AccountId==queryParameters.AccountId &&t.Date <= queryParameters.Query.FromDate)
                                 .OrderBy(queryParameters.OrderBy, queryParameters.IsDescending());
@@ -71,7 +71,6 @@ namespace Account.Data
 
         public IQueryable<OperationHistorySucceededEntity> FilterFunction(QueryParameters queryParameters)
         {
-            //      IQueryable <OperationHistorySucceededEntity> operationsList;
             DateTime emptyDate = new DateTime();
             if (queryParameters.Query.FromDate == emptyDate && queryParameters.Query.ToDate == emptyDate)
                 return  FilterByOperartionType(queryParameters);

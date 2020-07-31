@@ -24,14 +24,6 @@ namespace Transaction.WebApi.Controllers
         {
             TransactionInfoModel transactionInfoModel = await _transactionService.GetTransactionInfoAsync(transactionId);
             TransactionInfoDTO transactionInfoDTO = _mapper.Map<TransactionInfoDTO>(transactionInfoModel);
-                /*new TransactionInfoDTO()
-            {
-                Amount = transactionInfoModel.Amount,
-                Date = transactionInfoModel.Date,
-                FromAccountId = transactionInfoModel.FromAccountId,
-                ToAccountId = transactionInfoModel.ToAccountId
-            };
-            */
             return transactionInfoDTO;
         }
     }
