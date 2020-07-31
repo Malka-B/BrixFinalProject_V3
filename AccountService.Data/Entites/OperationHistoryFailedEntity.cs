@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Account.Data.Entites
 {
@@ -14,5 +12,14 @@ namespace Account.Data.Entites
         public int Balance { get; set; }
         public DateTime Date { get; set; }
         public string FailureReason { get; set; }
+
+        public void FillFields(Guid accountId, bool operationType)
+        {
+            this.Id = new Guid();
+            this.AccountId = accountId;
+            this.operationType = operationType;            
+        }
     }
+
+
 }

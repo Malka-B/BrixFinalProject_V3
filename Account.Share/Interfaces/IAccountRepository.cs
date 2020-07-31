@@ -1,5 +1,4 @@
-﻿
-using Account.Share.Models;
+﻿using Account.Share.Models;
 using Messages.Commands;
 using System;
 using System.Threading.Tasks;

@@ -1,9 +1,7 @@
 ﻿using Account.Share.Models;
 using Messages.Commands;
-using Messages.Events;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Account.Share.Interfaces

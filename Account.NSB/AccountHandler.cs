@@ -41,30 +41,16 @@ namespace Account.NSB
                 }
             }
             if (transactionCorrectness.isAccountsUpdateSuccess)
-            {
-                UpdateSucceededTransaction transactionSucceeded = new UpdateSucceededTransaction()
-                {
-                    TransactionId = message.TransactionId,
-                    FromAccountId = message.FromAccountId,
-                    ToAccountId = message.ToAccountId,
-                    Date = message.Date,
-                    Amount = message.Amount,
-                    BalanceOfToAccount = transactionDetails.BalanceOfToAccount,
-                    BalanceOfFromAccount = transactionDetails.BalanceOfFromAccount                    
-                };
+            {               
+                UpdateSucceededTransaction transactionSucceeded = _mapper.Map<UpdateSucceededTransaction>(message);
+                transactionSucceeded.BalanceOfToAccount = transactionDetails.BalanceOfToAccount;
+                transactionSucceeded.BalanceOfFromAccount = transactionDetails.BalanceOfFromAccount;
                 await context.SendLocal(transactionSucceeded);
             }
             else
-            {
-                UpdateFailedTransaction transactionFailed = new UpdateFailedTransaction()
-                {
-                    TransactionId = message.TransactionId,
-                    FromAccountId = message.FromAccountId,
-                    ToAccountId = message.ToAccountId,
-                    Date = message.Date,
-                    Amount = message.Amount,                    
-                    FailureReason = transactionCorrectness.FailureReason
-                };
+            {                
+                UpdateFailedTransaction transactionFailed = _mapper.Map<UpdateFailedTransaction>(message);
+                transactionFailed.FailureReason = transactionCorrectness.FailureReason;
                 await context.SendLocal(transactionFailed);
             }
             accountsUpdated.isAccountsUpdateSuccess = transactionCorrectness.isAccountsUpdateSuccess;
@@ -79,12 +65,12 @@ namespace Account.NSB
             if (await _accountRepository.CheckAccountCorrectness(fromAccountId) == false)
             {
                 transactionCorrectness.isAccountsUpdateSuccess = false;
-                transactionCorrectness.FailureReason = "The FromAccountId doesn't exist";
+                transactionCorrectness.FailureReason = $"The FromAccountId: {fromAccountId} doesn't exist";
             }
             else if (await _accountRepository.CheckAccountCorrectness(toAccountId) == false)
             {
                 transactionCorrectness.isAccountsUpdateSuccess = false;
-                transactionCorrectness.FailureReason = "The ToAccountId doesn't exist";
+                transactionCorrectness.FailureReason = $"The ToAccountId: {toAccountId} doesn't exist";
             }
             return transactionCorrectness;
         }
