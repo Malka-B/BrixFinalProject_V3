@@ -2,12 +2,14 @@
 
 namespace Messages.Commands
 {
-    public class StartTransaction
+    public class UpdateSucceededTransaction
     {
-        public Guid TransactionId { get; set; }
         public Guid FromAccountId { get; set; }
         public Guid ToAccountId { get; set; }
         public int Amount { get; set; }
+        public int BalanceOfFromAccount { get; set; }
+        public int BalanceOfToAccount { get; set; }
         public DateTime Date { get; set; }
+        public Guid TransactionId { get; set; }
     }
 }

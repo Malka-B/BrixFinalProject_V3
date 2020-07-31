@@ -35,7 +35,8 @@ namespace Transaction.WebApi.Controllers
                 Amount = transactionModel.Amount,
                 FromAccountId = transactionModel.FromAccountId,
                 ToAccountId = transactionModel.ToAccountId,
-                TransactionId = transactionId
+                TransactionId = transactionId,
+                Date = transactionModel.Date
             };
             await _messageSession.Send(startTransaction)
               .ConfigureAwait(false);            

@@ -16,7 +16,8 @@ namespace Transaction.NSB
                 Amount = message.Amount,
                 FromAccountId = message.FromAccountId,
                 ToAccountId = message.ToAccountId,
-                TransactionId = message.TransactionId
+                TransactionId = message.TransactionId,
+                Date = message.Date
             };
             await context.Send(updateAccounts)
                 .ConfigureAwait(false);

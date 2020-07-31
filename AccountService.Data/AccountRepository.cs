@@ -23,7 +23,7 @@ namespace Account.Data
         public async Task<bool> CheckAccountCorrectness(Guid accountId)
         {
             AccountEntity account = await _accountContext.Accounts
-            .FirstOrDefaultAsync(account => account.Id == accountId);            
+            .FirstOrDefaultAsync(account => account.Id == accountId);
             if (account == null)
             {
                 return false;
@@ -31,27 +31,30 @@ namespace Account.Data
             return true;
         }
 
-        public async Task<bool> CheckBalance(Guid fromAccountId, int amount)
+        public async Task<int> CheckBalance(Guid fromAccountId, int amount)
         {
             AccountEntity account = await _accountContext.Accounts
             .FirstOrDefaultAsync(account => account.Id == fromAccountId);
-            if (account.Balance < amount)
-            {
-                return false;
-            }
-            return true;
+            return account.Balance;
         }
 
-        public async Task<bool> UpdateAccounts(UpdateAccounts message)
+        public async Task<AccountsBalance> UpdateAccounts(UpdateAccounts message)
         {
-            var fromAccount = await _accountContext.Accounts
+            AccountEntity fromAccount = await _accountContext.Accounts
             .FirstOrDefaultAsync(account => account.Id == message.FromAccountId);
+
             fromAccount.Balance -= message.Amount;
-            var toAccount = await _accountContext.Accounts
+            AccountEntity toAccount = await _accountContext.Accounts
                 .FirstOrDefaultAsync(account => account.Id == message.ToAccountId);
             toAccount.Balance += message.Amount;
+
             await _accountContext.SaveChangesAsync();
-            return true;
+            AccountsBalance accountsBalance = new AccountsBalance()
+            {
+                BalanceOfFromAccount = fromAccount.Balance,
+                BalanceOfToAccount = toAccount.Balance
+            };
+            return accountsBalance;
         }
 
         public async Task<AccountModel> GetAccountInfoAsync(Guid accountId)

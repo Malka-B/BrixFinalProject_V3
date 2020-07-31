@@ -1,11 +1,10 @@
 ﻿using Account.Share.Interfaces;
-using Messages.Events;
+using Messages.Commands;
 using NServiceBus;
-using System;
 using System.Threading.Tasks;
 namespace Account.NSB
 {
-    public class HistoryForFailTransactionHandler : IHandleMessages<TransactionFailed>
+    public class HistoryForFailTransactionHandler : IHandleMessages<UpdateFailedTransaction>
     {
         private readonly IOperationHistoryRepository _operationHistoryRepository;
 
@@ -13,7 +12,7 @@ namespace Account.NSB
         {
             _operationHistoryRepository = operationHistoryRepository;
         }
-        public async Task Handle(TransactionFailed message, IMessageHandlerContext context)
+        public async Task Handle(UpdateFailedTransaction message, IMessageHandlerContext context)
         {
            await _operationHistoryRepository.UpdateFailedTransactionHistory(message);
         }

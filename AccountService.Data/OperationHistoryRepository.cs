@@ -2,13 +2,12 @@
 using Account.Share.Interfaces;
 using Account.Share.Models;
 using AutoMapper;
-using Messages.Events;
-using Microsoft.EntityFrameworkCore;
+using Messages.Commands;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Linq.Dynamic.Core;
+using System.Threading.Tasks;
 
 namespace Account.Data
 {
@@ -30,28 +29,7 @@ namespace Account.Data
             return accountHistory.Count();
         }
 
-        //public Task<List<HistoryModel>> GetAll(QueryParameters queryParameters)
-        //{
-        //   //IQueryable<Location> _allItems = _CoronaContext.Location.OrderBy(queryParameters.OrderBy,
-        //   //   queryParameters.IsDescending());
-        //    IQueryable<OperationHistorySucceededEntity> accountHistory = _accountContext
-        //        .SucceededOperations.OrderBy(queryParameters.OrderBy,
-        //     queryParameters.IsDescending());
-
-        //    //filter by server
-        //    if (queryParameters.HasQuery())
-        //    {
-        //        accountHistory = accountHistory
-        //            .Where(x => x.Date.ToString().Contains(queryParameters.Query.ToLowerInvariant()));
-        //    }
-
-        //    HistoryModel history = _mapper.Map<HistoryModel>(accountHistory);
-        //    return history
-        //        .Skip(queryParameters.PageCount * (queryParameters.Page - 1))
-        //        .Take(queryParameters.PageCount);
-        //}
-
-        public IQueryable<HistoryModel> GetAll(QueryParameters queryParameters)
+        public List<HistoryModel> GetAll(QueryParameters queryParameters)
         {
             IQueryable<OperationHistorySucceededEntity> historyPage = _accountContext
                 .SucceededOperations.Where(a => a.AccountId == queryParameters.AccountId)
@@ -61,39 +39,23 @@ namespace Account.Data
             if (queryParameters.HasQuery())
             {
                 historyPage = historyPage
-                    .Where(x => x.Date.ToString().Contains(queryParameters.Query.ToLowerInvariant()));
+                    .Where(x => x.Date.ToString().Contains(queryParameters.Query.ToLowerInvariant()));                
             }
 
-            IQueryable<OperationHistorySucceededEntity> historyPage1 = historyPage
+            List<OperationHistorySucceededEntity> historyPage1 = historyPage
                 .Skip(queryParameters.PageCount * (queryParameters.Page - 1))
-                .Take(queryParameters.PageCount);
-            IQueryable<HistoryModel> history = _mapper.Map<IQueryable<HistoryModel>>(historyPage1);
-
+                .Take(queryParameters.PageCount).ToList();
+            List<HistoryModel> history = _mapper.Map<List<HistoryModel>>(historyPage1);
             return history;
         }
 
-        public async Task UpdateFailedTransactionHistory(TransactionFailed message)
+        public async Task UpdateFailedTransactionHistory(UpdateFailedTransaction message)
         {
-            AccountEntity accountDebit = await _accountContext.Accounts.FindAsync(message.FromAccountId);
-            int balanceDebit = -1;
-            int balanceCredit = -1;
-            if (accountDebit != null)
-            {
-                balanceDebit = accountDebit.Balance;
-            }
-
-            AccountEntity accountCredit = await _accountContext.Accounts.FindAsync(message.ToAccountId);
-            if (accountCredit != null)
-            {
-                balanceCredit = accountCredit.Balance;
-            }
-
-            //change do by mapper
+            
             OperationHistoryFailedEntity HistoryFailedDebit = new OperationHistoryFailedEntity()
             {
                 Id = new Guid(),
-                AccountId = message.FromAccountId,
-                Balance = balanceDebit,
+                AccountId = message.FromAccountId,                
                 Date = message.Date,
                 operationType = false,
                 TransactionAmount = message.Amount,
@@ -105,7 +67,6 @@ namespace Account.Data
             {
                 Id = new Guid(),
                 AccountId = message.ToAccountId,
-                Balance = balanceCredit,
                 Date = message.Date,
                 operationType = true,
                 TransactionAmount = message.Amount,
@@ -116,17 +77,14 @@ namespace Account.Data
             await _accountContext.SaveChangesAsync();
         }
 
-        public async Task UpdateSucceededTransactionHistory(TransactionSucceeded message)
+        public async Task UpdateSucceededTransactionHistory(UpdateSucceededTransaction message)
         {
-            AccountEntity accountDebit = await _accountContext.Accounts.FindAsync(message.FromAccountId);
-            int balanceDebit = accountDebit.Balance;
-            AccountEntity accountCredit = await _accountContext.Accounts.FindAsync(message.ToAccountId);
-            int balanceCredit = accountCredit.Balance;
+            
             OperationHistorySucceededEntity HistorySucceededDebit = new OperationHistorySucceededEntity()
             {
                 Id = new Guid(),
                 AccountId = message.FromAccountId,
-                Balance = balanceDebit,
+                Balance = message.BalanceOfFromAccount,
                 Date = message.Date,
                 operationType = false,
                 TransactionAmount = message.Amount,
@@ -137,7 +95,7 @@ namespace Account.Data
             {
                 Id = new Guid(),
                 AccountId = message.ToAccountId,
-                Balance = balanceCredit,
+                Balance = message.BalanceOfToAccount,
                 Date = message.Date,
                 operationType = true,
                 TransactionAmount = message.Amount,

@@ -8,6 +8,6 @@ namespace Transaction.Share.Interfaces
     public interface ITransactionRepository
     {
         Task<Guid> CreateTransactionAsync(TransactionModel transactionModel);
-        Task<TransactionForHistory> UpdateTransactionStatusAsync(UpdateTransactionStatus updateTransactionStatus);
+        Task/*<TransactionForHistory>*/ UpdateTransactionStatusAsync(UpdateTransactionStatus updateTransactionStatus);
     }
 }

@@ -1,12 +1,11 @@
 ﻿using Account.Share.Interfaces;
-using Messages.Events;
+using Messages.Commands;
 using NServiceBus;
-using System;
 using System.Threading.Tasks;
 
 namespace Account.NSB
 {
-    public class HistoryForSuccessTransactionHandler : IHandleMessages<TransactionSucceeded>
+    public class HistoryForSuccessTransactionHandler : IHandleMessages<UpdateSucceededTransaction>
     {
         private readonly IOperationHistoryRepository _operationHistoryRepository;
 
@@ -14,7 +13,7 @@ namespace Account.NSB
         {
             _operationHistoryRepository = operationHistoryRepository;
         }
-        public async Task Handle(TransactionSucceeded message, IMessageHandlerContext context)
+        public async Task Handle(UpdateSucceededTransaction message, IMessageHandlerContext context)
         {
             await _operationHistoryRepository.UpdateSucceededTransactionHistory(message);
         }

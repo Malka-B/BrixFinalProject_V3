@@ -1,0 +1,54 @@
+﻿2020-07-29 00:24:04.773 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 00:24:05.875 INFO  Auditing processed messages to 'audit'
+2020-07-29 00:24:06.494 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 00:24:13.869 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 00:30:39.289 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 00:30:40.525 INFO  Auditing processed messages to 'audit'
+2020-07-29 00:30:40.991 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 00:30:50.287 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-29 00:32:00.940 INFO  Immediate Retry is going to retry message 'b3e5a109-80ad-4427-bd43-ac060161d7d9' because of an exception:
+System.Exception: Failed to ExecuteNonQuery. CommandText:
+
+insert into [dbo].[AccountNSB_OutboxData]
+(
+    MessageId,
+    Operations,
+    PersistenceVersion
+)
+values
+(
+    @MessageId,
+    @Operations,
+    @PersistenceVersion
+)
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__AccountN__C87C0C9DDA9ACB48'. Cannot insert duplicate key in object 'dbo.AccountNSB_OutboxData'. The duplicate key value is (b3e5a109-80ad-4427-bd43-ac060161d7d9).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Extensions.ExecuteNonQueryEx(DbCommand command, CancellationToken cancellationToken) in /_/src/SqlPersistence/Extensions.cs:line 107
+ClientConnectionId:a8038109-1245-4c18-9aef-d2a3e2d0b3cb
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Extensions.ExecuteNonQueryEx(DbCommand command, CancellationToken cancellationToken) in /_/src/SqlPersistence/Extensions.cs:line 112
+   at OptimisticConcurrencyControlStrategy.Complete(OutboxMessage outboxMessage, DbConnection connection, DbTransaction transaction, ContextBag context) in /_/src/SqlPersistence/Outbox/OptimisticConcurrencyControlStrategy.cs:line 32
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: b3e5a109-80ad-4427-bd43-ac060161d7d9
+2020-07-29 00:37:28.503 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-29 00:37:29.938 INFO  Auditing processed messages to 'audit'
+2020-07-29 00:37:31.152 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-07-29 00:37:43.197 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
