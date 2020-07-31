@@ -1,0 +1,56 @@
+﻿2020-07-30 21:46:11.486 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-30 21:46:11.732 INFO  Auditing processed messages to 'audit'
+2020-07-30 21:46:11.754 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-07-30 21:46:11.758 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-30 21:46:19.328 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-30 21:46:19.678 INFO  Executing saga creation scripts:
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-30 22:08:38.943 WARN  'TransactionNSB MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-30 22:08:38.943 WARN  'TransactionNSB Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-30 22:08:38.954 WARN  The circuit breaker for 'TransactionNSB MessagePump' is now in the armed state
+2020-07-30 22:08:39.526 INFO  Attempting to reconnect in 10 seconds.
+2020-07-30 22:08:48.314 INFO  The circuit breaker for 'TransactionNSB MessagePump' is now disarmed
+2020-07-30 22:08:49.569 INFO  Connection to the broker reestablished successfully.
+2020-07-30 22:28:31.993 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-30 22:28:33.415 INFO  Auditing processed messages to 'audit'
+2020-07-30 22:28:33.557 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-07-30 22:28:33.619 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-30 22:28:42.295 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-30 22:28:42.616 INFO  Executing saga creation scripts:
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-30 22:56:50.653 ERROR Your license has expired
+2020-07-30 22:56:51.372 ERROR Your license has expired
+2020-07-30 22:57:00.390 ERROR Your license has expired
+2020-07-30 22:57:00.675 ERROR Your license has expired
+2020-07-30 22:57:00.779 ERROR Your license has expired
+2020-07-30 22:57:14.896 ERROR Your license has expired
+2020-07-30 22:58:32.097 ERROR Your license has expired
+2020-07-30 22:58:32.126 ERROR Your license has expired
+2020-07-30 22:58:32.516 ERROR Your license has expired
+2020-07-30 22:58:32.537 ERROR Your license has expired
+2020-07-30 22:58:32.629 ERROR Your license has expired
+2020-07-30 22:58:32.705 ERROR Your license has expired
+2020-07-30 23:02:54.287 ERROR Your license has expired
+2020-07-30 23:02:54.411 ERROR Your license has expired
+2020-07-30 23:02:54.742 ERROR Your license has expired
+2020-07-30 23:02:54.766 ERROR Your license has expired
+2020-07-30 23:02:54.786 ERROR Your license has expired
+2020-07-30 23:02:54.883 ERROR Your license has expired
+2020-07-30 23:10:19.414 ERROR Your license has expired
+2020-07-30 23:10:19.427 ERROR Your license has expired
+2020-07-30 23:10:19.560 ERROR Your license has expired
+2020-07-30 23:10:19.576 ERROR Your license has expired
+2020-07-30 23:10:19.586 ERROR Your license has expired
+2020-07-30 23:10:19.656 ERROR Your license has expired

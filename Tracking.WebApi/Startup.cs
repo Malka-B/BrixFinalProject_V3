@@ -28,6 +28,8 @@ namespace Tracking.WebApi
             services.AddControllers();
             services.AddScoped<ITransactionService, TransactionService>();
             services.AddScoped<ITransactionRepository, TransactionRepository>();
+            services.AddScoped<ITransactionInfoService, TransactionInfoService>();
+            services.AddScoped<ITransactionInfoRepository, TransactionInfoRepository>();
             services.AddDbContext<TransactionContext>(options =>
                         options.UseSqlServer(
                             Configuration.GetConnectionString("FinalProject_Transaction")));

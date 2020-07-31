@@ -10,18 +10,6 @@ C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרוי�
 C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.csproj.CopyComplete
 C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.dll
 C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.pdb
-F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\bin\Debug\netcoreapp3.1\Transaction.Share.deps.json
-F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\bin\Debug\netcoreapp3.1\Transaction.Share.dll
-F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\bin\Debug\netcoreapp3.1\Transaction.Share.pdb
-F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\bin\Debug\netcoreapp3.1\Messages.dll
-F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\bin\Debug\netcoreapp3.1\Messages.pdb
-F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.csprojAssemblyReference.cache
-F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.csproj.CoreCompileInputs.cache
-F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.AssemblyInfoInputs.cache
-F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.AssemblyInfo.cs
-F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.csproj.CopyComplete
-F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.dll
-F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.pdb
 C:\Users\User\Desktop\brix2-gibui\Brix final project\TransactionInterfaces\bin\Debug\netcoreapp3.1\Transaction.Share.deps.json
 C:\Users\User\Desktop\brix2-gibui\Brix final project\TransactionInterfaces\bin\Debug\netcoreapp3.1\Transaction.Share.dll
 C:\Users\User\Desktop\brix2-gibui\Brix final project\TransactionInterfaces\bin\Debug\netcoreapp3.1\Transaction.Share.pdb
@@ -34,3 +22,15 @@ C:\Users\User\Desktop\brix2-gibui\Brix final project\TransactionInterfaces\obj\D
 C:\Users\User\Desktop\brix2-gibui\Brix final project\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.csproj.CopyComplete
 C:\Users\User\Desktop\brix2-gibui\Brix final project\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.dll
 C:\Users\User\Desktop\brix2-gibui\Brix final project\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\bin\Debug\netcoreapp3.1\Transaction.Share.deps.json
+F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\bin\Debug\netcoreapp3.1\Transaction.Share.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\bin\Debug\netcoreapp3.1\Transaction.Share.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\bin\Debug\netcoreapp3.1\Messages.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\bin\Debug\netcoreapp3.1\Messages.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.csprojAssemblyReference.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.csproj.CoreCompileInputs.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.AssemblyInfoInputs.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.AssemblyInfo.cs
+F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.csproj.CopyComplete
+F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\TransactionInterfaces\obj\Debug\netcoreapp3.1\Transaction.Share.pdb

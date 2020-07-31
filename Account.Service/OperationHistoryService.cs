@@ -2,11 +2,7 @@
 using Account.Service.Models;
 using Account.Share.Interfaces;
 using Account.Share.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Account.Service
 {
@@ -23,12 +19,22 @@ namespace Account.Service
         {
             List<HistoryModel> accountHistory = _operationHistoryRepository
                 .GetAll(queryParameters);
-
             int allItemCount =  _operationHistoryRepository.Count(queryParameters.AccountId);
-
             return new PagingReturn
             {
                 AccountHistory = accountHistory,
+                Count = allItemCount
+            };
+        }
+
+        public PagingReturn GetFilteredInfo(QueryParameters queryParameters)
+        {
+            List<HistoryModel> accountsHistory = _operationHistoryRepository
+                .GetFilteredInfo(queryParameters);
+            int allItemCount = _operationHistoryRepository.Count(queryParameters.AccountId);
+            return new PagingReturn
+            {
+                AccountHistory = accountsHistory,
                 Count = allItemCount
             };
         }

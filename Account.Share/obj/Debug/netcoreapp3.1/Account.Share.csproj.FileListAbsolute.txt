@@ -10,18 +10,6 @@ C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרוי�
 C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.csproj.CopyComplete
 C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.dll
 C:\Users\User\Desktop\BH-brix_finalGibui\jm_VOexf6FFpkiZ5il\גיבוי פרויקט סופי בנק\Brix final project\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.pdb
-F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\bin\Debug\netcoreapp3.1\Account.Share.deps.json
-F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\bin\Debug\netcoreapp3.1\Account.Share.dll
-F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\bin\Debug\netcoreapp3.1\Account.Share.pdb
-F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\bin\Debug\netcoreapp3.1\Messages.dll
-F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\bin\Debug\netcoreapp3.1\Messages.pdb
-F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.csprojAssemblyReference.cache
-F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.csproj.CoreCompileInputs.cache
-F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.AssemblyInfoInputs.cache
-F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.AssemblyInfo.cs
-F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.csproj.CopyComplete
-F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.dll
-F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.pdb
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Share\bin\Debug\netcoreapp3.1\Account.Share.deps.json
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Share\bin\Debug\netcoreapp3.1\Account.Share.dll
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Share\bin\Debug\netcoreapp3.1\Account.Share.pdb
@@ -34,3 +22,15 @@ C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Share\obj\Debug\net
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.csproj.CopyComplete
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.dll
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\bin\Debug\netcoreapp3.1\Account.Share.deps.json
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\bin\Debug\netcoreapp3.1\Account.Share.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\bin\Debug\netcoreapp3.1\Account.Share.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\bin\Debug\netcoreapp3.1\Messages.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\bin\Debug\netcoreapp3.1\Messages.pdb
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.csprojAssemblyReference.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.csproj.CoreCompileInputs.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.AssemblyInfoInputs.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.AssemblyInfo.cs
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.csproj.CopyComplete
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.Share\obj\Debug\netcoreapp3.1\Account.Share.pdb

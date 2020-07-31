@@ -3,6 +3,7 @@ using Account.Share.Interfaces;
 using Account.Share.Models;
 using AutoMapper;
 using Messages.Commands;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,15 +34,60 @@ namespace Account.Data
         {
             IQueryable<OperationHistorySucceededEntity> historyPage = _accountContext
                 .SucceededOperations.Where(a => a.AccountId == queryParameters.AccountId)
-                .OrderBy(queryParameters.OrderBy,queryParameters.IsDescending());
-
-            //filter
+                .OrderBy(queryParameters.OrderBy, queryParameters.IsDescending());
             if (queryParameters.HasQuery())
             {
-                historyPage = historyPage
-                    .Where(x => x.Date.ToString().Contains(queryParameters.Query.ToLowerInvariant()));                
+                return GetFilteredInfo(queryParameters);
+                //    historyPage = historyPage
+                //        .Where(x => x.Date.ToString().Contains(queryParameters.Query.ToLowerInvariant()));
+                //}
             }
+            List<OperationHistorySucceededEntity> historyPage1 = historyPage
+                .Skip(queryParameters.PageCount * (queryParameters.Page - 1))
+                .Take(queryParameters.PageCount).ToList();
+            List<HistoryModel> history = _mapper.Map<List<HistoryModel>>(historyPage1);
+            return history;
+        }
 
+        public IQueryable<OperationHistorySucceededEntity> FilterByOperartionType(QueryParameters queryParameters)
+        {
+            var a = _accountContext.SucceededOperations.Where(t => t.AccountId == queryParameters.AccountId&& t.operationType ==queryParameters.Query.OperationType);
+            a= a.OrderBy(queryParameters.OrderBy, queryParameters.IsDescending());
+            return a;
+        }
+
+        public IQueryable<OperationHistorySucceededEntity> FilterByFromDate(QueryParameters queryParameters/*, DateTime fromDate*/)
+        {
+            return _accountContext.SucceededOperations.Where(t =>t.AccountId==queryParameters.AccountId &&t.Date <= queryParameters.Query.FromDate)
+                                .OrderBy(queryParameters.OrderBy, queryParameters.IsDescending());
+        }
+
+        public   IQueryable<OperationHistorySucceededEntity> FilterBetweenDates(QueryParameters queryParameters)
+        {
+            return  _accountContext.SucceededOperations.Where(t => t.AccountId==queryParameters.AccountId&&t.Date >= queryParameters.Query.FromDate
+             && t.Date <= queryParameters.Query.ToDate)
+                                .OrderBy(queryParameters.OrderBy, queryParameters.IsDescending());
+        }
+
+        public IQueryable<OperationHistorySucceededEntity> FilterFunction(QueryParameters queryParameters)
+        {
+            //      IQueryable <OperationHistorySucceededEntity> operationsList;
+            DateTime emptyDate = new DateTime();
+            if (queryParameters.Query.FromDate == emptyDate && queryParameters.Query.ToDate == emptyDate)
+                return  FilterByOperartionType(queryParameters);
+            if (queryParameters.Query.FromDate != emptyDate && queryParameters.Query.ToDate != emptyDate)
+                return FilterBetweenDates(queryParameters);
+            else
+                return FilterByFromDate(queryParameters);
+        }
+
+        public List<HistoryModel> GetFilteredInfo(QueryParameters queryParameters)
+        {
+            IQueryable<OperationHistorySucceededEntity> historyPage;
+            if (queryParameters.HasQuery())
+                historyPage = FilterFunction(queryParameters);
+            else
+                return GetAll(queryParameters);
             List<OperationHistorySucceededEntity> historyPage1 = historyPage
                 .Skip(queryParameters.PageCount * (queryParameters.Page - 1))
                 .Take(queryParameters.PageCount).ToList();
@@ -51,11 +97,10 @@ namespace Account.Data
 
         public async Task UpdateFailedTransactionHistory(UpdateFailedTransaction message)
         {
-            
             OperationHistoryFailedEntity HistoryFailedDebit = new OperationHistoryFailedEntity()
             {
                 Id = new Guid(),
-                AccountId = message.FromAccountId,                
+                AccountId = message.FromAccountId,
                 Date = message.Date,
                 operationType = false,
                 TransactionAmount = message.Amount,
@@ -79,7 +124,6 @@ namespace Account.Data
 
         public async Task UpdateSucceededTransactionHistory(UpdateSucceededTransaction message)
         {
-            
             OperationHistorySucceededEntity HistorySucceededDebit = new OperationHistorySucceededEntity()
             {
                 Id = new Guid(),

@@ -2653,7 +2653,10 @@
         },
         "runtime": {
           "bin/placeholder/Account.Data.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Account.Service/1.0.0": {
         "type": "project",
@@ -2668,7 +2671,10 @@
         },
         "runtime": {
           "bin/placeholder/Account.Service.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Account.Share/1.0.0": {
         "type": "project",
@@ -2694,7 +2700,10 @@
         },
         "runtime": {
           "bin/placeholder/Exceptions.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Messages/1.0.0": {
         "type": "project",
@@ -8696,7 +8705,6 @@
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "F:\\Brix\\NuGet.Config",
         "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8704,8 +8712,8 @@
         "netcoreapp3.1"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.myget.org/F/dotnet-core/api/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {

@@ -12,7 +12,7 @@ namespace Account.Share.Models
             get { return _pageCount; }
             set { _pageCount = (value > maxPageCount) ? maxPageCount : value; }
         }
-        public string Query { get; set; }
+        public Filter Query { get; set; }
         public string OrderBy { get; set; } = "Date";
         public Guid AccountId { get; set; }
     }
