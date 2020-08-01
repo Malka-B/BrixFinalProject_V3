@@ -2671,10 +2671,7 @@
         },
         "runtime": {
           "bin/placeholder/Account.Service.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "Account.Share/1.0.0": {
         "type": "project",
@@ -2700,10 +2697,7 @@
         },
         "runtime": {
           "bin/placeholder/Exceptions.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "Messages/1.0.0": {
         "type": "project",

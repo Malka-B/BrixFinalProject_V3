@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Account.Data.Migrations
 {
-    public partial class account_migration : Migration
+    public partial class account_inital_migration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -30,7 +30,7 @@ namespace Account.Data.Migrations
                     Id = table.Column<Guid>(nullable: false),
                     AccountId = table.Column<Guid>(nullable: false),
                     TransactionId = table.Column<Guid>(nullable: false),
-                    operationType = table.Column<bool>(nullable: false),
+                    operationType = table.Column<int>(nullable: false),
                     TransactionAmount = table.Column<int>(nullable: false),
                     Balance = table.Column<int>(nullable: false),
                     Date = table.Column<DateTime>(nullable: false),
@@ -48,7 +48,7 @@ namespace Account.Data.Migrations
                     Id = table.Column<Guid>(nullable: false),
                     AccountId = table.Column<Guid>(nullable: false),
                     TransactionId = table.Column<Guid>(nullable: false),
-                    operationType = table.Column<bool>(nullable: false),
+                    operationType = table.Column<int>(nullable: false),
                     TransactionAmount = table.Column<int>(nullable: false),
                     Balance = table.Column<int>(nullable: false),
                     Date = table.Column<DateTime>(nullable: false)

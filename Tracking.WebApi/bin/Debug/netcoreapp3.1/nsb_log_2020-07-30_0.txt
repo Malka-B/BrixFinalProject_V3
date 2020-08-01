@@ -1,0 +1,30 @@
+﻿2020-07-30 21:46:37.601 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-30 21:46:39.115 INFO  Auditing processed messages to 'audit'
+2020-07-30 21:46:39.228 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-07-30 21:46:39.708 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-30 21:46:39.944 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-30 21:46:51.938 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-30 22:08:42.303 WARN  'Transaction Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-30 22:08:42.303 WARN  'Transaction MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-07-30 22:08:42.521 WARN  The circuit breaker for 'Transaction MessagePump' is now in the armed state
+2020-07-30 22:08:42.525 INFO  Attempting to reconnect in 10 seconds.
+2020-07-30 22:08:52.289 INFO  The circuit breaker for 'Transaction MessagePump' is now disarmed
+2020-07-30 22:08:54.523 INFO  Connection to the broker reestablished successfully.
+2020-07-30 22:28:37.681 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-30 22:28:38.535 INFO  Auditing processed messages to 'audit'
+2020-07-30 22:28:38.791 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-07-30 22:28:38.874 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-30 22:28:38.908 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-30 22:28:49.639 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Account.Data.Migrations
 {
     [DbContext(typeof(AccountContext))]
-    [Migration("20200728104245_account_migration")]
-    partial class account_migration
+    [Migration("20200728152104_account_inital_migration")]
+    partial class account_inital_migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -93,8 +93,8 @@ namespace Account.Data.Migrations
                     b.Property<Guid>("TransactionId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("operationType")
-                        .HasColumnType("bit");
+                    b.Property<int>("operationType")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -122,8 +122,8 @@ namespace Account.Data.Migrations
                     b.Property<Guid>("TransactionId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("operationType")
-                        .HasColumnType("bit");
+                    b.Property<int>("operationType")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

@@ -1,0 +1,6 @@
+﻿2020-07-31 12:33:02.842 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-31 12:33:03.499 INFO  Auditing processed messages to 'audit'
+2020-07-31 12:33:03.592 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-07-31 12:33:03.609 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-31 12:33:03.625 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-31 12:33:16.495 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'

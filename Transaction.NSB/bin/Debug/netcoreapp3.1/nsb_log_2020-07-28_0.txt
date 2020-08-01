@@ -71,35 +71,43 @@ License Expiration: 2020-10-04
 2020-07-28 14:16:22.605 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
 2020-07-28 14:16:22.809 INFO  Executing saga creation scripts:
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
-2020-07-28 18:21:04.926 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
-2020-07-28 18:21:11.670 INFO  Auditing processed messages to 'audit'
-2020-07-28 18:21:12.015 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
-License Expiration: 2020-10-04
-2020-07-28 18:21:16.254 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
-2020-07-28 18:21:18.493 INFO  Executing saga creation scripts:
-C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
-2020-07-28 18:41:21.414 WARN  'TransactionNSB MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
- ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
-   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
-   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
-   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
-2020-07-28 18:41:21.415 WARN  'TransactionNSB Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
- ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
-   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(NetworkBinaryReader reader)
-   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
-   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
-2020-07-28 18:41:21.438 WARN  The circuit breaker for 'TransactionNSB MessagePump' is now in the armed state
-2020-07-28 18:41:21.442 INFO  Attempting to reconnect in 10 seconds.
-2020-07-28 18:41:31.426 INFO  The circuit breaker for 'TransactionNSB MessagePump' is now disarmed
-2020-07-28 18:41:31.500 INFO  Connection to the broker reestablished successfully.
-2020-07-28 18:44:57.823 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
-2020-07-28 18:44:58.570 INFO  Auditing processed messages to 'audit'
-2020-07-28 18:44:59.222 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
-License Expiration: 2020-10-04
-2020-07-28 18:45:01.585 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
-2020-07-28 18:45:01.808 INFO  Executing saga creation scripts:
-C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-28 18:23:21.917 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-28 18:23:23.157 INFO  Auditing processed messages to 'audit'
+2020-07-28 18:23:23.491 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-07-28 18:23:23.702 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-28 18:23:32.244 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-28 18:23:32.614 INFO  Executing saga creation scripts:
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-28 18:24:37.358 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-28 18:24:37.955 INFO  Auditing processed messages to 'audit'
+2020-07-28 18:24:37.999 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-07-28 18:24:38.013 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-28 18:24:44.256 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-28 18:24:44.411 INFO  Executing saga creation scripts:
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-28 21:49:33.919 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-28 21:49:34.769 INFO  Auditing processed messages to 'audit'
+2020-07-28 21:49:34.825 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-07-28 21:49:34.869 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-28 21:49:43.416 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-28 21:49:43.746 INFO  Executing saga creation scripts:
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-28 21:58:37.028 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-28 21:58:37.305 INFO  Auditing processed messages to 'audit'
+2020-07-28 21:58:37.325 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-07-28 21:58:37.329 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-07-28 21:58:43.209 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-28 21:58:43.335 INFO  Executing saga creation scripts:
+F:\Brix\Brix final project\BrixFinalProject_V3\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-07-28 22:06:14.048 ERROR Your license has expired
+2020-07-28 22:06:14.416 ERROR Your license has expired
+2020-07-28 22:06:16.437 ERROR Your license has expired
+2020-07-28 22:06:16.544 ERROR Your license has expired
+2020-07-28 22:06:16.557 ERROR Your license has expired
+2020-07-28 22:06:23.725 ERROR Your license has expired
+2020-07-28 22:06:51.176 ERROR Your license has expired
+2020-07-28 22:06:51.211 ERROR Your license has expired
+2020-07-28 22:06:51.314 ERROR Your license has expired
+2020-07-28 22:06:51.326 ERROR Your license has expired
+2020-07-28 22:06:51.335 ERROR Your license has expired
+2020-07-28 22:06:54.059 ERROR Your license has expired

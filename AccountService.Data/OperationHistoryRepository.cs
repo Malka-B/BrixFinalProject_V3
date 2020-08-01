@@ -1,4 +1,5 @@
 ﻿using Account.Data.Entites;
+using Account.Share.Enums;
 using Account.Share.Interfaces;
 using Account.Share.Models;
 using AutoMapper;
@@ -29,56 +30,89 @@ namespace Account.Data
             return accountHistory.Count();
         }
 
-        public  List<HistoryModel> GetAll(QueryParameters queryParameters)
+        public List<HistoryModel> GetAll(QueryParameters queryParameters)
         {
-            IQueryable<OperationHistorySucceededEntity> historyPage;
-            if (queryParameters.OrderBy == "date")
-            {
-                historyPage = _accountContext
+            IQueryable<OperationHistorySucceededEntity> historyPage = _accountContext
                 .SucceededOperations.Where(a => a.AccountId == queryParameters.AccountId)
-                .OrderByDescending(a => a.Date);
-            }
-            else
-            {
-                historyPage = _accountContext
-               .SucceededOperations.Where(a => a.AccountId == queryParameters.AccountId)
-               .OrderBy(queryParameters.OrderBy, queryParameters.IsDescending());
-            }           
-
-            //filter
+                .OrderBy(queryParameters.OrderBy, queryParameters.IsDescending());
             if (queryParameters.HasQuery())
             {
-                historyPage = historyPage
-                    .Where(x => x.Date.ToString().Contains(queryParameters.Query.ToLowerInvariant()));                
+                return GetFilteredInfo(queryParameters);
+                //    historyPage = historyPage
+                //        .Where(x => x.Date.ToString().Contains(queryParameters.Query.ToLowerInvariant()));
+                //}
             }
-
             List<OperationHistorySucceededEntity> historyPage1 = historyPage
                 .Skip(queryParameters.PageCount * (queryParameters.Page - 1))
                 .Take(queryParameters.PageCount).ToList();
+            List<HistoryModel> history = _mapper.Map<List<HistoryModel>>(historyPage1);
+            return history;
+        }
 
+        public IQueryable<OperationHistorySucceededEntity> FilterByOperartionType(QueryParameters queryParameters)
+        {
+            var a = _accountContext.SucceededOperations.Where(t => t.AccountId == queryParameters.AccountId&& t.operationType ==queryParameters.Query.OperationType);
+            a= a.OrderBy(queryParameters.OrderBy, queryParameters.IsDescending());
+            return a;
+        }
+
+        public IQueryable<OperationHistorySucceededEntity> FilterByFromDate(QueryParameters queryParameters)
+        {
+            return _accountContext.SucceededOperations.Where(t =>t.AccountId==queryParameters.AccountId &&t.Date <= queryParameters.Query.FromDate)
+                                .OrderBy(queryParameters.OrderBy, queryParameters.IsDescending());
+        }
+
+        public   IQueryable<OperationHistorySucceededEntity> FilterBetweenDates(QueryParameters queryParameters)
+        {
+            return  _accountContext.SucceededOperations.Where(t => t.AccountId==queryParameters.AccountId&&t.Date >= queryParameters.Query.FromDate
+             && t.Date <= queryParameters.Query.ToDate)
+                                .OrderBy(queryParameters.OrderBy, queryParameters.IsDescending());
+        }
+
+        public IQueryable<OperationHistorySucceededEntity> FilterFunction(QueryParameters queryParameters)
+        {
+            DateTime emptyDate = new DateTime();
+            if (queryParameters.Query.FromDate == emptyDate && queryParameters.Query.ToDate == emptyDate)
+                return  FilterByOperartionType(queryParameters);
+            if (queryParameters.Query.FromDate != emptyDate && queryParameters.Query.ToDate != emptyDate)
+                return FilterBetweenDates(queryParameters);
+            else
+                return FilterByFromDate(queryParameters);
+        }
+
+        public List<HistoryModel> GetFilteredInfo(QueryParameters queryParameters)
+        {
+            IQueryable<OperationHistorySucceededEntity> historyPage;
+            if (queryParameters.HasQuery())
+                historyPage = FilterFunction(queryParameters);
+            else
+                return GetAll(queryParameters);
+            List<OperationHistorySucceededEntity> historyPage1 = historyPage
+                .Skip(queryParameters.PageCount * (queryParameters.Page - 1))
+                .Take(queryParameters.PageCount).ToList();
             List<HistoryModel> history = _mapper.Map<List<HistoryModel>>(historyPage1);
             return history;
         }
 
         public async Task UpdateFailedTransactionHistory(UpdateFailedTransaction message)
-        {        
+        {
             OperationHistoryFailedEntity operationFailedDebit = _mapper.Map<OperationHistoryFailedEntity>(message);
-            operationFailedDebit.FillFields(message.FromAccountId, false);            
+            operationFailedDebit.FillFields(message.FromAccountId, OperationType.Debit);
 
             OperationHistoryFailedEntity operationFailedCredit = _mapper.Map<OperationHistoryFailedEntity>(message);
-            operationFailedCredit.FillFields(message.ToAccountId, true);
+            operationFailedCredit.FillFields(message.ToAccountId, OperationType.Credit);
             
             await _accountContext.FailedOperations.AddRangeAsync(operationFailedDebit, operationFailedCredit);
             await _accountContext.SaveChangesAsync();
         }
 
         public async Task UpdateSucceededTransactionHistory(UpdateSucceededTransaction message)
-        {      
+        {
             OperationHistorySucceededEntity operationSucceededDebit = _mapper.Map<OperationHistorySucceededEntity>(message);
-            operationSucceededDebit.FillFields(message.FromAccountId, false, message.BalanceOfFromAccount);
-            
+            operationSucceededDebit.FillFields(message.FromAccountId, OperationType.Debit, message.BalanceOfFromAccount);
+
             OperationHistorySucceededEntity operationSucceededCredit = _mapper.Map<OperationHistorySucceededEntity>(message);
-            operationSucceededCredit.FillFields(message.ToAccountId, true, message.BalanceOfToAccount);
+            operationSucceededCredit.FillFields(message.ToAccountId, OperationType.Credit, message.BalanceOfToAccount);
 
             await _accountContext.SucceededOperations.AddRangeAsync(operationSucceededDebit, operationSucceededCredit);
             await _accountContext.SaveChangesAsync();

@@ -1,11 +1,8 @@
 ﻿using Account.Service.Intefaces;
 using Account.Service.Models;
 using Account.Share.Models;
-using Account.WebApi.DTO;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace Account.WebApi.Controllers
 {
@@ -14,32 +11,49 @@ namespace Account.WebApi.Controllers
     public class OperationHistoryController : ControllerBase
     {
         private readonly IOperationHistoryService _operationHistoryService;
-        
+        private readonly IUrlHelper _urlHelper;
+
         public OperationHistoryController(IOperationHistoryService operationHistoryService, IUrlHelper urlHelper)
         {
-            _operationHistoryService = operationHistoryService;            
+            _operationHistoryService = operationHistoryService;
+            _urlHelper = urlHelper;
         }
-        
-        [HttpGet("GetAccountHistory")]        
+
+        [HttpGet("GetAccountHistory")]
         public IActionResult GetAll([FromQuery] QueryParameters queryParameters)
         {
             PagingReturn pagingReturn = _operationHistoryService.GetAll(queryParameters);
-
             var paginationMetadata = new
             {
                 totalCount = pagingReturn.Count,
                 pageSize = queryParameters.PageCount,
                 currentPage = queryParameters.Page,
                 totalPages = queryParameters.GetTotalPages(pagingReturn.Count)
-            };            
-
+            };
             Response.Headers
                 .Add("X-Pagination",
                     JsonConvert.SerializeObject(paginationMetadata));
-
-            return Ok(pagingReturn.AccountHistory);            
+            return Ok(pagingReturn.AccountHistory);
         }
 
-
+        [HttpGet("GetAccountHistoryFiltered")]
+        public IActionResult GetAccountHistoryFiltered([FromQuery] QueryParameters queryParameters)
+        {
+            PagingReturn pagingReturn = _operationHistoryService
+                .GetFilteredInfo(queryParameters);
+            var paginationMetadata = new
+            {
+                totalCount = pagingReturn.Count,
+                pageSize = queryParameters.PageCount,
+                currentPage = queryParameters.Page,
+                totalPages = queryParameters.GetTotalPages(pagingReturn.Count)
+            };
+            Response.Headers
+                .Add("X-Pagination",
+                    JsonConvert.SerializeObject(paginationMetadata));
+            return Ok(pagingReturn.AccountHistory);
+        }
     }
 }
+
+

@@ -22,7 +22,7 @@ namespace Account.Share.Models
 
         public static bool HasQuery(this QueryParameters queryParameters)
         {
-            return !String.IsNullOrEmpty(queryParameters.Query);
+            return queryParameters.Query != null;
         }
 
         public static bool IsDescending(this QueryParameters queryParameters)

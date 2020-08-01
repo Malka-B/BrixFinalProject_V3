@@ -16,35 +16,7 @@ namespace Transaction.NSB
 
         public async Task Handle(UpdateTransactionStatus message, IMessageHandlerContext context)
         {
-            //TransactionForHistory transactionForHistory = 
-                await _transactionRepository.UpdateTransactionStatusAsync(message);
-
-
-            //if (transactionForHistory.isTransactionSucceeded)
-            //{
-            //    TransactionSucceeded transactionSucceeded = new TransactionSucceeded()
-            //    {
-            //        TransactionId = message.TransactionId,
-            //        FromAccountId = transactionForHistory.FromAccountId,
-            //        ToAccountId = transactionForHistory.ToAccountId,
-            //        Date = transactionForHistory.Date,
-            //        Amount = transactionForHistory.Amount
-            //    };
-            //    await context.Publish(transactionSucceeded);
-            //}
-            //else
-            //{
-            //    TransactionFailed transactionFailed = new TransactionFailed()
-            //    {
-            //        TransactionId = message.TransactionId,
-            //        FromAccountId = transactionForHistory.FromAccountId,
-            //        ToAccountId = transactionForHistory.ToAccountId,
-            //        Date = transactionForHistory.Date,
-            //        Amount = transactionForHistory.Amount,
-            //        FailureReason = transactionForHistory.FailureReason
-            //    };
-            //    await context.Publish(transactionFailed);
-            //}
+            await _transactionRepository.UpdateTransactionStatusAsync(message); 
             await Task.CompletedTask;
         }
     }

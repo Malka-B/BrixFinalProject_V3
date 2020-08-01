@@ -11,6 +11,7 @@ namespace Account.Share.Interfaces
         Task UpdateFailedTransactionHistory(UpdateFailedTransaction message);
         Task UpdateSucceededTransactionHistory(UpdateSucceededTransaction message);        
         List<HistoryModel> GetAll(QueryParameters queryParameters);
+        List<HistoryModel> GetFilteredInfo(QueryParameters queryParameters);
         int Count(Guid accountId);
     }
 }

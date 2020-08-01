@@ -6,5 +6,6 @@ namespace Account.Service.Intefaces
     public interface IOperationHistoryService
     {
         PagingReturn GetAll(QueryParameters queryParameters);
+        PagingReturn GetFilteredInfo(QueryParameters queryParameters);
     }
 }
