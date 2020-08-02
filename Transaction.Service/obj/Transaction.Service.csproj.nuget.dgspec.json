@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Transaction.Service\\Transaction.Service.csproj": {}
+    "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Transaction.Service\\Transaction.Service.csproj": {}
   },
   "projects": {
-    "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Messages\\Messages.csproj": {
+    "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\Messages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Messages\\Messages.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\Messages.csproj",
         "projectName": "Messages",
-        "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Messages\\Messages.csproj",
-        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
-        "outputPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Messages\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\Messages.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,24 +55,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Transaction.Service\\Transaction.Service.csproj": {
+    "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Transaction.Service\\Transaction.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Transaction.Service\\Transaction.Service.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Transaction.Service\\Transaction.Service.csproj",
         "projectName": "Transaction.Service",
-        "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Transaction.Service\\Transaction.Service.csproj",
-        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
-        "outputPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Transaction.Service\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Transaction.Service\\Transaction.Service.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Transaction.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,11 +85,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Messages\\Messages.csproj": {
-                "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Messages\\Messages.csproj"
+              "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\Messages.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\Messages.csproj"
               },
-              "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\TransactionInterfaces\\Transaction.Share.csproj": {
-                "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\TransactionInterfaces\\Transaction.Share.csproj"
+              "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\TransactionInterfaces\\Transaction.Share.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\TransactionInterfaces\\Transaction.Share.csproj"
               }
             }
           }
@@ -127,24 +127,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\TransactionInterfaces\\Transaction.Share.csproj": {
+    "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\TransactionInterfaces\\Transaction.Share.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\TransactionInterfaces\\Transaction.Share.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\TransactionInterfaces\\Transaction.Share.csproj",
         "projectName": "Transaction.Share",
-        "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\TransactionInterfaces\\Transaction.Share.csproj",
-        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
-        "outputPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\TransactionInterfaces\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\TransactionInterfaces\\Transaction.Share.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\TransactionInterfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -157,8 +157,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Messages\\Messages.csproj": {
-                "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Messages\\Messages.csproj"
+              "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\Messages.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\Messages.csproj"
               }
             }
           }
@@ -186,7 +186,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

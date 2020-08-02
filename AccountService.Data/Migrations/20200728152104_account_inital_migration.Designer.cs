@@ -93,8 +93,8 @@ namespace Account.Data.Migrations
                     b.Property<Guid>("TransactionId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("operationType")
-                        .HasColumnType("bit");
+                    b.Property<int>("operationType")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -122,8 +122,8 @@ namespace Account.Data.Migrations
                     b.Property<Guid>("TransactionId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("operationType")
-                        .HasColumnType("bit");
+                    b.Property<int>("operationType")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

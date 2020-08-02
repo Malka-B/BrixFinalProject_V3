@@ -1,9 +1,9 @@
 ﻿using Account.Data.Entites;
+using Account.Share.Enums;
 using Account.Share.Interfaces;
 using Account.Share.Models;
 using AutoMapper;
 using Messages.Commands;
-using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -96,55 +96,25 @@ namespace Account.Data
 
         public async Task UpdateFailedTransactionHistory(UpdateFailedTransaction message)
         {
-            OperationHistoryFailedEntity HistoryFailedDebit = new OperationHistoryFailedEntity()
-            {
-                Id = new Guid(),
-                AccountId = message.FromAccountId,
-                Date = message.Date,
-                operationType = false,
-                TransactionAmount = message.Amount,
-                TransactionId = message.TransactionId,
-                FailureReason = message.FailureReason
-            };
+            OperationHistoryFailedEntity operationFailedDebit = _mapper.Map<OperationHistoryFailedEntity>(message);
+            operationFailedDebit.FillFields(message.FromAccountId, OperationType.Debit);
 
-            OperationHistoryFailedEntity HistoryFailedCredit = new OperationHistoryFailedEntity()
-            {
-                Id = new Guid(),
-                AccountId = message.ToAccountId,
-                Date = message.Date,
-                operationType = true,
-                TransactionAmount = message.Amount,
-                TransactionId = message.TransactionId,
-                FailureReason = message.FailureReason
-            };
-            await _accountContext.FailedOperations.AddRangeAsync(HistoryFailedDebit, HistoryFailedCredit);
+            OperationHistoryFailedEntity operationFailedCredit = _mapper.Map<OperationHistoryFailedEntity>(message);
+            operationFailedCredit.FillFields(message.ToAccountId, OperationType.Credit);
+            
+            await _accountContext.FailedOperations.AddRangeAsync(operationFailedDebit, operationFailedCredit);
             await _accountContext.SaveChangesAsync();
         }
 
         public async Task UpdateSucceededTransactionHistory(UpdateSucceededTransaction message)
         {
-            OperationHistorySucceededEntity HistorySucceededDebit = new OperationHistorySucceededEntity()
-            {
-                Id = new Guid(),
-                AccountId = message.FromAccountId,
-                Balance = message.BalanceOfFromAccount,
-                Date = message.Date,
-                operationType = false,
-                TransactionAmount = message.Amount,
-                TransactionId = message.TransactionId
-            };
+            OperationHistorySucceededEntity operationSucceededDebit = _mapper.Map<OperationHistorySucceededEntity>(message);
+            operationSucceededDebit.FillFields(message.FromAccountId, OperationType.Debit, message.BalanceOfFromAccount);
 
-            OperationHistorySucceededEntity HistorySucceededCredit = new OperationHistorySucceededEntity()
-            {
-                Id = new Guid(),
-                AccountId = message.ToAccountId,
-                Balance = message.BalanceOfToAccount,
-                Date = message.Date,
-                operationType = true,
-                TransactionAmount = message.Amount,
-                TransactionId = message.TransactionId
-            };
-            await _accountContext.SucceededOperations.AddRangeAsync(HistorySucceededDebit, HistorySucceededCredit);
+            OperationHistorySucceededEntity operationSucceededCredit = _mapper.Map<OperationHistorySucceededEntity>(message);
+            operationSucceededCredit.FillFields(message.ToAccountId, OperationType.Credit, message.BalanceOfToAccount);
+
+            await _accountContext.SucceededOperations.AddRangeAsync(operationSucceededDebit, operationSucceededCredit);
             await _accountContext.SaveChangesAsync();
         }
     }
