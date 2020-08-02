@@ -58,7 +58,7 @@ namespace Account.Data
 
         public IQueryable<OperationHistorySucceededEntity> FilterByFromDate(QueryParameters queryParameters)
         {
-            return _accountContext.SucceededOperations.Where(t =>t.AccountId==queryParameters.AccountId &&t.Date <= queryParameters.Query.FromDate)
+            return _accountContext.SucceededOperations.Where(t =>t.AccountId==queryParameters.AccountId &&t.Date >= queryParameters.Query.FromDate)
                                 .OrderBy(queryParameters.OrderBy, queryParameters.IsDescending());
         }
 

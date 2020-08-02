@@ -1,0 +1,5 @@
+﻿2020-08-02 09:34:33.186 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 09:34:33.591 INFO  Auditing processed messages to 'audit'
+2020-08-02 09:34:34.813 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-08-02 09:34:38.078 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
