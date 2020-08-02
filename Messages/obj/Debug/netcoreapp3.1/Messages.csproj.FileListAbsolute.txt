@@ -28,7 +28,6 @@ C:\Users\User\Desktop\brix2-gibui\Brix final project\Messages\obj\Debug\netcorea
 F:\Brix\Brix final project\BrixFinalProject_V3\Messages\bin\Debug\netcoreapp3.1\Messages.deps.json
 F:\Brix\Brix final project\BrixFinalProject_V3\Messages\bin\Debug\netcoreapp3.1\Messages.dll
 F:\Brix\Brix final project\BrixFinalProject_V3\Messages\bin\Debug\netcoreapp3.1\Messages.pdb
-F:\Brix\Brix final project\BrixFinalProject_V3\Messages\obj\Debug\netcoreapp3.1\Messages.csprojAssemblyReference.cache
 F:\Brix\Brix final project\BrixFinalProject_V3\Messages\obj\Debug\netcoreapp3.1\Messages.csproj.CoreCompileInputs.cache
 F:\Brix\Brix final project\BrixFinalProject_V3\Messages\obj\Debug\netcoreapp3.1\Messages.AssemblyInfoInputs.cache
 F:\Brix\Brix final project\BrixFinalProject_V3\Messages\obj\Debug\netcoreapp3.1\Messages.AssemblyInfo.cs

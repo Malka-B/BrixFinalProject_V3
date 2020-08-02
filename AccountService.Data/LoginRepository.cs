@@ -67,6 +67,46 @@ namespace Account.Data
             await _accountContext.SaveChangesAsync();
             return true;
         }
+        private string GenerateOTP()
+        {
+            int _min = 1000, _max = 9999;
+            Random _rdm = new Random();
+            return _rdm.Next(_min, _max).ToString();
+        }
+
+        public async Task<string> AddEmailVerifcationAsync(string email)
+        {
+            EmailVerificationEntity emailVerificationEntity =
+              await _accountContext.EmailVerification.FirstOrDefaultAsync(e => e.Email == email);
+            if (emailVerificationEntity == null)
+            {
+                emailVerificationEntity = new EmailVerificationEntity()
+                {
+                    Id = new Guid(),
+                    Email = email,
+                    ExpirationTime = DateTime.Now.AddMinutes(5),
+                    VerificationCode = GenerateOTP()
+                };
+                await _accountContext.EmailVerification.AddAsync(emailVerificationEntity);
+            }
+            else
+            {
+                emailVerificationEntity.ExpirationTime = DateTime.Now.AddMinutes(5);
+                emailVerificationEntity.VerificationCode = GenerateOTP();
+            }
+            await _accountContext.SaveChangesAsync();
+            return emailVerificationEntity.VerificationCode;
+        }
+
+        public async Task<bool> IsVerificationCodeValidAsync(string verificationCode,string email)
+        {
+            EmailVerificationEntity emailVerification = await _accountContext
+                   .EmailVerification.FirstOrDefaultAsync(e => e.Email == email
+                   && e.ExpirationTime > DateTime.Now && e.VerificationCode == verificationCode);
+            if (emailVerification != null)
+                return true;
+            return false;
+        }
     }
 }
 

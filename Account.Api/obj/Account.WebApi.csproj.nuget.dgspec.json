@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Api\\Account.WebApi.csproj": {}
+    "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Api\\Account.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Api\\Account.WebApi.csproj": {
+    "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Api\\Account.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Api\\Account.WebApi.csproj",
+        "projectUniqueName": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Api\\Account.WebApi.csproj",
         "projectName": "Account.WebApi",
-        "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Api\\Account.WebApi.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Api\\obj\\",
+        "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Api\\Account.WebApi.csproj",
+        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
+        "outputPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\AccountService.Data\\Account.Data.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\AccountService.Data\\Account.Data.csproj"
+              "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\AccountService.Data\\Account.Data.csproj": {
+                "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\AccountService.Data\\Account.Data.csproj"
               }
             }
           }
@@ -71,6 +71,26 @@
               "target": "Package",
               "version": "[3.1.3, )"
             },
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "NServiceBus.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "NServiceBus.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "NServiceBus.Persistence.Sql": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "NServiceBus.RabbitMQ": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.5.1, )"
@@ -98,24 +118,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Service\\Account.Service.csproj": {
+    "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Service\\Account.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Service\\Account.Service.csproj",
+        "projectUniqueName": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Service\\Account.Service.csproj",
         "projectName": "Account.Service",
-        "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Service\\Account.Service.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Service\\obj\\",
+        "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Service\\Account.Service.csproj",
+        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
+        "outputPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -128,11 +148,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Share\\Account.Share.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Share\\Account.Share.csproj"
+              "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Share\\Account.Share.csproj": {
+                "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Share\\Account.Share.csproj"
               },
-              "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Exceptions\\Exceptions.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Exceptions\\Exceptions.csproj"
+              "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Exceptions\\Exceptions.csproj": {
+                "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Exceptions\\Exceptions.csproj"
               }
             }
           }
@@ -169,24 +189,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Share\\Account.Share.csproj": {
+    "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Share\\Account.Share.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Share\\Account.Share.csproj",
+        "projectUniqueName": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Share\\Account.Share.csproj",
         "projectName": "Account.Share",
-        "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Share\\Account.Share.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Share\\obj\\",
+        "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Share\\Account.Share.csproj",
+        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
+        "outputPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Share\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -199,8 +219,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\Messages.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\Messages.csproj"
+              "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Messages\\Messages.csproj": {
+                "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Messages\\Messages.csproj"
               }
             }
           }
@@ -228,24 +248,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\AccountService.Data\\Account.Data.csproj": {
+    "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\AccountService.Data\\Account.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\AccountService.Data\\Account.Data.csproj",
+        "projectUniqueName": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\AccountService.Data\\Account.Data.csproj",
         "projectName": "Account.Data",
-        "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\AccountService.Data\\Account.Data.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\AccountService.Data\\obj\\",
+        "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\AccountService.Data\\Account.Data.csproj",
+        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
+        "outputPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\AccountService.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -258,14 +278,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Service\\Account.Service.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Service\\Account.Service.csproj"
+              "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Service\\Account.Service.csproj": {
+                "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Service\\Account.Service.csproj"
               },
-              "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Share\\Account.Share.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Account.Share\\Account.Share.csproj"
+              "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Share\\Account.Share.csproj": {
+                "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Account.Share\\Account.Share.csproj"
               },
-              "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Exceptions\\Exceptions.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Exceptions\\Exceptions.csproj"
+              "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Exceptions\\Exceptions.csproj": {
+                "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Exceptions\\Exceptions.csproj"
               }
             }
           }
@@ -328,24 +348,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Exceptions\\Exceptions.csproj": {
+    "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Exceptions\\Exceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Exceptions\\Exceptions.csproj",
+        "projectUniqueName": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Exceptions\\Exceptions.csproj",
         "projectName": "Exceptions",
-        "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Exceptions\\Exceptions.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Exceptions\\obj\\",
+        "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Exceptions\\Exceptions.csproj",
+        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
+        "outputPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Exceptions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -392,24 +412,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\Messages.csproj": {
+    "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Messages\\Messages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\Messages.csproj",
+        "projectUniqueName": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Messages\\Messages.csproj",
         "projectName": "Messages",
-        "projectPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\Messages.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\brix2-gibui\\Brix final project\\Messages\\obj\\",
+        "projectPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Messages\\Messages.csproj",
+        "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
+        "outputPath": "F:\\Brix\\Brix final project\\BrixFinalProject_V3\\Messages\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -447,7 +467,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

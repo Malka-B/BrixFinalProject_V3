@@ -30,8 +30,9 @@ namespace Account.Service
 
         public async Task<bool> RegisterAsync(CustomerModel customerModel)
         {
+            bool isVerificationCodeValid = await _loginRepository.IsVerificationCodeValidAsync(customerModel.VerificationCode, customerModel.Email);
             bool isEmailValid = await _loginRepository.IsEmailValidAsync(customerModel.Email);
-            if (isEmailValid)
+            if (isEmailValid && isVerificationCodeValid)
             {
                 string passowrdSalt = Hashing.GetSalt();
                 customerModel.Id = Guid.NewGuid();
@@ -45,9 +46,11 @@ namespace Account.Service
                 return await _loginRepository.RegisterAsync(customerModel, account);
             }
             else
-            {                
+            {    
+                //throw matching error
                 throw new DuplicateEmailException();
             }
         }
+
     }
 }

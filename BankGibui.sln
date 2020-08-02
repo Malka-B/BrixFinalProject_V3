@@ -27,9 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transaction.NSB", "Transact
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transaction.Share", "TransactionInterfaces\Transaction.Share.csproj", "{BB2E80B2-7E5D-402F-B4CB-AD2BF8BABD29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.NSB", "Account.NSB\Account.NSB.csproj", "{C22119FB-48FC-4EBA-8D43-25B0E2671773}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Account.NSB", "Account.NSB\Account.NSB.csproj", "{C22119FB-48FC-4EBA-8D43-25B0E2671773}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Share", "Account.Share\Account.Share.csproj", "{964D46DB-85AD-47F1-9E73-9923FB9E1E6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Account.Share", "Account.Share\Account.Share.csproj", "{964D46DB-85AD-47F1-9E73-9923FB9E1E6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -38,9 +38,6 @@ namespace Account.Data
             if (queryParameters.HasQuery())
             {
                 return GetFilteredInfo(queryParameters);
-                //    historyPage = historyPage
-                //        .Where(x => x.Date.ToString().Contains(queryParameters.Query.ToLowerInvariant()));
-                //}
             }
             List<OperationHistorySucceededEntity> historyPage1 = historyPage
                 .Skip(queryParameters.PageCount * (queryParameters.Page - 1))
@@ -113,7 +110,6 @@ namespace Account.Data
 
             OperationHistorySucceededEntity operationSucceededCredit = _mapper.Map<OperationHistorySucceededEntity>(message);
             operationSucceededCredit.FillFields(message.ToAccountId, OperationType.Credit, message.BalanceOfToAccount);
-
             await _accountContext.SucceededOperations.AddRangeAsync(operationSucceededDebit, operationSucceededCredit);
             await _accountContext.SaveChangesAsync();
         }

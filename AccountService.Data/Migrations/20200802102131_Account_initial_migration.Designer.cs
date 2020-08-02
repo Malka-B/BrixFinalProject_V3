@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Account.Data.Migrations
 {
     [DbContext(typeof(AccountContext))]
-    [Migration("20200728152104_account_inital_migration")]
-    partial class account_inital_migration
+    [Migration("20200802102131_Account_initial_migration")]
+    partial class Account_initial_migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -67,6 +67,26 @@ namespace Account.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("Account.Data.Entites.EmailVerificationEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ExpirationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("VerificationCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("EmailVerification");
                 });
 
             modelBuilder.Entity("Account.Data.Entites.OperationHistoryFailedEntity", b =>

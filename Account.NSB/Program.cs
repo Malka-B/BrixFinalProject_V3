@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using Account.Share.Interfaces;
 using AutoMapper;
 using Account.WebApi.Profiles;
+using Account.Service.Intefaces;
 
 namespace Account.NSB
 {
@@ -17,7 +18,6 @@ namespace Account.NSB
     {
         //לשנות את טבלת היסטוריה של כישלון
         //לסדר מידלואר עם לוגים לד"ב
-        //לעשות מאפר בשכבת דאטה
         static async Task Main()
         {
             var builder = new ConfigurationBuilder()
@@ -31,6 +31,7 @@ namespace Account.NSB
 
             var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
             containerSettings.ServiceCollection.AddScoped<IAccountRepository, AccountRepository>();
+            containerSettings.ServiceCollection.AddScoped<ILoginRepository, LoginRepository>();
             containerSettings.ServiceCollection.AddScoped<IOperationHistoryRepository, OperationHistoryRepository>();
             containerSettings.ServiceCollection.AddDbContext<AccountContext>(
                   options => options.UseSqlServer(configuration.GetConnectionString("FinalProject_Account")));

@@ -17,5 +17,6 @@ namespace Account.Data
         public DbSet<CustomerEntity> Customers { get; set; }
         public DbSet<OperationHistoryFailedEntity> FailedOperations { get; set; }
         public DbSet<OperationHistorySucceededEntity> SucceededOperations { get; set; }
+        public DbSet<EmailVerificationEntity> EmailVerification { get; set; }
     }
 }

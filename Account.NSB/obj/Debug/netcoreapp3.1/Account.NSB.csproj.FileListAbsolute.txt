@@ -356,6 +356,11 @@ C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\obj\Debug\netco
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.dll
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.pdb
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.genruntimeconfig.cache
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\System.Linq.Dynamic.Core.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.csprojAssemblyReference.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.csproj.CoreCompileInputs.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.AssemblyInfoInputs.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.AssemblyInfo.cs
 F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\appsettings.Development.json
 F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\appsettings.json
 F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -435,6 +440,7 @@ F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3
 F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Core.dll
 F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Extensions.DependencyInjection.dll
+F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Extensions.Hosting.dll
 F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql.dll
 F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Transport.RabbitMQ.dll
 F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
@@ -528,12 +534,7 @@ F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3
 F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\Account.Service.pdb
 F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\Exceptions.pdb
 F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\bin\Debug\netcoreapp3.1\Messages.pdb
-F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.csprojAssemblyReference.cache
-F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.csproj.CoreCompileInputs.cache
-F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.AssemblyInfoInputs.cache
-F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.AssemblyInfo.cs
 F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.csproj.CopyComplete
 F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.dll
 F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.pdb
 F:\Brix\Brix final project\BrixFinalProject_V3\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.genruntimeconfig.cache
-C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.NSB\bin\Debug\netcoreapp3.1\System.Linq.Dynamic.Core.dll

@@ -2,7 +2,9 @@
 using Account.Service.Models;
 using Account.WebApi.DTO;
 using AutoMapper;
+using Messages.Commands;
 using Microsoft.AspNetCore.Mvc;
+using NServiceBus;
 using System;
 using System.Threading.Tasks;
 
@@ -14,11 +16,12 @@ namespace Account.WebApi.Controllers
     {
         private readonly ILoginService _loginService;
         private readonly IMapper _mapper;
-
-        public LoginController(ILoginService loginService, IMapper mapper)
+        private readonly IMessageSession _messageSession;
+        public LoginController(ILoginService loginService, IMapper mapper, IMessageSession messageSession)
         {
             _loginService = loginService;
             _mapper = mapper;
+            _messageSession = messageSession;
         }
 
         [HttpPost("login")]
@@ -34,6 +37,17 @@ namespace Account.WebApi.Controllers
             CustomerModel customerModel = _mapper.Map<CustomerModel>(customer);
             var response = await _loginService.RegisterAsync(customerModel);
             return response;
+        }
+        [HttpPost("sendEmail")]
+        public async Task <bool> SendEmailAsync ([FromBody] EmailDTO email)
+        {
+            SendEmail sendEmail = new SendEmail()
+            {
+                Email = email.Email
+            };
+            await _messageSession.Send(sendEmail)
+                .ConfigureAwait(false);
+            return true;
         }
     }
 }
