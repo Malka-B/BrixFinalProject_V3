@@ -14,7 +14,8 @@ namespace Transaction.Service
         }
         public async Task<TransactionInfoModel> GetTransactionInfoAsync(Guid transactionId)
         {
-            var a= await _transactionInfoRepository.GetTransactionInfoAsync(transactionId);
+            var a = await _transactionInfoRepository.GetTransactionInfoAsync(transactionId);
+            a.Amount /= 10;
             return a; 
         }
     }

@@ -11,30 +11,11 @@ namespace Account.WebApi.Controllers
     public class OperationHistoryController : ControllerBase
     {
         private readonly IOperationHistoryService _operationHistoryService;
-        private readonly IUrlHelper _urlHelper;
-
-        public OperationHistoryController(IOperationHistoryService operationHistoryService, IUrlHelper urlHelper)
+        
+        public OperationHistoryController(IOperationHistoryService operationHistoryService)
         {
-            _operationHistoryService = operationHistoryService;
-            _urlHelper = urlHelper;
-        }
-
-        [HttpGet("GetAccountHistory")]
-        public IActionResult GetAll([FromQuery] QueryParameters queryParameters)
-        {
-            PagingReturn pagingReturn = _operationHistoryService.GetAll(queryParameters);
-            var paginationMetadata = new
-            {
-                totalCount = pagingReturn.Count,
-                pageSize = queryParameters.PageCount,
-                currentPage = queryParameters.Page,
-                totalPages = queryParameters.GetTotalPages(pagingReturn.Count)
-            };
-            Response.Headers
-                .Add("X-Pagination",
-                    JsonConvert.SerializeObject(paginationMetadata));
-            return Ok(pagingReturn.AccountHistory);
-        }
+            _operationHistoryService = operationHistoryService;            
+        }        
 
         [HttpGet("GetAccountHistoryFiltered")]
         public IActionResult GetAccountHistoryFiltered([FromQuery] QueryParameters queryParameters)

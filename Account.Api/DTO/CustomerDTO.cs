@@ -13,6 +13,8 @@ namespace Account.WebApi.DTO
         public string Email { get; set; }
         [Required]
         public string Password { get; set; }
+        [Required]
+        [Range(1000,9999)]
         public string VerificationCode { get; set; }
     }
 }

@@ -33,6 +33,8 @@ namespace Account.NSB
             containerSettings.ServiceCollection.AddScoped<IAccountRepository, AccountRepository>();
             containerSettings.ServiceCollection.AddScoped<ILoginRepository, LoginRepository>();
             containerSettings.ServiceCollection.AddScoped<IOperationHistoryRepository, OperationHistoryRepository>();
+           containerSettings.ServiceCollection.AddSingleton(configuration);
+
             containerSettings.ServiceCollection.AddDbContext<AccountContext>(
                   options => options.UseSqlServer(configuration.GetConnectionString("FinalProject_Account")));
             var mappingConfig = new MapperConfiguration(mc =>

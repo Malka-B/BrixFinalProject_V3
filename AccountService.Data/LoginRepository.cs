@@ -58,7 +58,9 @@ namespace Account.Data
 
         public async Task<bool> RegisterAsync(CustomerModel customerModel, AccountRegisterModel accountRegisterModel)
         {
+            customerModel.Id = Guid.NewGuid();
             CustomerEntity customer = _mapper.Map<CustomerEntity>(customerModel);
+            accountRegisterModel.CustomerId = customer.Id;
             AccountEntity account = _mapper.Map<AccountEntity>(accountRegisterModel);
             account.Id = new Guid();
             account.OpenDate = DateTime.Now;

@@ -46,7 +46,7 @@ namespace Account.Api
       transport.UseConventionalRoutingTopology()
       .ConnectionString("host = localhost:5672; username = guest; password = guest");//Configuration.GetConnectionString("RabbitMQ"));
       var persistence = endpointConfiguration.UsePersistence<SqlPersistence>();
-      var connection =Configuration.GetConnectionString("AccountOutbox");
+      var connection = Configuration.GetConnectionString("AccountOutbox");
       persistence.SqlDialect<SqlDialect.MsSqlServer>();
       persistence.ConnectionBuilder(
           connectionBuilder: () =>

@@ -1,4 +1,5 @@
-﻿using Messages.Commands;
+﻿using AutoMapper;
+using Messages.Commands;
 using Messages.Events;
 using NServiceBus;
 using System.Threading.Tasks;
@@ -9,6 +10,12 @@ namespace Transaction.NSB
         IAmStartedByMessages<StartTransaction>,
         IHandleMessages<AccountsUpdated>
     {
+        private readonly IMapper _mapper;
+             
+        public TransactionSaga(IMapper mapper)
+        {
+            _mapper = mapper;
+        }
         public async Task Handle(StartTransaction message, IMessageHandlerContext context)
         {
             UpdateAccounts updateAccounts = new UpdateAccounts()
@@ -25,12 +32,7 @@ namespace Transaction.NSB
 
         public async Task Handle(AccountsUpdated message, IMessageHandlerContext context)
         {
-            UpdateTransactionStatus updateTransactionStatus = new UpdateTransactionStatus()
-            {
-                IsTransactionSucceeded = message.isAccountsUpdateSuccess,
-                TransactionId = message.TransactionId,
-                FailureReason = message.FailureReason
-            };
+            UpdateTransactionStatus updateTransactionStatus = _mapper.Map<UpdateTransactionStatus>(message);                     
             await context.SendLocal(updateTransactionStatus)
                 .ConfigureAwait(false);
             MarkAsComplete();

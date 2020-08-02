@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Messages.Commands;
+using Messages.Events;
 using Tracking.WebApi.DTO;
 using Transaction.Data.Entities;
 using Transaction.Share.Models;
@@ -16,6 +18,10 @@ namespace Tracking.WebApi.Profiles
             CreateMap<TransactionModel, TransactionEntity>();
             CreateMap<TransactionEntity, TransactionInfoModel>();
             CreateMap<TransactionInfoModel, TransactionInfoDTO>();
+            CreateMap<AccountsUpdated, UpdateTransactionStatus>()
+                .ForMember(destination => destination.IsTransactionSucceeded, option => 
+                option.MapFrom(src =>(src.isAccountsUpdateSuccess)));
+
         }
     }
 }

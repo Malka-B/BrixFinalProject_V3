@@ -28,7 +28,7 @@ namespace Account.WebApi.Controllers
         [HttpGet("GetAccountInfo")]
         public async Task<AccountDTO> Get([FromQuery]Guid accountId)
         {
-            AccountModel accountModel = await _accountService.GetAccountInfoAsync(accountId);
+            AccountModel accountModel = await _accountService.GetAccountInfoAsync(accountId);            
             return _mapper.Map<AccountDTO>(accountModel);
         }
     }

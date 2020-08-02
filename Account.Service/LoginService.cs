@@ -35,13 +35,13 @@ namespace Account.Service
             if (isEmailValid && isVerificationCodeValid)
             {
                 string passowrdSalt = Hashing.GetSalt();
-                customerModel.Id = Guid.NewGuid();
+                //customerModel.Id = Guid.NewGuid();
                 customerModel.PassowrdSalt = passowrdSalt;
                 customerModel.PasswordHash = Hashing.GenerateHash(customerModel.Password, passowrdSalt);
                 AccountRegisterModel account = new AccountRegisterModel()
                 {
-                    CustomerId = customerModel.Id,
-                    Balance = 1000
+                    //CustomerId = customerModel.Id,
+                    Balance = 10000
                 };
                 return await _loginRepository.RegisterAsync(customerModel, account);
             }

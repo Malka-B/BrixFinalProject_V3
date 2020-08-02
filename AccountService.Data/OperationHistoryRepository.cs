@@ -30,15 +30,16 @@ namespace Account.Data
             return accountHistory.Count();
         }
 
-        public List<HistoryModel> GetAll(QueryParameters queryParameters)
+        private List<HistoryModel> GetAll(QueryParameters queryParameters)
         {
             IQueryable<OperationHistorySucceededEntity> historyPage = _accountContext
                 .SucceededOperations.Where(a => a.AccountId == queryParameters.AccountId)
                 .OrderBy(queryParameters.OrderBy, queryParameters.IsDescending());
-            if (queryParameters.HasQuery())
-            {
-                return GetFilteredInfo(queryParameters);
-            }
+            
+            //if (queryParameters.HasQuery())
+            //{
+            //    return GetFilteredInfo(queryParameters);
+            //}
             List<OperationHistorySucceededEntity> historyPage1 = historyPage
                 .Skip(queryParameters.PageCount * (queryParameters.Page - 1))
                 .Take(queryParameters.PageCount).ToList();

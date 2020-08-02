@@ -9,8 +9,7 @@ namespace Account.Share.Interfaces
     public interface IOperationHistoryRepository
     {
         Task UpdateFailedTransactionHistory(UpdateFailedTransaction message);
-        Task UpdateSucceededTransactionHistory(UpdateSucceededTransaction message);        
-        List<HistoryModel> GetAll(QueryParameters queryParameters);
+        Task UpdateSucceededTransactionHistory(UpdateSucceededTransaction message);
         List<HistoryModel> GetFilteredInfo(QueryParameters queryParameters);
         int Count(Guid accountId);
     }

@@ -17,7 +17,8 @@ namespace Transaction.Service
         public async Task<TransactionDetails> CreateTransactionAsync(TransactionModel transactionModel)
         {            
             transactionModel.Status = eStatus.proccessing;
-            TransactionDetails transactionId = await _transactionRepository.CreateTransactionAsync(transactionModel);   
+            transactionModel.Amount *= 10;
+            TransactionDetails transactionId = await _transactionRepository.CreateTransactionAsync(transactionModel);            
             return transactionId;
         }
     }

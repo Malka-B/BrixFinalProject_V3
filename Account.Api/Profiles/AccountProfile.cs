@@ -13,7 +13,9 @@ namespace Account.WebApi.Profiles
     {
         public AccountProfile()
         {
-            CreateMap<AccountModel, AccountDTO>();
+            CreateMap<AccountModel, AccountDTO>()
+                .ForMember(destination => destination.Balance, option => option.MapFrom(src =>
+             (src.Balance / 10)));
             CreateMap<AccountDTO, AccountModel>();
             CreateMap<AccountEntity, AccountModel>()
              .ForMember(destination => destination.FirstName, option => option.MapFrom(src =>
@@ -27,11 +29,11 @@ namespace Account.WebApi.Profiles
             CreateMap<AccountRegisterModel, AccountEntity>();
             CreateMap<OperationHistorySucceededEntity, HistoryModel>()
                 .ForMember(destination => destination.Amount, option => option.MapFrom(src =>
-              src.TransactionAmount))
+              (src.TransactionAmount / 10)))
+                .ForMember(destination => destination.Balance, option => option.MapFrom(src =>
+              (src.Balance / 10)))
                 .ForMember(destination => destination.operationType, option => option.MapFrom(src =>
               Enum.GetName(typeof(OperationType), src.operationType)));
-
-            //string colorName in Enum.GetNames(typeof(Colors))
             CreateMap<HistoryModel, HistoryDTO>();
             CreateMap<HistoryDTO, HistoryModel>();
             CreateMap<UpdateAccounts, TransactionDetailsForHistory>();

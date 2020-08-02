@@ -15,18 +15,6 @@ namespace Account.Service
             _operationHistoryRepository = operationHistoryRepository;
         }
 
-        public PagingReturn GetAll(QueryParameters queryParameters)
-        {
-            List<HistoryModel> accountHistory = _operationHistoryRepository
-                .GetAll(queryParameters);
-            int allItemCount =  _operationHistoryRepository.Count(queryParameters.AccountId);
-            return new PagingReturn
-            {
-                AccountHistory = accountHistory,
-                Count = allItemCount
-            };
-        }
-
         public PagingReturn GetFilteredInfo(QueryParameters queryParameters)
         {
             List<HistoryModel> accountsHistory = _operationHistoryRepository
