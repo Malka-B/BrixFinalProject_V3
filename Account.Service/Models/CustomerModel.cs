@@ -13,5 +13,6 @@ namespace Account.Service.Models
         public string Password { get; set; }
         public string PasswordHash { get; set; }
         public string PassowrdSalt { get; set; }
+        public string VerificationCode { get; set; }
     }
 }

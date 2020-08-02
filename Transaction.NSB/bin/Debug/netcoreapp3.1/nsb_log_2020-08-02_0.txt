@@ -12,3 +12,39 @@ License Expiration: 2020-10-04
 2020-08-02 14:30:12.491 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
 2020-08-02 14:30:13.204 INFO  Executing saga creation scripts:
 C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-08-02 14:46:32.473 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 14:48:46.275 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 14:48:46.595 INFO  Auditing processed messages to 'audit'
+2020-08-02 14:48:46.730 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-08-02 14:48:47.897 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-02 14:48:48.109 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-08-02 15:01:20.913 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 15:01:21.226 INFO  Auditing processed messages to 'audit'
+2020-08-02 15:01:21.376 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-08-02 15:01:22.281 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-02 15:01:22.598 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-08-02 15:36:48.191 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 15:36:48.475 INFO  Auditing processed messages to 'audit'
+2020-08-02 15:36:48.622 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-08-02 15:36:49.817 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-02 15:36:49.996 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-08-02 15:54:11.905 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 15:54:12.344 INFO  Auditing processed messages to 'audit'
+2020-08-02 15:54:12.518 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-08-02 15:54:13.707 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-02 15:54:14.206 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql
+2020-08-02 16:14:02.827 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 16:14:03.380 INFO  Auditing processed messages to 'audit'
+2020-08-02 16:14:03.591 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-08-02 16:14:05.055 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-02 16:14:05.270 INFO  Executing saga creation scripts:
+C:\Users\User\Desktop\brix2-gibui\Brix final project\Transaction.NSB\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionSaga_Create.sql

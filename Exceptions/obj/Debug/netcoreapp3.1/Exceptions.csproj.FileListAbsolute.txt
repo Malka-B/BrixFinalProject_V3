@@ -28,7 +28,6 @@ C:\Users\User\Desktop\brix2-gibui\Brix final project\Exceptions\obj\Debug\netcor
 F:\Brix\Brix final project\BrixFinalProject_V3\Exceptions\bin\Debug\netcoreapp3.1\Exceptions.deps.json
 F:\Brix\Brix final project\BrixFinalProject_V3\Exceptions\bin\Debug\netcoreapp3.1\Exceptions.dll
 F:\Brix\Brix final project\BrixFinalProject_V3\Exceptions\bin\Debug\netcoreapp3.1\Exceptions.pdb
-F:\Brix\Brix final project\BrixFinalProject_V3\Exceptions\obj\Debug\netcoreapp3.1\Exceptions.csprojAssemblyReference.cache
 F:\Brix\Brix final project\BrixFinalProject_V3\Exceptions\obj\Debug\netcoreapp3.1\Exceptions.csproj.CoreCompileInputs.cache
 F:\Brix\Brix final project\BrixFinalProject_V3\Exceptions\obj\Debug\netcoreapp3.1\Exceptions.AssemblyInfoInputs.cache
 F:\Brix\Brix final project\BrixFinalProject_V3\Exceptions\obj\Debug\netcoreapp3.1\Exceptions.AssemblyInfo.cs

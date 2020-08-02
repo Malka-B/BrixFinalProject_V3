@@ -9,5 +9,6 @@ namespace Account.Service.Intefaces
         
         Task<Guid> LoginAsync(string email, string password);
         Task<bool> RegisterAsync(CustomerModel customerModel);
+       // Task<bool> SendEmailasync(string email);
     }
 }

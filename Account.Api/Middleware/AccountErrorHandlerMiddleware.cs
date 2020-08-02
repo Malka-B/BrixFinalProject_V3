@@ -49,7 +49,13 @@ namespace Account.WebApi.Miidleware
             {
                 code = HttpStatusCode.BadRequest;
                 context.Response.StatusCode = (int)code;
-                errorMessage = "Email is not correct. Try again.";
+                errorMessage = "One of your details is not valid. Try again.";
+            }
+            if (ex is VerificationCodeNotValidException)
+            {
+                code = HttpStatusCode.BadRequest;
+                context.Response.StatusCode = (int)code;
+                errorMessage = "Your Verification Code is not valid or expire time.Please Try again.";
             }
             var result = JsonConvert.SerializeObject(new { error = errorMessage });
             return context.Response.WriteAsync(result);

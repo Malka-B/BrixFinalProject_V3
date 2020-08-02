@@ -38,10 +38,7 @@
         },
         "runtime": {
           "bin/placeholder/Exceptions.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "Messages/1.0.0": {
         "type": "project",

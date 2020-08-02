@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Account.Data.Migrations
 {
-    public partial class account_inital_migration : Migration
+    public partial class Account_initial_migration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -21,6 +21,20 @@ namespace Account.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Customers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "EmailVerification",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(nullable: false),
+                    Email = table.Column<string>(nullable: true),
+                    VerificationCode = table.Column<string>(nullable: true),
+                    ExpirationTime = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_EmailVerification", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -88,6 +102,9 @@ namespace Account.Data.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Accounts");
+
+            migrationBuilder.DropTable(
+                name: "EmailVerification");
 
             migrationBuilder.DropTable(
                 name: "FailedOperations");

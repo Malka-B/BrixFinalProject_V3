@@ -1,0 +1,120 @@
+﻿2020-08-02 12:42:28.977 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 12:42:31.263 INFO  Auditing processed messages to 'audit'
+2020-08-02 12:42:31.345 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-08-02 12:42:31.711 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 12:42:32.183 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 12:42:56.648 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-02 12:46:40.380 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 12:46:41.427 INFO  Auditing processed messages to 'audit'
+2020-08-02 12:46:41.463 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-08-02 12:46:41.494 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 12:46:54.910 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-02 12:51:07.956 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 12:51:09.627 INFO  Auditing processed messages to 'audit'
+2020-08-02 12:51:09.792 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-08-02 12:51:09.805 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 12:52:40.501 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 12:52:41.246 INFO  Auditing processed messages to 'audit'
+2020-08-02 12:52:41.448 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-08-02 12:52:41.465 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 12:56:06.805 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-02 12:59:27.035 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 12:59:27.531 INFO  Auditing processed messages to 'audit'
+2020-08-02 12:59:27.576 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-08-02 12:59:27.614 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 12:59:35.410 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-02 13:15:58.557 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 13:15:58.864 INFO  Auditing processed messages to 'audit'
+2020-08-02 13:15:58.910 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-08-02 13:15:58.915 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 13:15:58.919 WARN  To extend your trial license, visit: https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 13:16:17.685 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 13:16:17.968 INFO  Auditing processed messages to 'audit'
+2020-08-02 13:16:18.000 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-08-02 13:16:18.003 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 13:16:18.005 WARN  To extend your trial license, visit: https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 13:21:29.883 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 13:21:29.988 INFO  Auditing processed messages to 'audit'
+2020-08-02 13:21:29.999 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-08-02 13:21:30.001 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 13:21:30.002 WARN  To extend your trial license, visit: https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 13:21:43.161 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 13:21:43.433 INFO  Auditing processed messages to 'audit'
+2020-08-02 13:21:43.476 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-08-02 13:21:43.481 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 13:21:43.484 WARN  To extend your trial license, visit: https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 13:27:27.135 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 13:27:28.245 INFO  Auditing processed messages to 'audit'
+2020-08-02 13:27:28.576 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-08-02 13:27:28.610 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 13:27:28.651 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 13:27:42.146 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-02 14:22:32.078 INFO  Logging to 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 14:22:33.288 INFO  Auditing processed messages to 'audit'
+2020-08-02 14:22:33.482 INFO  No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-08-02 14:22:33.685 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 14:22:33.713 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-08-02 14:22:56.560 INFO  Executing 'F:\Brix\Brix final project\BrixFinalProject_V3\Account.Api\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-02 14:46:33.432 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 14:46:33.767 INFO  Auditing processed messages to 'audit'
+2020-08-02 14:46:33.915 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-08-02 14:46:51.901 ERROR Could not complete the installation. 
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (53): The network path was not found.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at NServiceBus.Persistence.Sql.ScriptRunner.ExecuteInSeparateConnection[T](Func`6 installAction, String scriptDirectory, String tablePrefix, SqlDialect sqlDialect, Func`2 connectionBuilder) in /_/src/SqlPersistence/ScriptRunner.cs:line 70
+   at NServiceBus.Persistence.Sql.ScriptRunner.Install(SqlDialect sqlDialect, String tablePrefix, Func`2 connectionBuilder, String scriptDirectory, Boolean shouldInstallOutbox, Boolean shouldInstallSagas, Boolean shouldInstallSubscriptions, Boolean shouldInstallTimeouts) in /_/src/SqlPersistence/ScriptRunner.cs:line 48
+   at SqlPersistenceInstaller.Install(String identity) in /_/src/SqlPersistence/NeedToInstallSomething.cs:line 30
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 53
+	HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2020-08-02 14:48:46.281 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 14:48:46.555 INFO  Auditing processed messages to 'audit'
+2020-08-02 14:48:46.674 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-08-02 14:48:54.010 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-02 14:59:27.818 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 14:59:28.083 INFO  Auditing processed messages to 'audit'
+2020-08-02 14:59:28.182 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-08-02 15:00:03.786 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 15:00:03.888 INFO  Auditing processed messages to 'audit'
+2020-08-02 15:00:03.929 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-08-02 15:00:16.695 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 15:00:16.898 INFO  Auditing processed messages to 'audit'
+2020-08-02 15:00:16.982 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-08-02 15:01:20.884 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 15:01:21.200 INFO  Auditing processed messages to 'audit'
+2020-08-02 15:01:21.332 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-08-02 15:01:23.681 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-02 15:36:48.322 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 15:36:48.568 INFO  Auditing processed messages to 'audit'
+2020-08-02 15:36:48.685 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-08-02 15:36:50.743 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-02 15:54:12.279 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 15:54:12.587 INFO  Auditing processed messages to 'audit'
+2020-08-02 15:54:12.735 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-08-02 15:54:15.424 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-02 16:14:03.031 INFO  Logging to 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-02 16:14:03.515 INFO  Auditing processed messages to 'audit'
+2020-08-02 16:14:03.743 INFO  Selected active license from C:\Users\User\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-04
+2020-08-02 16:14:06.802 INFO  Executing 'C:\Users\User\Desktop\brix2-gibui\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'

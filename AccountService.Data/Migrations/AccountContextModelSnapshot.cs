@@ -67,6 +67,26 @@ namespace Account.Data.Migrations
                     b.ToTable("Customers");
                 });
 
+            modelBuilder.Entity("Account.Data.Entites.EmailVerificationEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ExpirationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("VerificationCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("EmailVerification");
+                });
+
             modelBuilder.Entity("Account.Data.Entites.OperationHistoryFailedEntity", b =>
                 {
                     b.Property<Guid>("Id")

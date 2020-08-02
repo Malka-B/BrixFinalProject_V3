@@ -87,6 +87,10 @@ C:\Users\User\Desktop\brix2-gibui\Brix final project\AccountService.Data\obj\Deb
 C:\Users\User\Desktop\brix2-gibui\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.pdb
 C:\Users\User\Desktop\brix2-gibui\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.genruntimeconfig.cache
 C:\Users\User\Desktop\brix2-gibui\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.csproj.CoreCompileInputs.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.csprojAssemblyReference.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.csproj.CoreCompileInputs.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.AssemblyInfoInputs.cache
+F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.AssemblyInfo.cs
 F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.deps.json
 F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.runtimeconfig.json
 F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.runtimeconfig.dev.json
@@ -100,10 +104,6 @@ F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\bin\Debug\net
 F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Share.pdb
 F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\bin\Debug\netcoreapp3.1\Exceptions.pdb
 F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\bin\Debug\netcoreapp3.1\Messages.pdb
-F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.csprojAssemblyReference.cache
-F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.csproj.CoreCompileInputs.cache
-F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.AssemblyInfoInputs.cache
-F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.AssemblyInfo.cs
 F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.csproj.CopyComplete
 F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.dll
 F:\Brix\Brix final project\BrixFinalProject_V3\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.pdb
